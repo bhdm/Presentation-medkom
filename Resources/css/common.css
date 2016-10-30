@@ -1,0 +1,39 @@
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+.title{
+    color: #204d74;
+    margin-bottom: 50px;
+}
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 18px;
+}
+form{
+    max-width: 700px;
+}
+.chosen-container{
+    height: 34px;
+}
+
+.chosen-single{
+    height: 34px !important;
+    line-height: 34px !important;
+}
+.chosen-container-single .chosen-single div{
+    top: 5px;
+}
+footer{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right:0;
+}
+footer .container{
+    margin: 0 auto;
+}
