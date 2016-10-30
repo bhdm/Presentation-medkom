@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Created by PhpStorm.
  * User: maxim
@@ -241,7 +240,7 @@ class VolumeClass
             $keySlide1++;
             $this->slide2['a' . $i] = $this->slide1['a' . $key];
             $this->slide2['b' . $i] = $this->slide1['a' . $key];
-            switch ($this->slide1['a' . $i]) {
+            switch ($this->slide2['a' . $i]) {
                 case $this->slide1['a52']:
                     $this->slide1['b' . $i] = $this->slide1['b52'];
                     break;

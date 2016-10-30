@@ -12,7 +12,7 @@
     <script type="application/javascript" src="/Resources/assets/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="application/javascript" src="/Resources/assets/chosen/chosen.jquery.js"></script>
     <script type="application/javascript" src="/Resources/assets/iCheck/icheck.min.js"></script>
-    <script type="application/javascript" src="/Resources/assets/chart.js/dist/Chart.min.js"></script>
+    <script type="application/javascript" src="/Resources/assets/canvasjs/canvasjs.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.chosen').chosen({width: '100%'});
@@ -27,7 +27,9 @@
 </head>
 <body>
 <div class="container">
-    <?php include "slides".$url.".php"; ?>
+    <?php
+        include "slides".$url.".php";
+    ?>
 </div>
 
 <footer>

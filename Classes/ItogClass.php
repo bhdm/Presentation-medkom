@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Created by PhpStorm.
  * User: maxim
@@ -239,5 +238,29 @@ class ItogClass
 
 
         return $this->slide5;
+    }
+
+    public function getVolumeSurgeons(){
+        return $this->slide4['g19'] +
+        $this->slide4['g20'] +
+        $this->slide4['g21'] +
+        $this->slide4['g22'] +
+        $this->slide4['g23'] +
+        $this->slide4['g24'] +
+        $this->slide4['g25'] +
+        $this->slide4['g26'] +
+        $this->slide4['g27'] +
+        $this->slide4['g28'] +
+        $this->slide4['g29'] +
+        $this->slide4['g30'];
+    }
+
+    public function getVolumeNurses(){
+        return $this->slide4['g31'] +
+        $this->slide4['g32'] +
+        $this->slide4['g33'] +
+        $this->slide4['g34'] +
+        $this->slide4['g35'] +
+        $this->slide4['g36'];
     }
 }
