@@ -233,6 +233,25 @@ class DurationClass
 
 
         }
+
+        //        Пересчет итого
+        for ($i = 1 ; $i <= 67 ; $i++){
+            $char = $this->intToChar($i);
+            $this->slide2[$char.'40'] = 0;
+            $this->slide2[$char.'41'] = 0;
+            for ($j = 3; $j<=36 ; $j +=3 ){
+                $this->slide2[$char.'40'] += ( $this->slide2[$char.($j+1)] ? $this->slide2[$char.($j+1)] : 0 );
+                $this->slide2[$char.'41'] += ( $this->slide2[$char.($j+2)] ? $this->slide2[$char.($j+2)] : 0 );
+            }
+        }
+
         return $this->slide3;
+    }
+
+    public function intToChar($number){
+        $chars = array(
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'aa', 'ab', 'ac', 'ad', 'ae', 'af', 'ag', 'ah', 'ai', 'aj', 'ak', 'al', 'am', 'an', 'ao', 'ap', 'aq', 'ar', 'as', 'at', 'au', 'av', 'aw', 'ax', 'ay', 'az', 'ba', 'bb', 'bc', 'bd', 'be', 'bf', 'bg', 'bh', 'bi', 'bj', 'bk', 'bl', 'bm', 'bn', 'bo', 'bp', 'bq', 'br', 'bs', 'bt', 'bu', 'bv', 'bw', 'bx', 'by', 'bz'
+        );
+        return $chars[$number];
     }
 }
