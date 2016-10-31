@@ -1,3 +1,14 @@
+<?php
+    if (isset($_POST['countOfYear'])){
+        $_SESSION['slide1']['b2'] = htmlspecialchars($_POST['countOfYear']);
+    }
+    if (isset($_POST['specialty'])){
+        foreach ($_POST['specialty'] as $key=> $spec){
+            $_SESSION['slide1']['spec']['title'] = htmlspecialchars($spec);
+            $_SESSION['slide1']['spec']['value'] = htmlspecialchars((isset($_POST['value'][$key]) ? $_POST['value'][$key] : 0));
+        }
+    }
+?>
 <div class="title"><h1>Алгоритм расчета структуры закупок хирургических перчаток для операций</h1></div>
 
 <div class="text-center">
