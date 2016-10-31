@@ -29,96 +29,90 @@
 
         var chart1 = new CanvasJS.Chart("chart-1", {
             title: {
-                text: "Удовлетворение профессиональных потребностей"
+                text: "Удовлетворение функциональных потребностей"
             },
             axisX: {
                 interval: 10
             },
-            theme: "theme3",
+            theme: "theme1",
             data: [{
-                name: 'Закупки прошлого периода',
+                name: 'Хирурги',
                 showInLegend: true,
                 type: "area",
                 dataPoints: [
-                    { x: 0, y: 50, label: "С текстурой" },
-                    { x: 10, y: 80, label: "Акушерские" },
-                    { x: 20, y: 90, label: "Пов. прочности" },
-                    { x: 30, y: 60, label: "пов. чувствительн" },
+                    { y: 0, label: "" },
+                    { y: 150, label: "Хирурги" },
+                    { y: 0, label: "" },
                 ]
             },{
-                name: 'Расчитанный объем',
+                name: 'Операционные медсестры',
                 showInLegend: true,
                 type: "area",
                 dataPoints: [
-                    { x: 0, y: 100, label: "С текстурой" },
-                    { x: 10, y: 20, label: "Акушерские" },
-                    { x: 20, y: 30, label: "Пов. прочности" },
-                    { x: 30, y: 60, label: "пов. чувствительн" },
+                    { y: 0, label: "" },
+                    { y: 180, label: "Операционные медсестры" },
+                    { y: 0, label: "" },
                 ]
             }
             ]
         });
 
-        var chart2 = new CanvasJS.Chart("chart-2",
-            {
-                title:{
-                    text: ""
-                },
-                animationEnabled: true,
-                axisY: {
-                    title: ""
-                },
-                legend: {
-                    verticalAlign: "bottom",
-                    horizontalAlign: "center"
-                },
-                theme: "theme3",
-                data: [
-
-                    {
-                        type: "column",
-                        showInLegend: true,
-                        legendMarkerColor: "grey",
-                        legendText: "Общий объем",
-                        dataPoints: [
-                            {y: <?=$itog->getVolumeSurgeons()?>, label: "Хирурги"},
-                            {y: <?=$itog->getVolumeNurses()?>,  label: "Операционные медсестры" }
-                        ]
-                    }
+        var chart2 = new CanvasJS.Chart("chart-2",{
+            title: {
+                text: "Удовлетворение индивидуальных потребностей"
+            },
+            axisX: {
+                interval: 10
+            },
+            theme: "theme1",
+            data: [{
+                name: 'Хирурги',
+                showInLegend: true,
+                type: "area",
+                dataPoints: [
+                    { y: 0, label: "" },
+                    { y: 150, label: "Аллергия 1 и 4 типа" },
+                    { y: 180, label: "Контактный неаллергический дерматит" },
+                    { y: 0, label: "" },
                 ]
-            });
-
-        var chart3 = new CanvasJS.Chart("chart-3",
-            {
-                title:{
-                    text: ""
-                },
-                animationEnabled: true,
-                axisY: {
-                    title: ""
-                },
-                legend: {
-                    verticalAlign: "bottom",
-                    horizontalAlign: "center"
-                },
-                theme: "theme3",
-                data: [
-
-                    {
-                        type: "column",
-                        showInLegend: true,
-                        legendMarkerColor: "grey",
-                        legendText: "Общий объем",
-                        dataPoints: [
-                            { y: <?=$itog->slide4()['g26']?>, label: "Акушерские", color: '#369ead'},
-                            { y: <?=$itog->slide4()['g27']?>,  label: "Пов. прочности", color: '#369ead' },
-                            { y: <?=$itog->slide4()['g28']?>,  label: "Пов. чувствител.", color: '#369ead' },
-                            { y: <?=($itog->slide3()['ay40'] ? $itog->slide3()['ay40'] : 0)?>,  label: "Антимикрорбные", color: '#369ead' },
-                            { y: <?=$itog->slide4()['g29']?>,  label: "Текстурированные", color: '#369ead' }
-                        ]
-                    }
+            },{
+                name: 'Операционные медсестры',
+                showInLegend: true,
+                type: "area",
+                dataPoints: [
+                    { y: 0, label: "" },
+                    { y: 52, label: "Аллергия 1 и 4 типа" },
+                    { y: 75, label: "Контактный неаллергический дерматит" },
+                    { y: 0, label: "" },
                 ]
-            });
+            }
+            ]
+        });
+
+        var chart3 = new CanvasJS.Chart("chart-3",{
+            title: {
+                text: "Удовлетворение профессиональных потребностей "
+            },
+            axisX: {
+                interval: 10
+            },
+            theme: "theme1",
+            data: [{
+                name: 'Хирурги',
+                showInLegend: false,
+                type: "area",
+                dataPoints: [
+                    { y: 0, label: "" },
+                    { y: 150, label: "Акушерские" },
+                    { y: 180, label: "Пов. прочности" },
+                    { y: 180, label: "Пов. чувствительн." },
+                    { y: 180, label: "Антимикробные" },
+                    { y: 180, label: "Текстурированные" },
+                    { y: 0, label: "" },
+                ]
+            }
+            ]
+        });
 
 
         chart1.render();

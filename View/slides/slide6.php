@@ -59,15 +59,71 @@
             <th class="text-center">Годовое число</th>
         </tr>
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
+            <td rowspan="3">Синтетические перчатки</td>
+            <td>система двойных перчаток</td>
+            <td>Biogel Skinsense Indicator</td>
+            <td class="text-center">8579</td>
+        </tr>
+        <tr>
+            <td>с антимикробным покрытием</td>
+            <td>Bioclean Ultimate</td>
+            <td class="text-center">8579</td>
+        </tr>
+        <tr>
+            <td>стандартные</td>
+            <td>Encore Ultra</td>
+            <td class="text-center">8579</td>
+        </tr>
+        <tr>
+            <td rowspan="9">Латексные перчатки</td>
+            <td>стандартные неопудренные</td>
+            <td>Biogel Eclipse</td>
+            <td class="text-center">8579</td>
+        </tr>
+        <tr>
+            <td>стандратные опудренные</td>
+            <td>Medi-Grip PWD</td>
+            <td class="text-center">8579</td>
+        </tr>
+        <tr>
+            <td>система двойных перчаток</td>
+            <td>Encore Acclaim + Encore Underglove</td>
+            <td class="text-center">8579</td>
+        </tr>
+        <tr>
+            <td>с антимикробным покрытием</td>
+            <td>Bioclean Extra</td>
+            <td class="text-center">8579</td>
+        </tr>
+        <tr>
+            <td>акушерские</td>
+            <td>Dona 410 PF</td>
+            <td class="text-center">8579</td>
+        </tr>
+        <tr>
+            <td>повышенной прочности</td>
+            <td>Encore Orthopaedic</td>
+            <td class="text-center">8579</td>
+        </tr>
+        <tr>
+            <td>повышенной чувствительности</td>
+            <td>Encore Microptic</td>
+            <td class="text-center">8579</td>
+        </tr>
+        <tr>
+            <td>текстурированные</td>
+            <td>Encore Style 85</td>
+            <td class="text-center">8579</td>
+        </tr>
+        <tr>
+            <td>с увлажнителем</td>
+            <td>Encore Underglove</td>
+            <td class="text-center">8579</td>
         </tr>
         <tfoot>
             <tr>
-                <td></td>
-                <td></td>
+                <td class="text-center">8579</td>
+                <td class="text-center">8579</td>
                 <td>Итого</td>
                 <td>100500</td>
             </tr>
@@ -75,5 +131,71 @@
     </table>
 </div>
 <div class="col-xs-12 col-md-4">
-    <canvas id="chart-6" class="chart"></canvas>
+    <div id="chart-6" class="chart" style="height: 100%"></div>
 </div>
+
+<script type="text/javascript">
+    window.onload = function() {
+
+        var chart1 = new CanvasJS.Chart("chart-6", {
+            title: {
+                text: "Удовлетворение профессиональных потребностей",
+                fontSize: 18
+            },
+            legend: {
+                fontSize: 14
+            },
+            axisY: {
+                labelFontSize: 14
+            },
+            axisX: {
+                interval: 10,
+                labelAngle: 0,
+                labelFontSize: 14
+            },
+            theme: "theme1",
+            data: [{
+                name: 'Базовый объем (операции)',
+                showInLegend: true,
+                type: "stackedColumn",
+                toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
+                dataPoints: [
+                    { x: 0, y: 50, label: "Стандартные латексные" },
+
+                ],
+            },{
+                name: 'Дополнительный объем (длительность)',
+                showInLegend: true,
+                type: "stackedColumn",
+                toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
+                dataPoints: [
+                    { x: 0, y: 50, label: "Стандартные латексные" },
+
+                ],
+            },{
+                name: 'Базовый объем (манипуляции)',
+                showInLegend: true,
+                type: "stackedColumn",
+                toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
+                dataPoints: [
+                    { x: 0, y: 50, label: "Стандартные латексные" },
+
+                ],
+            },{
+                name: 'Дополнительный объем (повреждения)',
+                showInLegend: true,
+                type: "stackedColumn",
+                toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
+                dataPoints: [
+                    { x: 0, y: 50, label: "Стандартные латексные" },
+                ],
+            }
+            ]
+        });
+
+
+        chart1.render();
+
+
+    }
+</script>
