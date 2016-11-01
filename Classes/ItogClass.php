@@ -263,4 +263,121 @@ class ItogClass
         $this->slide4['g35'] +
         $this->slide4['g36'];
     }
+
+    public function getForSlide2(){
+        return array(
+            $this->slide4['g19'] + $this->slide4['g20'] + $this->slide4['g21'],
+            $this->slide4['g30'],
+            $this->slide4['g31'] + $this->slide4['g32'],
+            $this->slide4['g36'],
+
+            $this->slide4['g26'],
+            $this->slide4['g27'],
+            $this->slide4['g28'],
+            $this->slide3['ay40'],
+            $this->slide4['g29'],
+        );
+    }
+
+    public function getForSlide5(){
+        $cell1 = array(
+            $this->slide4['d19'] + $this->slide4['d31'],
+            $this->slide4['d20'] + $this->slide4['d32'],
+            $this->slide4['d21'],
+            $this->slide4['d22'] + $this->slide4['d33'],
+            $this->slide4['d23'] + $this->slide4['d34'],
+            $this->slide4['d24'] + $this->slide4['d35'],
+            $this->slide4['d25'],
+            $this->slide4['d26'],
+            $this->slide4['d27'],
+            $this->slide4['d28'],
+            $this->slide4['d29'],
+            $this->slide4['d30'] + $this->slide4['d36']
+        );
+        $cell2 = array(
+            $this->slide4['e19'] + $this->slide4['e31'] - $cell1[0],
+            $this->slide4['e20'] + $this->slide4['e32'] - $cell1[1],
+            $this->slide4['e21'] - $cell1[2],
+            $this->slide4['e22'] + $this->slide4['e33'] - $cell1[3],
+            $this->slide4['e23'] + $this->slide4['e34'] - $cell1[4],
+            $this->slide4['e24'] + $this->slide4['e35'] - $cell1[5],
+            $this->slide4['e25'] - $cell1[6],
+            $this->slide4['e26'] - $cell1[7],
+            $this->slide4['e27'] - $cell1[8],
+            $this->slide4['e28'] - $cell1[9],
+            $this->slide4['e29'] - $cell1[10],
+            $this->slide4['e30'] + $this->slide4['e36'] - $cell1[12]
+        );
+        $cell3 = array(
+            ($this->slide4['g19'] + $this->slide4['g31']) - ($this->slide4['e19'] + $this->slide4['e31']),
+            ($this->slide4['g20'] + $this->slide4['g32']) - ($this->slide4['e20'] + $this->slide4['e32']),
+            ($this->slide4['g21']) - ($this->slide4['e21']),
+            ($this->slide4['g22'] + $this->slide4['g33']) - ($this->slide4['e22'] + $this->slide4['e33']),
+            ($this->slide4['g23'] + $this->slide4['g34']) - ($this->slide4['e23'] + $this->slide4['e34']),
+            ($this->slide4['g24'] + $this->slide4['g35']) - ($this->slide4['e24'] + $this->slide4['e35']),
+            ($this->slide4['g25']) - ($this->slide4['e25']),
+            ($this->slide4['g26']) - ($this->slide4['e26']),
+            ($this->slide4['g27']) - ($this->slide4['e27']),
+            ($this->slide4['g28']) - ($this->slide4['e28']),
+            ($this->slide4['g29']) - ($this->slide4['e29']),
+            ($this->slide4['g30'] + $this->slide4['g36']) - ($this->slide4['e30'] + $this->slide4['e36'])
+        );
+        $cell4 = array(
+            $cell1[0] + $cell2[0] + $cell3[0],
+            $cell1[1] + $cell2[1] + $cell3[1],
+            $cell1[2] + $cell2[2] + $cell3[2],
+            $cell1[3] + $cell2[3] + $cell3[3],
+            $cell1[4] + $cell2[4] + $cell3[4],
+            $cell1[5] + $cell2[5] + $cell3[5],
+            $cell1[6] + $cell2[6] + $cell3[6],
+            $cell1[7] + $cell2[7] + $cell3[7],
+            $cell1[8] + $cell2[8] + $cell3[8],
+            $cell1[9] + $cell2[9] + $cell3[9],
+            $cell1[10] + $cell2[10] + $cell3[10],
+            $cell1[11] + $cell2[11] + $cell3[11],
+        );
+        $cell5 = array(
+            $cell1[0] + $cell3[0],
+            $cell1[1] + $cell3[1],
+            $cell1[2] + $cell3[2],
+            $cell1[3] + $cell3[3],
+            $cell1[4] + $cell3[4],
+            $cell1[5] + $cell3[5],
+            $cell1[6] + $cell3[6],
+            $cell1[7] + $cell3[7],
+            $cell1[8] + $cell3[8],
+            $cell1[9] + $cell3[9],
+            $cell1[10] + $cell3[10],
+            $cell1[11] + $cell3[11],
+        );
+        $cell6 = array(
+            $cell1[0] + $cell2[0],
+            $cell1[1] + $cell2[1],
+            $cell1[2] + $cell2[2],
+            $cell1[3] + $cell2[3],
+            $cell1[4] + $cell2[4],
+            $cell1[5] + $cell2[5],
+            $cell1[6] + $cell2[6],
+            $cell1[7] + $cell2[7],
+            $cell1[8] + $cell2[8],
+            $cell1[9] + $cell2[9],
+            $cell1[10] + $cell2[10],
+            $cell1[11] + $cell2[11],
+        );
+
+        $table = array(
+          $cell1, $cell2, $cell3, $cell4, $cell5, $cell6
+        );
+
+        foreach ($table as $k =>$t){
+            foreach ($t as $k2 => $t2){
+                if ($t2 < 0){
+                    $table[$k][$k2] = $t2*-1;
+                }
+            }
+        }
+
+        return $table;
+    }
+
 }

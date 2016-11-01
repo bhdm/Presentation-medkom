@@ -2,7 +2,7 @@
 
 <form class="form-horizontal">
     <div class="form-group">
-        <label class="col-sm-6">
+        <label class="col-sm-8">
             Длительность операции
         </label>
         <div class="col-sm-2">
@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-6">
+        <label class="col-sm-8">
             Повреждения перчаток
         </label>
         <div class="col-sm-2">
@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-6">
+        <label class="col-sm-8">
             Специализация
         </label>
         <div class="col-sm-2">
@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-6">
+        <label class="col-sm-8">
             Аллергический статус
         </label>
         <div class="col-sm-2">
@@ -34,7 +34,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-6">
+        <label class="col-sm-8">
             Гемоконтактные инфекции
         </label>
         <div class="col-sm-2">
@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-6">
+        <label class="col-sm-8">
             Профилактика ИСМП ( инфекции, связанные с оказанием медицинской помощи)
         </label>
         <div class="col-sm-2">

@@ -41,7 +41,7 @@
                 type: "area",
                 dataPoints: [
                     { y: 0, label: "" },
-                    { y: 150, label: "Хирурги" },
+                    { y: <?=$itog->getVolumeSurgeons()?>, label: "Хирурги" },
                     { y: 0, label: "" },
                 ]
             },{
@@ -50,7 +50,7 @@
                 type: "area",
                 dataPoints: [
                     { y: 0, label: "" },
-                    { y: 180, label: "Операционные медсестры" },
+                    { y: <?=$itog->getVolumeNurses()?>, label: "Операционные медсестры" },
                     { y: 0, label: "" },
                 ]
             }
@@ -71,8 +71,8 @@
                 type: "area",
                 dataPoints: [
                     { y: 0, label: "" },
-                    { y: 150, label: "Аллергия 1 и 4 типа" },
-                    { y: 180, label: "Контактный неаллергический дерматит" },
+                    { y: <?=$itog->getForSlide2()[0]?>, label: "Аллергия 1 и 4 типа" },
+                    { y: <?=$itog->getForSlide2()[1]?>, label: "Контактный неаллергический дерматит" },
                     { y: 0, label: "" },
                 ]
             },{
@@ -81,8 +81,8 @@
                 type: "area",
                 dataPoints: [
                     { y: 0, label: "" },
-                    { y: 52, label: "Аллергия 1 и 4 типа" },
-                    { y: 75, label: "Контактный неаллергический дерматит" },
+                    { y: <?=$itog->getForSlide2()[2]?>, label: "Аллергия 1 и 4 типа" },
+                    { y: <?=$itog->getForSlide2()[3]?>, label: "Контактный неаллергический дерматит" },
                     { y: 0, label: "" },
                 ]
             }
@@ -103,11 +103,11 @@
                 type: "area",
                 dataPoints: [
                     { y: 0, label: "" },
-                    { y: 150, label: "Акушерские" },
-                    { y: 180, label: "Пов. прочности" },
-                    { y: 180, label: "Пов. чувствительн." },
-                    { y: 180, label: "Антимикробные" },
-                    { y: 180, label: "Текстурированные" },
+                    { y: <?=$itog->getForSlide2()[4]?>, label: "Акушерские" },
+                    { y: <?=$itog->getForSlide2()[5]?>, label: "Пов. прочности" },
+                    { y: <?=$itog->getForSlide2()[6]?>, label: "Пов. чувствительн." },
+                    { y: <?=$itog->getForSlide2()[7]?>, label: "Антимикробные" },
+                    { y: <?=$itog->getForSlide2()[8]?>, label: "Текстурированные" },
                     { y: 0, label: "" },
                 ]
             }

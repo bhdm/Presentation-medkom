@@ -236,11 +236,11 @@ class DurationClass
         //        Пересчет итого
         for ($i = 1 ; $i <= 67 ; $i++){
             $char = $this->intToChar($i);
-            $this->slide2[$char.'40'] = 0;
+            $this->slide3[$char.'40'] = 0;
             $this->slide2[$char.'41'] = 0;
             for ($j = 3; $j<=36 ; $j +=3 ){
-                $this->slide2[$char.'40'] += ( $this->slide2[$char.($j+1)] ? $this->slide2[$char.($j+1)] : 0 );
-                $this->slide2[$char.'41'] += ( $this->slide2[$char.($j+2)] ? $this->slide2[$char.($j+2)] : 0 );
+                $this->slide3[$char.'40'] += ( $this->slide3[$char.($j+1)] ? $this->slide3[$char.($j+1)] : 0 );
+                $this->slide3[$char.'41'] += ( $this->slide3[$char.($j+2)] ? $this->slide3[$char.($j+2)] : 0 );
             }
         }
 
