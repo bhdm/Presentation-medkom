@@ -32,4 +32,8 @@ $itog = new ItogClass();
     }
     $next = substr($url,-1) + 1;
     $preview = substr($url,-1) - 1;
-    include_once __DIR__."/View/index.php";
+    if ($url == '/table'){
+        include_once __DIR__."/View/slides/table.php";
+    }else{
+        include_once __DIR__."/View/index.php";
+    }
