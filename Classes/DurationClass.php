@@ -228,7 +228,7 @@ class DurationClass
             $this->slide3['bi' . ($i + 2)] = $this->slide3['b' . ($i + 2)] * $this->slide3['c47'];
             $this->slide3['bl' . ($i + 2)] = $this->slide3['b' . ($i + 2)] * $this->slide3['c47'] * $this->slide3['b' . ($i + 2)] * $this->slide3['c47'] * ( $this->slide3['b50'] + $this->slide3['b51'] + $this->slide3['b52'] );
             $this->slide3['bm' . ($i + 2)] = $this->slide3['b' . ($i + 2)] * $this->slide3['c47'];
-            $this->slide3['bo' . ($i + 2)] = $this->slide3['b' . ($i + 2)] * $this->slide3['c47'] * $this->slide3['b' . ($i + 2)] * $this->slide3['c47'] * ( $this->slide3['b50'] + $this->slide3['b51'] + $this->slide3['b52'] );
+            $this->slide3['bo' . ($i + 2)] = $this->slide3['b' . ($i + 2)] * $this->slide3['c47'] - $this->slide3['b' . ($i + 2)] * $this->slide3['c47'] * ( $this->slide3['b50'] + $this->slide3['b51'] + $this->slide3['b52'] );
 
 
         }
@@ -237,7 +237,7 @@ class DurationClass
         for ($i = 1 ; $i <= 67 ; $i++){
             $char = $this->intToChar($i);
             $this->slide3[$char.'40'] = 0;
-            $this->slide2[$char.'41'] = 0;
+            $this->slide3[$char.'41'] = 0;
             for ($j = 3; $j<=36 ; $j +=3 ){
                 $this->slide3[$char.'40'] += ( $this->slide3[$char.($j+1)] ? $this->slide3[$char.($j+1)] : 0 );
                 $this->slide3[$char.'41'] += ( $this->slide3[$char.($j+2)] ? $this->slide3[$char.($j+2)] : 0 );

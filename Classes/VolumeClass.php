@@ -430,7 +430,7 @@ class VolumeClass
             $this->slide2['bi' . ($i + 2)] = $this->slide2['b' . ($i + 2)] * $this->slide2['c47'];
             $this->slide2['bl' . ($i + 2)] = $this->slide2['b' . ($i + 2)] * $this->slide2['c47'] * $this->slide2['b' . ($i + 2)] * $this->slide2['c47'] * ( $this->slide2['b50'] + $this->slide2['b51'] + $this->slide2['b52'] );
             $this->slide2['bm' . ($i + 2)] = $this->slide2['b' . ($i + 2)] * $this->slide2['c47'];
-            $this->slide2['bo' . ($i + 2)] = $this->slide2['b' . ($i + 2)] * $this->slide2['c47'] * $this->slide2['b' . ($i + 2)] * $this->slide2['c47'] * ( $this->slide2['b50'] + $this->slide2['b51'] + $this->slide2['b52'] );
+            $this->slide2['bo' . ($i + 2)] = $this->slide2['b' . ($i + 2)] * $this->slide2['c47'] - $this->slide2['b' . ($i + 2)] * $this->slide2['c47'] * ( $this->slide2['b50'] + $this->slide2['b51'] + $this->slide2['b52'] );
 
 
         }
