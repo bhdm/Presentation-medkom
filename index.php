@@ -26,6 +26,9 @@ $itog = new ItogClass();
     $url = $_SERVER['REQUEST_URI'];
     if ($url == null){
         $url = '/slide1';
+    }elseif($url == '/clear'){
+        unset($_SESSION['slide1']);
+        header( 'Location: /slide1', true, 301 );
     }
     $next = substr($url,-1) + 1;
     $preview = substr($url,-1) - 1;

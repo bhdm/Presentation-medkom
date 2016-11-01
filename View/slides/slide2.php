@@ -16,7 +16,7 @@
     <div class="form-group">
         <label class="col-sm-6">Количество операций за год</label>
         <div class="col-sm-2">
-            <input type="number" class="form-control" name="countOfYear" id="countOfYear">
+            <input type="number" class="form-control" name="countOfYear" id="countOfYear" value="<?=$_SESSION['slide1']['b2']?>">
         </div>
     </div>
     <strong>Распределение операций по профилю:</strong>
@@ -28,81 +28,81 @@
     <div class="specialty-box">
 
         <?php if (is_array($_SESSION['slide1']['spec'])){ ?>
-        <?php foreach ($_SESSION['slide1']['spec'] as $item){ ?>
-        <div class="form-group">
-            <div class="col-sm-6">
-                <select class="chosen" name="specialty[0]">
-                    <option  <?=($item['title'] == 'Абдоминальная хирургия' ? 'selected' : '')?> value="Абдоминальная хирургия">Абдоминальная хирургия</option>
-                    <option  <?=($item['title'] == 'Акушерство' ? 'selected' : '')?> value="Акушерство">Акушерство</option>
-                    <option  <?=($item['title'] == 'Андрология' ? 'selected' : '')?> value="Андрология ">Андрология </option>
-                    <option  <?=($item['title'] == 'Гастроэнтерология' ? 'selected' : '')?> value="Гастроэнтерология">Гастроэнтерология</option>
-                    <option  <?=($item['title'] == 'Гинекология' ? 'selected' : '')?> value="Гинекология">Гинекология</option>
-                    <option  <?=($item['title'] == 'Гнойная хирургия' ? 'selected' : '')?> value="Гнойная хирургия">Гнойная хирургия</option>
-                    <option  <?=($item['title'] == 'Кардиохирургия' ? 'selected' : '')?> value="Кардиохирургия">Кардиохирургия</option>
-                    <option  <?=($item['title'] == 'Колопроктология' ? 'selected' : '')?> value="Колопроктология">Колопроктология</option>
-                    <option  <?=($item['title'] == 'ЛОР' ? 'selected' : '')?> value="ЛОР">ЛОР</option>
-                    <option  <?=($item['title'] == 'Нейрохирургия' ? 'selected' : '')?> value="Нейрохирургия">Нейрохирургия</option>
-                    <option  <?=($item['title'] == 'Общая хирургия' ? 'selected' : '')?> value="Общая хирургия">Общая хирургия</option>
-                    <option  <?=($item['title'] == 'Офтальмология' ? 'selected' : '')?> value="Офтальмология">Офтальмология</option>
-                    <option  <?=($item['title'] == 'Сердечно-сосудистая хирургия' ? 'selected' : '')?> value="Сердечно-сосудистая хирургия">Сердечно-сосудистая хирургия</option>
-                    <option  <?=($item['title'] == 'Стоматология' ? 'selected' : '')?> value="Стоматология">Стоматология</option>
-                    <option  <?=($item['title'] == 'Торакальная хирургия' ? 'selected' : '')?> value="Торакальная хирургия">Торакальная хирургия</option>
-                    <option  <?=($item['title'] == 'Травматология и ортопедия' ? 'selected' : '')?> value="Травматология и ортопедия">Травматология и ортопедия</option>
-                    <option  <?=($item['title'] == 'Трансплантология' ? 'selected' : '')?> value="Трансплантология">Трансплантология</option>
-                    <option  <?=($item['title'] == 'Урология' ? 'selected' : '')?> value="Урология">Урология</option>
-                    <option  <?=($item['title'] == 'Челюстно-лицевая хирургия' ? 'selected' : '')?> value="Челюстно-лицевая хирургия">Челюстно-лицевая хирургия</option>
-                    <option  <?=($item['title'] == 'Эндокринология' ? 'selected' : '')?> value="Эндокринология">Эндокринология</option>
-                    <option  <?=($item['title'] == 'Эндоскопия' ? 'selected' : '')?> value="Эндоскопия">Эндоскопия</option>
-                </select>
-            </div>
-            <div class="col-sm-2">
-                <input type="number" class="form-control patr" name="value[0]" value="<?=$item['value']?>">
-            </div>
-            <div class="col-sm-2 text-right">
-                <?php if (end($_SESSION['slide1']['spec']) == $item){ ?>
-                    <button type="button" class="btn btn-primary" id="add"><span class="glyphicon glyphicon-plus"></span></button>
-                <?php }else{ ?>
-                <button type="button" class="btn btn-danger remove-item"><span class="glyphicon glyphicon-remove"></span></button>
-                <?php } ?>
-            </div>
-        </div>
-        <?php } ?>
+            <?php $number = -1 ;foreach ($_SESSION['slide1']['spec'] as $item){ $number++; ?>
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <select class="chosen" name="specialty[<?=$number?>]">
+                            <option  <?=($item['title'] == 'Абдоминальная хирургия' ? 'selected' : '')?> value="Абдоминальная хирургия">Абдоминальная хирургия</option>
+                            <option  <?=($item['title'] == 'Акушерство' ? 'selected' : '')?> value="Акушерство">Акушерство</option>
+                            <option  <?=($item['title'] == 'Андрология' ? 'selected' : '')?> value="Андрология ">Андрология </option>
+                            <option  <?=($item['title'] == 'Гастроэнтерология' ? 'selected' : '')?> value="Гастроэнтерология">Гастроэнтерология</option>
+                            <option  <?=($item['title'] == 'Гинекология' ? 'selected' : '')?> value="Гинекология">Гинекология</option>
+                            <option  <?=($item['title'] == 'Гнойная хирургия' ? 'selected' : '')?> value="Гнойная хирургия">Гнойная хирургия</option>
+                            <option  <?=($item['title'] == 'Кардиохирургия' ? 'selected' : '')?> value="Кардиохирургия">Кардиохирургия</option>
+                            <option  <?=($item['title'] == 'Колопроктология' ? 'selected' : '')?> value="Колопроктология">Колопроктология</option>
+                            <option  <?=($item['title'] == 'ЛОР' ? 'selected' : '')?> value="ЛОР">ЛОР</option>
+                            <option  <?=($item['title'] == 'Нейрохирургия' ? 'selected' : '')?> value="Нейрохирургия">Нейрохирургия</option>
+                            <option  <?=($item['title'] == 'Общая хирургия' ? 'selected' : '')?> value="Общая хирургия">Общая хирургия</option>
+                            <option  <?=($item['title'] == 'Офтальмология' ? 'selected' : '')?> value="Офтальмология">Офтальмология</option>
+                            <option  <?=($item['title'] == 'Сердечно-сосудистая хирургия' ? 'selected' : '')?> value="Сердечно-сосудистая хирургия">Сердечно-сосудистая хирургия</option>
+                            <option  <?=($item['title'] == 'Стоматология' ? 'selected' : '')?> value="Стоматология">Стоматология</option>
+                            <option  <?=($item['title'] == 'Торакальная хирургия' ? 'selected' : '')?> value="Торакальная хирургия">Торакальная хирургия</option>
+                            <option  <?=($item['title'] == 'Травматология и ортопедия' ? 'selected' : '')?> value="Травматология и ортопедия">Травматология и ортопедия</option>
+                            <option  <?=($item['title'] == 'Трансплантология' ? 'selected' : '')?> value="Трансплантология">Трансплантология</option>
+                            <option  <?=($item['title'] == 'Урология' ? 'selected' : '')?> value="Урология">Урология</option>
+                            <option  <?=($item['title'] == 'Челюстно-лицевая хирургия' ? 'selected' : '')?> value="Челюстно-лицевая хирургия">Челюстно-лицевая хирургия</option>
+                            <option  <?=($item['title'] == 'Эндокринология' ? 'selected' : '')?> value="Эндокринология">Эндокринология</option>
+                            <option  <?=($item['title'] == 'Эндоскопия' ? 'selected' : '')?> value="Эндоскопия">Эндоскопия</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="number" class="form-control patr" name="value[<?=$number?>]" value="<?=$item['value']?>">
+                    </div>
+                    <div class="col-sm-2 text-right">
+                        <?php if (end($_SESSION['slide1']['spec']) == $item){ ?>
+                            <button type="button" class="btn btn-primary" id="add"><span class="glyphicon glyphicon-plus"></span></button>
+                        <?php }else{ ?>
+                            <button type="button" class="btn btn-danger remove-item"><span class="glyphicon glyphicon-remove"></span></button>
+                        <?php } ?>
+                    </div>
+                </div>
+            <?php } ?>
         <?php }else{ ?>
-        <div class="form-group">
-            <div class="col-sm-6">
-                <select class="chosen" name="specialty[0]">
-                    <option value="Абдоминальная хирургия">Абдоминальная хирургия</option>
-                    <option value="Акушерство">Акушерство</option>
-                    <option value="Андрология ">Андрология </option>
-                    <option value="Гастроэнтерология">Гастроэнтерология</option>
-                    <option value="Гинекология">Гинекология</option>
-                    <option value="Гнойная хирургия">Гнойная хирургия</option>
-                    <option value="Кардиохирургия">Кардиохирургия</option>
-                    <option value="Колопроктология">Колопроктология</option>
-                    <option value="ЛОР">ЛОР</option>
-                    <option value="Нейрохирургия">Нейрохирургия</option>
-                    <option value="Общая хирургия">Общая хирургия</option>
-                    <option value="Офтальмология">Офтальмология</option>
-                    <option value="Сердечно-сосудистая хирургия">Сердечно-сосудистая хирургия</option>
-                    <option value="Стоматология">Стоматология</option>
-                    <option value="Торакальная хирургия">Торакальная хирургия</option>
-                    <option value="Травматология и ортопедия">Травматология и ортопедия</option>
-                    <option value="Трансплантология">Трансплантология</option>
-                    <option value="Урология">Урология</option>
-                    <option value="Челюстно-лицевая хирургия">Челюстно-лицевая хирургия</option>
-                    <option value="Эндокринология">Эндокринология</option>
-                    <option value="Эндоскопия">Эндоскопия</option>
-                </select>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <select class="chosen" name="specialty[0]">
+                        <option value="Абдоминальная хирургия">Абдоминальная хирургия</option>
+                        <option value="Акушерство">Акушерство</option>
+                        <option value="Андрология ">Андрология </option>
+                        <option value="Гастроэнтерология">Гастроэнтерология</option>
+                        <option value="Гинекология">Гинекология</option>
+                        <option value="Гнойная хирургия">Гнойная хирургия</option>
+                        <option value="Кардиохирургия">Кардиохирургия</option>
+                        <option value="Колопроктология">Колопроктология</option>
+                        <option value="ЛОР">ЛОР</option>
+                        <option value="Нейрохирургия">Нейрохирургия</option>
+                        <option value="Общая хирургия">Общая хирургия</option>
+                        <option value="Офтальмология">Офтальмология</option>
+                        <option value="Сердечно-сосудистая хирургия">Сердечно-сосудистая хирургия</option>
+                        <option value="Стоматология">Стоматология</option>
+                        <option value="Торакальная хирургия">Торакальная хирургия</option>
+                        <option value="Травматология и ортопедия">Травматология и ортопедия</option>
+                        <option value="Трансплантология">Трансплантология</option>
+                        <option value="Урология">Урология</option>
+                        <option value="Челюстно-лицевая хирургия">Челюстно-лицевая хирургия</option>
+                        <option value="Эндокринология">Эндокринология</option>
+                        <option value="Эндоскопия">Эндоскопия</option>
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <input type="number" class="form-control patr" name="value[0]">
+                </div>
+                <div class="col-sm-2 text-right">
+                    <button type="button" class="btn btn-primary" id="add"><span class="glyphicon glyphicon-plus"></span></button>
+                </div>
             </div>
-            <div class="col-sm-2">
-                <input type="number" class="form-control patr" name="value[0]">
-            </div>
-            <div class="col-sm-2 text-right">
-                <button type="button" class="btn btn-primary" id="add"><span class="glyphicon glyphicon-plus"></span></button>
-            </div>
-        </div>
+        <?php } ?>
     </div>
-    <?php } ?>
     <div class="row">
         <div class="col-sm-offset-8 col-sm-2 text-right">
             <button type="submit" class="btn btn-primary" id="save">Сохранить</button>

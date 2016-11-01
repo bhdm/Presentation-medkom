@@ -122,10 +122,10 @@
         </tr>
         <tfoot>
             <tr>
-                <td class="text-center">8579</td>
-                <td class="text-center">8579</td>
-                <td>Итого</td>
-                <td>100500</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-right"><strong>Итого</strong></td>
+                <td class="text-center"><strong>100500</strong></td>
             </tr>
         </tfoot>
     </table>

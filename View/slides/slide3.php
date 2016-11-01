@@ -3,13 +3,14 @@
         $_SESSION['slide1']['b2'] = htmlspecialchars($_POST['countOfYear']);
     }
     if (isset($_POST['specialty'])){
-        $_POST['specialty']['spec'] = null;
+        unset($_SESSION['slide1']['spec']);
         foreach ($_POST['specialty'] as $key=> $spec){
-            $_SESSION['slide1']['spec'][] = array(
-                'title' => htmlspecialchars($spec),
-                'value' => htmlspecialchars((isset($_POST['value'][$key]) ? $_POST['value'][$key] : 0)),
-            );
-
+            if (isset($spec) && $spec != null && $spec!= ''){
+                $_SESSION['slide1']['spec'][] = array(
+                    'title' => htmlspecialchars($spec),
+                    'value' => htmlspecialchars((isset($_POST['value'][$key]) ? $_POST['value'][$key] : 0)),
+                );
+            }
         }
     }
 
