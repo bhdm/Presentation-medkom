@@ -12,7 +12,6 @@ if ($dev == 1){
 
 
 spl_autoload_register(function ($class_name) {
-//    $class_name  = str_replace('\\','/',$class_name);
     if (file_exists('Classes/'.$class_name . '.php')) {
         require_once 'Classes/'.$class_name . '.php';
         return true;
@@ -20,6 +19,8 @@ spl_autoload_register(function ($class_name) {
     return false;
 
 });
+// Пересчет параметров
+$itog = new ItogClass();
 
 //Роутер
     $url = $_SERVER['REQUEST_URI'];
@@ -28,5 +29,4 @@ spl_autoload_register(function ($class_name) {
     }
     $next = substr($url,-1) + 1;
     $preview = substr($url,-1) - 1;
-    $itog = new ItogClass();
     include_once __DIR__."/View/index.php";

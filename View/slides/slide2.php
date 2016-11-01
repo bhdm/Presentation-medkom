@@ -16,7 +16,7 @@
     <div class="form-group">
         <label class="col-sm-6">Количество операций за год</label>
         <div class="col-sm-2">
-            <input type="number" class="form-control" name="countOfYear">
+            <input type="number" class="form-control" name="countOfYear" id="countOfYear">
         </div>
     </div>
     <strong>Распределение операций по профилю:</strong>
@@ -56,7 +56,7 @@
                 </select>
             </div>
             <div class="col-sm-2">
-                <input type="number" class="form-control" name="value[0]" value="<?=$item['value']?>">
+                <input type="number" class="form-control patr" name="value[0]" value="<?=$item['value']?>">
             </div>
             <div class="col-sm-2 text-right">
                 <?php if (end($_SESSION['slide1']['spec']) == $item){ ?>
@@ -95,7 +95,7 @@
                 </select>
             </div>
             <div class="col-sm-2">
-                <input type="number" class="form-control" name="value[0]">
+                <input type="number" class="form-control patr" name="value[0]">
             </div>
             <div class="col-sm-2 text-right">
                 <button type="button" class="btn btn-primary" id="add"><span class="glyphicon glyphicon-plus"></span></button>
@@ -105,10 +105,28 @@
     <?php } ?>
     <div class="row">
         <div class="col-sm-offset-8 col-sm-2 text-right">
-            <button type="submit" class="btn btn-primary">Сохранить</button>
+            <button type="submit" class="btn btn-primary" id="save">Сохранить</button>
         </div>
     </div>
 </form>
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="error">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-danger">Ошибка</h4>
+            </div>
+            <div class="modal-body">
+                <p>Количество операций за год должно равняться сумме операций по профилю</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
     $(document).ready(function () {
@@ -141,7 +159,7 @@
                 '</select>' +
                 '</div>' +
                 '<div class="col-sm-2">' +
-                '<input type="number" class="form-control" name="value['+count+']">' +
+                '<input type="number" class="form-control patr" name="value['+count+']">' +
                 '</div>' +
                 '<div class="col-sm-2 text-right">' +
                 '<button type="button" class="btn btn-primary" id="add"><span class="glyphicon glyphicon-plus"></span></button>' +
@@ -171,5 +189,18 @@
                 $('.chosen').chosen({width: '100%'});
             }
         });
+
+        $('#save').click(function () {
+            var count = parseInt($('#countOfYear').val());
+            var sum = 0;
+            for (var i =0 ; i < $('.patr').length ; i ++){
+                sum += parseInt($('.patr').eq(i).val());
+            }
+            if (count != sum){
+                $('#error').modal();
+                return false;
+            }
+
+        })
     });
 </script>

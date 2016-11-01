@@ -46,16 +46,45 @@ class VolumeClass
         $this->slide1['b15'] = 0;
         $this->slide1['b16'] = 0;
 
-        $testSum = $this->slide1['b5']+
-            $this->slide1['b6']+
-            $this->slide1['b7']+
-            $this->slide1['b8']+
-            $this->slide1['b9']+
-            $this->slide1['b10'];
+//      Берем данные из сессии второго слайда
+//        $this->slide1['a5'] =  (isset($_SESSION['slide1']['spec'][0]['title']) ? $_SESSION['slide1']['spec'][0]['title'] : 0 );
+//        $this->slide1['a6'] =  (isset($_SESSION['slide1']['spec'][1]['title']) ? $_SESSION['slide1']['spec'][1]['title'] : 0 );
+//        $this->slide1['a7'] =  (isset($_SESSION['slide1']['spec'][2]['title']) ? $_SESSION['slide1']['spec'][2]['title'] : 0 );
+//        $this->slide1['a8'] =  (isset($_SESSION['slide1']['spec'][3]['title']) ? $_SESSION['slide1']['spec'][3]['title'] : 0 );
+//        $this->slide1['a9'] =  (isset($_SESSION['slide1']['spec'][4]['title']) ? $_SESSION['slide1']['spec'][4]['title'] : 0 );
+//        $this->slide1['a10'] = (isset($_SESSION['slide1']['spec'][5]['title']) ? $_SESSION['slide1']['spec'][5]['title'] : 0 );
+//        $this->slide1['a11'] = (isset($_SESSION['slide1']['spec'][6]['title']) ? $_SESSION['slide1']['spec'][6]['title'] : 0 );
+//        $this->slide1['a12'] = (isset($_SESSION['slide1']['spec'][7]['title']) ? $_SESSION['slide1']['spec'][7]['title'] : 0 );
+//        $this->slide1['a13'] = (isset($_SESSION['slide1']['spec'][8]['title']) ? $_SESSION['slide1']['spec'][8]['title'] : 0 );
+//        $this->slide1['a14'] = (isset($_SESSION['slide1']['spec'][9]['title']) ? $_SESSION['slide1']['spec'][9]['title'] : 0 );
+//        $this->slide1['a15'] = (isset($_SESSION['slide1']['spec'][10]['title']) ? $_SESSION['slide1']['spec'][10]['title'] : 0 );
+//        $this->slide1['a16'] = (isset($_SESSION['slide1']['spec'][11]['title']) ? $_SESSION['slide1']['spec'][11]['title'] : 0 );
+//
+//        $this->slide1['b5'] =  (isset($_SESSION['slide1']['spec'][0]['value']) ? $_SESSION['slide1']['spec'][0]['value'] : 0 );
+//        $this->slide1['b6'] =  (isset($_SESSION['slide1']['spec'][1]['value']) ? $_SESSION['slide1']['spec'][1]['value'] : 0 );
+//        $this->slide1['b7'] =  (isset($_SESSION['slide1']['spec'][2]['value']) ? $_SESSION['slide1']['spec'][2]['value'] : 0 );
+//        $this->slide1['b8'] =  (isset($_SESSION['slide1']['spec'][3]['value']) ? $_SESSION['slide1']['spec'][3]['value'] : 0 );
+//        $this->slide1['b9'] =  (isset($_SESSION['slide1']['spec'][4]['value']) ? $_SESSION['slide1']['spec'][4]['value'] : 0 );
+//        $this->slide1['b10'] = (isset($_SESSION['slide1']['spec'][5]['value']) ? $_SESSION['slide1']['spec'][5]['value'] : 0 );
+//        $this->slide1['b11'] = (isset($_SESSION['slide1']['spec'][6]['value']) ? $_SESSION['slide1']['spec'][6]['value'] : 0 );
+//        $this->slide1['b12'] = (isset($_SESSION['slide1']['spec'][7]['value']) ? $_SESSION['slide1']['spec'][7]['value'] : 0 );
+//        $this->slide1['b13'] = (isset($_SESSION['slide1']['spec'][8]['value']) ? $_SESSION['slide1']['spec'][8]['value'] : 0 );
+//        $this->slide1['b14'] = (isset($_SESSION['slide1']['spec'][9]['value']) ? $_SESSION['slide1']['spec'][9]['value'] : 0 );
+//        $this->slide1['b15'] = (isset($_SESSION['slide1']['spec'][10]['value']) ? $_SESSION['slide1']['spec'][10]['value'] : 0 );
+//        $this->slide1['b16'] = (isset($_SESSION['slide1']['spec'][11]['value']) ? $_SESSION['slide1']['spec'][11]['value'] : 0 );
 
-        if ($testSum != $this->slide1['b2']){
-            return ['error' => true, 'message' => 'Общее кол-во операций не соответствует сумме количество операций по специальностям'];
-        }
+
+
+//        $testSum = $this->slide1['b5']+
+//            $this->slide1['b6']+
+//            $this->slide1['b7']+
+//            $this->slide1['b8']+
+//            $this->slide1['b9']+
+//            $this->slide1['b10'];
+//
+//        if ($testSum != $this->slide1['b2']){
+//            return ['error' => true, 'message' => 'Общее кол-во операций не соответствует сумме количество операций по специальностям'];
+//        }
 
         $table = array(
             'a22' => 'Абдоминальная хирургия',          'b22' => 41.2903225806452,  'c22' => 0.3306,    'd22' => 83.3870967741936,  'e22' => 0.53,      'f22' => 156.177419354839,  'g22' => 0.1394,
@@ -427,5 +456,6 @@ class VolumeClass
         );
         return $chars[$number];
     }
+
 
 }
