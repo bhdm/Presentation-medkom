@@ -271,70 +271,70 @@ class VolumeClass
             $this->slide2['b' . $i] = $this->slide1['a' . $key];
             switch ($this->slide2['a' . $i]) {
                 case $this->slide1['a52']:
-                    $this->slide1['b' . $i] = $this->slide1['b52'];
+                    $this->slide2['b' . $i] = $this->slide1['b52'];
                     break;
                 case $this->slide1['a53']:
-                    $this->slide1['b' . $i] = $this->slide1['b53'];
+                    $this->slide2['b' . $i] = $this->slide1['b53'];
                     break;
                 case $this->slide1['a54']:
-                    $this->slide1['b' . $i] = $this->slide1['b54'];
+                    $this->slide2['b' . $i] = $this->slide1['b54'];
                     break;
                 case $this->slide1['a55']:
-                    $this->slide1['b' . $i] = $this->slide1['b55'];
+                    $this->slide2['b' . $i] = $this->slide1['b55'];
                     break;
                 case $this->slide1['a56']:
-                    $this->slide1['b' . $i] = $this->slide1['b56'];
+                    $this->slide2['b' . $i] = $this->slide1['b56'];
                     break;
                 case $this->slide1['a57']:
-                    $this->slide1['b' . $i] = $this->slide1['b57'];
+                    $this->slide2['b' . $i] = $this->slide1['b57'];
                     break;
                 case $this->slide1['a58']:
-                    $this->slide1['b' . $i] = $this->slide1['b58'];
+                    $this->slide2['b' . $i] = $this->slide1['b58'];
                     break;
                 case $this->slide1['a59']:
-                    $this->slide1['b' . $i] = $this->slide1['b59'];
+                    $this->slide2['b' . $i] = $this->slide1['b59'];
                     break;
                 case $this->slide1['a60']:
-                    $this->slide1['b' . $i] = $this->slide1['b60'];
+                    $this->slide2['b' . $i] = $this->slide1['b60'];
                     break;
                 case $this->slide1['a61']:
-                    $this->slide1['b' . $i] = $this->slide1['b61'];
+                    $this->slide2['b' . $i] = $this->slide1['b61'];
                     break;
                 case $this->slide1['a62']:
-                    $this->slide1['b' . $i] = $this->slide1['b62'];
+                    $this->slide2['b' . $i] = $this->slide1['b62'];
                     break;
                 case $this->slide1['a63']:
-                    $this->slide1['b' . $i] = $this->slide1['b63'];
+                    $this->slide2['b' . $i] = $this->slide1['b63'];
                     break;
                 case $this->slide1['a64']:
-                    $this->slide1['b' . $i] = $this->slide1['b64'];
+                    $this->slide2['b' . $i] = $this->slide1['b64'];
                     break;
                 case $this->slide1['a65']:
-                    $this->slide1['b' . $i] = $this->slide1['b65'];
+                    $this->slide2['b' . $i] = $this->slide1['b65'];
                     break;
                 case $this->slide1['a66']:
-                    $this->slide1['b' . $i] = $this->slide1['b66'];
+                    $this->slide2['b' . $i] = $this->slide1['b66'];
                     break;
                 case $this->slide1['a67']:
-                    $this->slide1['b' . $i] = $this->slide1['b67'];
+                    $this->slide2['b' . $i] = $this->slide1['b67'];
                     break;
                 case $this->slide1['a68']:
-                    $this->slide1['b' . $i] = $this->slide1['b68'];
+                    $this->slide2['b' . $i] = $this->slide1['b68'];
                     break;
                 case $this->slide1['a69']:
-                    $this->slide1['b' . $i] = $this->slide1['b69'];
+                    $this->slide2['b' . $i] = $this->slide1['b69'];
                     break;
                 case $this->slide1['a70']:
-                    $this->slide1['b' . $i] = $this->slide1['b70'];
+                    $this->slide2['b' . $i] = $this->slide1['b70'];
                     break;
                 case $this->slide1['a71']:
-                    $this->slide1['b' . $i] = $this->slide1['b71'];
+                    $this->slide2['b' . $i] = $this->slide1['b71'];
                     break;
                 case $this->slide1['a72']:
-                    $this->slide1['b' . $i] = $this->slide1['b72'];
+                    $this->slide2['b' . $i] = $this->slide1['b72'];
                     break;
                 default:
-                    $this->slide1['a' . $i] = 0;
+                    $this->slide2['a' . $i] = 0;
             }
 
             // Строка "Хирурги"
@@ -446,7 +446,11 @@ class VolumeClass
             }
         }
 
+//        echo '<pre>';
+//        print_r($this->slide2);
+//        echo '</pre>';
         return $this->slide2;
+
     }
 
 

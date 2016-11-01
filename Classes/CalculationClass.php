@@ -1188,6 +1188,10 @@ class CalculationClass
         $this->slide4['o117'] = $this->r($this->slide4['m117']/(1-$this->slide4['d3']));
         $this->slide4['o118'] = $this->r($this->slide4['m118']/(1-$this->slide4['d4']));
 
+//        echo '<pre>';
+//        print_r($this->slide4);
+//        echo '</pre>';
+
         return $this->slide4;
     }
 

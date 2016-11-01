@@ -235,7 +235,7 @@ class ItogClass
 //      0-0-0-0
         $this->slide5['i92'] = ($this->slide5['c3'] == 2 ? $this->slide4['o115'] + $this->slide4['o117'] : ($this->slide5['b3'] == 1 ? $this->slide4['m115'] + $this->slide4['m117'] : ($this->slide5['b4'] == 1 ? $this->slide4['n115'] + $this->slide4['n117'] : ($this->slide4['l115'] + $this->slide4['l117']))));
         $this->slide5['i93'] = ($this->slide5['c3'] == 2 ? $this->slide4['o116'] + $this->slide4['o118'] : ($this->slide5['b3'] == 1 ? $this->slide4['m116'] + $this->slide4['m118'] : ($this->slide5['b4'] == 1 ? $this->slide4['n116'] + $this->slide4['n118'] : ($this->slide4['l116'] + $this->slide4['l118']))));
-
+        
 
         return $this->slide5;
     }
