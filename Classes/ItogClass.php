@@ -126,7 +126,7 @@ class ItogClass
         $this->slide5['c18'] = 'Medi-Grip Plus';
         $this->slide5['c19'] = 'Encore Acclaim + Encore Underglove';
         $this->slide5['c20'] = 'Bioclean Extra';
-        $this->slide5['c21'] = 'Dona 410 PF ';
+        $this->slide5['c21'] = 'Dona 410 PF';
         $this->slide5['c22'] = 'Encore Orthopaedic';
         $this->slide5['c23'] = 'Encore Microptic';
         $this->slide5['c24'] = 'Encore Style 85';
@@ -816,15 +816,17 @@ class ItogClass
     ';
 
         $table = $this->slide5;
+        $count = 0;
         if ($char === 'a'){
             for($i = $cell ; true; $i ++){
                 if (!isset($table['a'.$i])){ break; }
+                $count += $table['d'.$i];
                 $text.= '
             <tr>
                 <td>'.$table['a'.$i].'</td>
                 <td>'.$table['b'.$i].'</td>
                 <td>'.$table['c'.$i].'</td>
-                <td class="text-center">'.$table['d'.$i].'</td>
+                <td class="text-center" data-title="'.$table['c'.$i].'">'.$table['d'.$i].'</td>
             </tr>
             ';
             }
@@ -832,18 +834,23 @@ class ItogClass
         if ($char == 'b'){
             for($i = $cell ; true; $i ++){
                 if (!isset($table['f'.$i])){ break; }
+                $count += $table['i'.$i];
                 $text.= '
             <tr>
+                <td>'.$table['f'.$i].'</td>
                 <td>'.$table['g'.$i].'</td>
                 <td>'.$table['h'.$i].'</td>
-                <td>'.$table['i'.$i].'</td>
-                <td class="text-center">'.$table['d'.$i].'</td>
+                <td class="text-center" data-title="'.$table['h'.$i].'">'.$table['i'.$i].'</td>
             </tr>
             ';
             }
         }
-
-        $text .= '</table>';
+        $text .= '
+                <tr>
+                    <td colspan="3" class="text-right"><b>Итого</b></td>
+                    <td>'.$count.'</td>
+                </tr>
+                </table>';
         return $text;
     }
 

@@ -56,11 +56,186 @@
     </div>
 </div>
 <div class="col-xs-12 col-md-4">
-<!--    <div id="chart-6" class="chart" style="height: 100%"></div>-->
+    <div id="chart-6" class="chart" style="height: 500px"></div>
 </div>
 
 <script type="text/javascript">
     $(document).ready(function () {
+        function getCounts() {
+            var counts = {
+                'Biogel Surgeons' :                     parseInt($('.table-condensed tr td[data-title="Biogel Surgeons"]').html()),
+                'Biogel Eclipse' :                      parseInt($('.table-condensed tr td[data-title="Biogel Eclipse"]').html()),
+                'Encore Acclaim' :                      parseInt($('.table-condensed tr td[data-title="Encore Acclaim"]').html()),
+                'Encore Style 85' :                     parseInt($('.table-condensed tr td[data-title="Encore Style 85"]').html()),
+                'Medi-Grip PF' :                        parseInt($('.table-condensed tr td[data-title="Medi-Grip PF"]').html()),
+                'Encore Style 42' :                     parseInt($('.table-condensed tr td[data-title="Encore Style 42"]').html()),
+                'Medi-Grip PWD' :                       parseInt($('.table-condensed tr td[data-title="Medi-Grip PWD"]').html()),
+                'Medi-Grip Plus' :                      parseInt($('.table-condensed tr td[data-title="Medi-Grip Plus"]').html()),
+                'Encore Acclaim + Encore Underglove' :  parseInt($('.table-condensed tr td[data-title="Encore Acclaim + Encore Underglove"]').html()),
+                'Biogel Eclipse Indicator' :            parseInt($('.table-condensed tr td[data-title="Biogel Eclipse Indicator"]').html()),
+                'Bioclean Extra' :                      parseInt($('.table-condensed tr td[data-title="Bioclean Extra"]').html()),
+                'Dona 410 PF' :                         parseInt($('.table-condensed tr td[data-title="Dona 410 PF"]').html()),
+                'Encore Microptic' :                    parseInt($('.table-condensed tr td[data-title="Encore Microptic"]').html()),
+                'Biogel Super Sensitive' :              parseInt($('.table-condensed tr td[data-title="Biogel Super Sensitive"]').html()),
+                'Biogel M' :                            parseInt($('.table-condensed tr td[data-title="Biogel M"]').html()),
+                'Encore Orthopaedic' :                  parseInt($('.table-condensed tr td[data-title="Encore Orthopaedic"]').html()),
+                'Encore Underglove' :                   parseInt($('.table-condensed tr td[data-title="Encore Underglove"]').html()),
+                'Encore Ultra' :                        parseInt($('.table-condensed tr td[data-title="Encore Ultra"]').html()),
+                'Biogel Skinsense' :                    parseInt($('.table-condensed tr td[data-title="Biogel Skinsense"]').html()),
+                'Biogel Skinsense Indicator' :          parseInt($('.table-condensed tr td[data-title="Biogel Skinsense Indicator"]').html()),
+                'Bioclean Emerald' :                    parseInt($('.table-condensed tr td[data-title="Bioclean Emerald"]').html()),
+                'Bioclean Ultimate' :                   parseInt($('.table-condensed tr td[data-title="Bioclean Ultimate"]').html()),
+
+            };
+            var data = [];
+            $.each(counts, function (key, val) {
+                if (val != 0 && val != NaN && val != undefined && val != false && !isNaN(val)){
+                    data.push({
+                        name: key,
+                        showInLegend: true,
+                        type: "stackedColumn",
+                        toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
+                        dataPoints: [
+                            { x: 0, y: val, label: "Объем закупок, пар" }
+                        ]
+                    });
+                    console.log(val);
+                }
+            });
+            console.log(data);
+            return data;
+        }
+        function getChart() {
+            var counts = getCounts();
+            var chart1 = new CanvasJS.Chart("chart-6", {
+                animationEnabled: true,
+                title: {
+                    text: "Объем закупок, пар",
+                    fontSize: 18
+                },
+                legend: {
+                    fontSize: 14
+                },
+                axisY: {
+                    labelFontSize: 14
+                },
+                axisX: {
+                    interval: 10,
+                    labelAngle: 0,
+                    labelFontSize: 0
+                },
+                theme: "theme1",
+//                data: [
+//                    {
+//                    name: 'Biogel Skinsense',
+//                    showInLegend: true,
+//                    type: "stackedColumn",
+//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
+//                    dataPoints: [
+//                        { x: 0, y: counts['Biogel Skinsense'], label: "Объем закупок, пар" },
+//
+//                    ],
+//                },{
+//                    name: 'Biogel Skinsense Indicator',
+//                    showInLegend: true,
+//                    type: "stackedColumn",
+//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
+//                    dataPoints: [
+//                        { x: 0, y: counts['Biogel Skinsense Indicator'], label: "Объем закупок, пар" },
+//
+//                    ],
+//                },{
+//                    name: 'Bioclean Ultimate',
+//                    showInLegend: true,
+//                    type: "stackedColumn",
+//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
+//                    dataPoints: [
+//                        { x: 0, y: counts['Bioclean Ultimate'], label: "Объем закупок, пар" },
+//
+//                    ],
+//                },{
+//                    name: 'Biogel Surgeons',
+//                    showInLegend: true,
+//                    type: "stackedColumn",
+//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
+//                    dataPoints: [
+//                        { x: 0, y: counts['Biogel Surgeons'], label: "Объем закупок, пар" },
+//                    ],
+//                },{
+//                    name: 'Medi-Grip Plus',
+//                    showInLegend: true,
+//                    type: "stackedColumn",
+//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
+//                    dataPoints: [
+//                        { x: 0, y: counts['Medi-Grip Plus'], label: "Объем закупок, пар" },
+//                    ],
+//                },{
+//                    name: 'Encore Acclaim + Encore Underglove',
+//                    showInLegend: true,
+//                    type: "stackedColumn",
+//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
+//                    dataPoints: [
+//                        { x: 0, y: counts['Encore Acclaim + Encore Underglove'], label: "Объем закупок, пар" },
+//                    ],
+//                },{
+//                    name: 'Bioclean Extra',
+//                    showInLegend: true,
+//                    type: "stackedColumn",
+//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
+//                    dataPoints: [
+//                        { x: 0, y: counts['Bioclean Extra'], label: "Объем закупок, пар" },
+//                    ],
+//                },{
+//                    name: 'Dona 410 PF',
+//                    showInLegend: true,
+//                    type: "stackedColumn",
+//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
+//                    dataPoints: [
+//                        { x: 0, y: counts['Dona 410 PF'], label: "Объем закупок, пар" },
+//                    ],
+//                },{
+//                    name: 'Encore Orthopaedic',
+//                    showInLegend: true,
+//                    type: "stackedColumn",
+//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
+//                    dataPoints: [
+//                        { x: 0, y: counts['Encore Orthopaedic'], label: "Объем закупок, пар" },
+//                    ],
+//                },{
+//                    name: 'Encore Microptic',
+//                    showInLegend: true,
+//                    type: "stackedColumn",
+//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
+//                    dataPoints: [
+//                        { x: 0, y: counts['Encore Microptic'], label: "Объем закупок, пар" },
+//                    ],
+//                },{
+//                    name: 'Encore Style 85',
+//                    showInLegend: true,
+//                    type: "stackedColumn",
+//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
+//                    dataPoints: [
+//                        { x: 0, y: counts['Encore Style 85'], label: "Объем закупок, пар" },
+//                    ],
+//                },{
+//                    name: 'Encore Underglove',
+//                    showInLegend: true,
+//                    type: "stackedColumn",
+//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
+//                    dataPoints: [
+//                        { x: 0, y: counts['Encore Underglove'], label: "Объем закупок, пар" },
+//                    ],
+//                }
+//
+//
+//                ]
+                data: counts
+            });
+
+
+            chart1.render();
+        }
+
         $('.check').on('ifChecked', function(event){
             $.ajax({
                 url: '/table',
@@ -68,6 +243,8 @@
                 method: 'POST',
                 success: function (msg) {
                     $('.table-item').html(msg);
+                    getChart();
+
                 }
             })
         });
@@ -78,71 +255,12 @@
                 method: 'POST',
                 success: function (msg) {
                     $('.table-item').html(msg);
+                    getChart();
                 }
         })
         });
+
+        getChart();
     })
-    window.onload = function() {
 
-//        var chart1 = new CanvasJS.Chart("chart-6", {
-//            title: {
-//                text: "Удовлетворение профессиональных потребностей",
-//                fontSize: 18
-//            },
-//            legend: {
-//                fontSize: 14
-//            },
-//            axisY: {
-//                labelFontSize: 14
-//            },
-//            axisX: {
-//                interval: 10,
-//                labelAngle: 0,
-//                labelFontSize: 14
-//            },
-//            theme: "theme1",
-//            data: [{
-//                name: 'Базовый объем (операции)',
-//                showInLegend: true,
-//                type: "stackedColumn",
-//                toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
-//                dataPoints: [
-//                    { x: 0, y: 50, label: "Стандартные латексные" },
-//
-//                ],
-//            },{
-//                name: 'Дополнительный объем (длительность)',
-//                showInLegend: true,
-//                type: "stackedColumn",
-//                toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
-//                dataPoints: [
-//                    { x: 0, y: 50, label: "Стандартные латексные" },
-//
-//                ],
-//            },{
-//                name: 'Базовый объем (манипуляции)',
-//                showInLegend: true,
-//                type: "stackedColumn",
-//                toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
-//                dataPoints: [
-//                    { x: 0, y: 50, label: "Стандартные латексные" },
-//
-//                ],
-//            },{
-//                name: 'Дополнительный объем (повреждения)',
-//                showInLegend: true,
-//                type: "stackedColumn",
-//                toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
-//                dataPoints: [
-//                    { x: 0, y: 50, label: "Стандартные латексные" },
-//                ],
-//            }
-//            ]
-//        });
-
-
-//        chart1.render();
-
-
-    }
 </script>
