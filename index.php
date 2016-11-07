@@ -24,7 +24,7 @@ $itog = new ItogClass();
 
 //Роутер
     $url = $_SERVER['REQUEST_URI'];
-    if ($url == null){
+    if ($url == null || $url == ''){
         $url = '/slide1';
     }elseif($url == '/clear'){
         unset($_SESSION['slide1']);
