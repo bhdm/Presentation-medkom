@@ -6,6 +6,7 @@
     <link type="text/css" rel="stylesheet" href="/Resources/assets/chosen/chosen.css"/>
     <link type="text/css" rel="stylesheet" href="/Resources/assets/iCheck/skins/flat/flat.css"/>
     <link type="text/css" rel="stylesheet" href="/Resources/assets/iCheck/skins/flat/blue.css"/>
+    <link type="text/css" rel="stylesheet" href="/Resources/assets/wow/css/libs/animate.css"/>
     <link type="text/css" rel="stylesheet" href="/Resources/css/common.css"/>
 
     <script type="application/javascript" src="/Resources/assets/jquery/dist/jquery.min.js"></script>
@@ -13,8 +14,10 @@
     <script type="application/javascript" src="/Resources/assets/chosen/chosen.jquery.js"></script>
     <script type="application/javascript" src="/Resources/assets/iCheck/icheck.min.js"></script>
     <script type="application/javascript" src="/Resources/assets/canvasjs/canvasjs.min.js"></script>
+    <script type="application/javascript" src="/Resources/assets/wow/dist/wow.min.js"></script>
     <script>
         $(document).ready(function () {
+            new WOW().init();
             $('.chosen').chosen({width: '100%'});
             $('.check').iCheck({
                 checkboxClass: 'icheckbox_flat-blue',

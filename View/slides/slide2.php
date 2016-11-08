@@ -98,7 +98,7 @@
                     <input type="number" class="form-control patr" name="value[0]">
                 </div>
                 <div class="col-sm-2 text-right">
-                    <button type="button" class="btn btn-primary" id="add"><span class="glyphicon glyphicon-plus"></span></button>
+                    <button type="button" class="btn btn-primary" id="add" data-toggle="tooltip" data-placement="right" title="Выбрать профиль"><span class="glyphicon glyphicon-plus"></span></button>
                 </div>
             </div>
         <?php } ?>
@@ -130,6 +130,8 @@
 
 <script>
     $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+
         $('body').on("click", '#add', function () {
             var count = $('.specialty-box .form-group').length;
             var box = '<div class="form-group">' +
@@ -162,7 +164,8 @@
                 '<input type="number" class="form-control patr" name="value['+count+']">' +
                 '</div>' +
                 '<div class="col-sm-2 text-right">' +
-                '<button type="button" class="btn btn-primary" id="add"><span class="glyphicon glyphicon-plus"></span></button>' +
+                '<button type="button" class="btn btn-primary" id="add" data-toggle="tooltip" data-placement="right" title="Выбрать профиль"><span class="glyphicon glyphicon-plus"></span></button>' +
+                '' +
                 '</div>' +
                 '</div>';
             $('.specialty-box').append(box);
@@ -176,7 +179,13 @@
                 btn.removeAttr('id');
                 btn.children('span').removeClass('glyphicon-plus');
                 btn.children('span').addClass('glyphicon-remove');
+                btn.removeAttr('data-toggle');
+                btn.removeAttr('title');
+                btn.removeAttr('aria-describedby');
+                btn.removeAttr('data-original-title');
+                $('[data-toggle="tooltip"]').tooltip().refresh();
             }
+
         });
 
         $('body').on("click", '.remove-item', function () {
