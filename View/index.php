@@ -41,7 +41,7 @@
             <?php
             if ($url !== '/slide1'){
                 ?>
-                <a href="/slide<?=$preview?>"><button class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Назад</button></a>
+                <a href="/slide<?=$preview?>"><button class="btn btn-primary btn-back"><span class="glyphicon glyphicon-arrow-left"></span> Назад</button></a>
                 <?php
             }
             ?>
@@ -51,7 +51,7 @@
             <?php
             if ($url !== '/slide6'){
                 ?>
-                <a href="/slide<?=$next?>"><button class="btn btn-primary">Далее <span class="glyphicon glyphicon-arrow-right"></span></button></a>
+                <a href="/slide<?=$next?>"><button class="btn btn-primary btn-next">Далее <span class="glyphicon glyphicon-arrow-right"></span></button></a>
                 <?php
             }
             ?>

@@ -12,7 +12,7 @@
     клинико-экономических расчетов, проведенных Медком-МП. Расчеты производятся на трех членов хирургической бригады.
 </p>
 <div class="title"><h2>Введите данные по Вашей больнице</h2></div>
-<form class="form-horizontal" method="POST" action="/slide3">
+<form class="form-horizontal" method="POST" action="/slide3" id="form">
     <div class="form-group">
         <label class="col-sm-6">Количество операций за год</label>
         <div class="col-sm-2">
@@ -104,9 +104,9 @@
         <?php } ?>
     </div>
     <div class="row">
-        <div class="col-sm-offset-8 col-sm-2 text-right">
-            <button type="submit" class="btn btn-primary" id="save">Сохранить</button>
-        </div>
+<!--        <div class="col-sm-offset-8 col-sm-2 text-right">-->
+<!--            <button type="submit" class="btn btn-primary" id="save">Сохранить</button>-->
+<!--        </div>-->
     </div>
 </form>
 
@@ -199,7 +199,7 @@
             }
         });
 
-        $('#save').click(function () {
+        $('.btn-next').click(function () {
             var count = parseInt($('#countOfYear').val());
             var sum = 0;
             for (var i =0 ; i < $('.patr').length ; i ++){
@@ -208,6 +208,8 @@
             if (count != sum){
                 $('#error').modal();
                 return false;
+            }else{
+                $('#form').submit();
             }
 
         })
