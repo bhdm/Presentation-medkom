@@ -23,45 +23,29 @@
 <div id="chart-5" class="chart" style="height: 500px"></div>
 <?php $table = $itog->getForSlide5() ?>
 <script type="text/javascript">
-    window.onload = function() {
-
-        var chart1 = new CanvasJS.Chart("chart-5", {
-            title: {
-                text: "Удовлетворение профессиональных потребностей",
-                fontSize: 18
-            },
-            legend: {
-                fontSize: 14
-            },
-            axisY: {
-                labelFontSize: 14
-            },
-            axisX: {
-                interval: 10,
-                labelAngle: 0,
-                labelFontSize: 14
-            },
-            theme: "theme1",
-            data: [{
-                name: 'Базовый объем',
-                showInLegend: true,
-                type: "stackedColumn",
-                toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
-                dataPoints: [
-                    { x: 0,   y: <?=$table[0][0]?>, label: "стандартные" },
-                    { x: 10,   y: <?=$table[0][1]?>, label: "система двойных перчаток" },
-                    { x: 20,  y: <?=$table[0][2]?>, label: "с антимикробным покрытием" },
-                    { x: 30,  y: <?=$table[0][3]?>, label: "стандартные неопудренные" },
-                    { x: 40,  y: <?=$table[0][4]?>, label: "стандратные опудренные" },
-                    { x: 50,  y: <?=$table[0][5]?>, label: "система двойных перчаток" },
-                    { x: 60,  y: <?=$table[0][6]?>, label: "с антимикробным покрытием" },
-                    { x: 70,  y: <?=$table[0][7]?>, label: "акушерские" },
-                    { x: 80,  y: <?=$table[0][8]?>, label: "повышенной прочности" },
-                    { x: 90,  y: <?=$table[0][9]?>, label: "повышенной чувствительности" },
-                    { x: 100, y: <?=$table[0][10]?>, label: "текстурированные" },
-                    { x: 110, y: <?=$table[0][11]?>, label: "с увлажнителем" },
-                ],
-            },{
+    function getChart(msg) {
+        var data = [{
+            name: 'Базовый объем',
+            showInLegend: true,
+            type: "stackedColumn",
+            toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
+            dataPoints: [
+                { x: 0,   y: <?=$table[0][0]?>, label: "стандартные" },
+                { x: 10,   y: <?=$table[0][1]?>, label: "система двойных перчаток" },
+                { x: 20,  y: <?=$table[0][2]?>, label: "с антимикробным покрытием" },
+                { x: 30,  y: <?=$table[0][3]?>, label: "стандартные неопудренные" },
+                { x: 40,  y: <?=$table[0][4]?>, label: "стандратные опудренные" },
+                { x: 50,  y: <?=$table[0][5]?>, label: "система двойных перчаток" },
+                { x: 60,  y: <?=$table[0][6]?>, label: "с антимикробным покрытием" },
+                { x: 70,  y: <?=$table[0][7]?>, label: "акушерские" },
+                { x: 80,  y: <?=$table[0][8]?>, label: "повышенной прочности" },
+                { x: 90,  y: <?=$table[0][9]?>, label: "повышенной чувствительности" },
+                { x: 100, y: <?=$table[0][10]?>, label: "текстурированные" },
+                { x: 110, y: <?=$table[0][11]?>, label: "с увлажнителем" },
+            ],
+        }]
+        if (msg[0] == 1){
+            data.push({
                 name: 'Дополнительный объем (длительность)',
                 showInLegend: true,
                 type: "stackedColumn",
@@ -80,7 +64,11 @@
                     { x: 100, y: <?=$table[1][10]?>, label: "текстурированные" },
                     { x: 110, y: <?=$table[1][11]?>, label: "с увлажнителем" },
                 ],
-            },{
+            })
+        }
+
+        if (msg[1] == 1){
+            data.push({
                 name: 'Дополнительный объем (повреждения)',
                 showInLegend: true,
                 type: "stackedColumn",
@@ -99,12 +87,57 @@
                     { x: 100, y: <?=$table[2][10]?>, label: "текстурированные" },
                     { x: 110, y: <?=$table[2][11]?>, label: "с увлажнителем" },
                 ],
-            }
-            ]
+            });
+        }
+        var chart1 = new CanvasJS.Chart("chart-5", {
+            animationEnabled: true,
+            title: {
+                text: "Удовлетворение профессиональных потребностей",
+                fontSize: 18
+            },
+            legend: {
+                fontSize: 14
+            },
+            axisY: {
+                labelFontSize: 14
+            },
+            axisX: {
+                interval: 10,
+                labelAngle: 0,
+                labelFontSize: 14
+            },
+            theme: "theme1",
+            data: data,
         });
 
         chart1.render();
-
-
     }
+
+
+$(document).ready(function () {
+
+    getChart({"0" : 1,"1" : 1});
+
+    $('.check').on('ifChecked', function(event){
+        $.ajax({
+            url: '/ajaxSlide5',
+            data: 'ch='+$(this).attr('name'),
+            method: 'POST',
+            success: function (msg) {
+                getChart(msg);
+            }
+        })
+    });
+    $('.check').on('ifUnchecked', function(event){
+        $.ajax({
+            url: '/ajaxSlide5',
+            data: 'uch='+$(this).attr('name'),
+            method: 'POST',
+            success: function (msg) {
+                getChart(msg);
+            }
+        })
+    });
+});
+
 </script>

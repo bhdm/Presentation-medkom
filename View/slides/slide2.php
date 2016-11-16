@@ -98,7 +98,7 @@
                     <input type="number" class="form-control patr" name="value[0]">
                 </div>
                 <div class="col-sm-2 text-right">
-                    <button type="button" class="btn btn-primary" id="add" data-toggle="tooltip" data-placement="right" title="Выбрать профиль"><span class="glyphicon glyphicon-plus"></span></button>
+                    <button type="button" class="btn btn-primary" id="add" data-toggle="tooltip" data-placement="right" title="Добавить профиль"><span class="glyphicon glyphicon-plus"></span></button>
                 </div>
             </div>
         <?php } ?>

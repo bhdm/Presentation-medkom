@@ -114,7 +114,7 @@
                     fontSize: 18
                 },
                 legend: {
-                    fontSize: 14
+                    fontSize: 0
                 },
                 axisY: {
                     labelFontSize: 14
@@ -125,110 +125,7 @@
                     labelFontSize: 0
                 },
                 theme: "theme1",
-//                data: [
-//                    {
-//                    name: 'Biogel Skinsense',
-//                    showInLegend: true,
-//                    type: "stackedColumn",
-//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
-//                    dataPoints: [
-//                        { x: 0, y: counts['Biogel Skinsense'], label: "Объем закупок, пар" },
-//
-//                    ],
-//                },{
-//                    name: 'Biogel Skinsense Indicator',
-//                    showInLegend: true,
-//                    type: "stackedColumn",
-//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
-//                    dataPoints: [
-//                        { x: 0, y: counts['Biogel Skinsense Indicator'], label: "Объем закупок, пар" },
-//
-//                    ],
-//                },{
-//                    name: 'Bioclean Ultimate',
-//                    showInLegend: true,
-//                    type: "stackedColumn",
-//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
-//                    dataPoints: [
-//                        { x: 0, y: counts['Bioclean Ultimate'], label: "Объем закупок, пар" },
-//
-//                    ],
-//                },{
-//                    name: 'Biogel Surgeons',
-//                    showInLegend: true,
-//                    type: "stackedColumn",
-//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
-//                    dataPoints: [
-//                        { x: 0, y: counts['Biogel Surgeons'], label: "Объем закупок, пар" },
-//                    ],
-//                },{
-//                    name: 'Medi-Grip Plus',
-//                    showInLegend: true,
-//                    type: "stackedColumn",
-//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
-//                    dataPoints: [
-//                        { x: 0, y: counts['Medi-Grip Plus'], label: "Объем закупок, пар" },
-//                    ],
-//                },{
-//                    name: 'Encore Acclaim + Encore Underglove',
-//                    showInLegend: true,
-//                    type: "stackedColumn",
-//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
-//                    dataPoints: [
-//                        { x: 0, y: counts['Encore Acclaim + Encore Underglove'], label: "Объем закупок, пар" },
-//                    ],
-//                },{
-//                    name: 'Bioclean Extra',
-//                    showInLegend: true,
-//                    type: "stackedColumn",
-//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
-//                    dataPoints: [
-//                        { x: 0, y: counts['Bioclean Extra'], label: "Объем закупок, пар" },
-//                    ],
-//                },{
-//                    name: 'Dona 410 PF',
-//                    showInLegend: true,
-//                    type: "stackedColumn",
-//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
-//                    dataPoints: [
-//                        { x: 0, y: counts['Dona 410 PF'], label: "Объем закупок, пар" },
-//                    ],
-//                },{
-//                    name: 'Encore Orthopaedic',
-//                    showInLegend: true,
-//                    type: "stackedColumn",
-//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
-//                    dataPoints: [
-//                        { x: 0, y: counts['Encore Orthopaedic'], label: "Объем закупок, пар" },
-//                    ],
-//                },{
-//                    name: 'Encore Microptic',
-//                    showInLegend: true,
-//                    type: "stackedColumn",
-//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
-//                    dataPoints: [
-//                        { x: 0, y: counts['Encore Microptic'], label: "Объем закупок, пар" },
-//                    ],
-//                },{
-//                    name: 'Encore Style 85',
-//                    showInLegend: true,
-//                    type: "stackedColumn",
-//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
-//                    dataPoints: [
-//                        { x: 0, y: counts['Encore Style 85'], label: "Объем закупок, пар" },
-//                    ],
-//                },{
-//                    name: 'Encore Underglove',
-//                    showInLegend: true,
-//                    type: "stackedColumn",
-//                    toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y} пар",
-//                    dataPoints: [
-//                        { x: 0, y: counts['Encore Underglove'], label: "Объем закупок, пар" },
-//                    ],
-//                }
-//
-//
-//                ]
+                showInLegend: false,
                 data: counts
             });
 

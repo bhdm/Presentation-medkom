@@ -32,8 +32,10 @@ $itog = new ItogClass();
     }
     $next = substr($url,-1) + 1;
     $preview = substr($url,-1) - 1;
-    if ($url == '/table'){
+    if ($url === '/table'){
         include_once __DIR__."/View/slides/table.php";
+    }elseif($url === '/ajaxSlide5'){
+        include_once __DIR__."/View/slides/ajaxSlide5.php";
     }else{
         include_once __DIR__."/View/index.php";
     }

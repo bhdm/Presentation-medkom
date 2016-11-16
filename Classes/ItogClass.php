@@ -650,6 +650,11 @@ class ItogClass
             $this->slide4['g28'],
             $this->slide3['ay40'],
             $this->slide4['g29'],
+
+            $this->slide4['g20'] + $this->slide4['g24'],
+            $this->slide4['g32'] + $this->slide4['g35'],
+            $this->slide4['g21'] + $this->slide3['j40'],
+            0,
         );
     }
 

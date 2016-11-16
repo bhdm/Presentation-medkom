@@ -6,8 +6,10 @@
         <div id="chart-1" class="chart"></div>
     </div>
     <div class="col-xs-12 col-md-6">
-        <p>Удовлетворение функциональных потребностей – перчатки необходимые для защиты от гемоконтактных инфекций и профилактики ИСМП</p>
-        <div id="chart-2" class="chart"></div>
+        <br />
+        <br />
+        <br />
+        <div id="chart-4" class="chart"></div>
     </div>
 </div>
 <br />
@@ -18,7 +20,8 @@
         <div id="chart-3" class="chart"></div>
     </div>
     <div class="col-xs-12 col-md-6">
-
+        <p>Удовлетворение функциональных потребностей – перчатки необходимые для защиты от гемоконтактных инфекций и профилактики ИСМП</p>
+        <div id="chart-2" class="chart"></div>
     </div>
 </div>
 
@@ -114,10 +117,43 @@
             ]
         });
 
+        var chart4 = new CanvasJS.Chart("chart-4",{
+            title: {
+                text: ""
+            },
+            axisX: {
+                interval: 10,
+                fontSize: 14
+            },
+            theme: "theme1",
+            data: [{
+                name: 'Хирурги',
+                showInLegend: true,
+                type: "area",
+                dataPoints: [
+                    { y: 0, label: "" },
+                    { y: <?=$itog->getForSlide2()[9]?>, label: "ГКИ" },
+                    { y: <?=$itog->getForSlide2()[11]?>, label: "ИСМП" },
+                    { y: 0, label: "" },
+                ]
+            },{
+                name: 'Операционные медсестры',
+                showInLegend: true,
+                type: "area",
+                dataPoints: [
+                    { y: 0, label: "" },
+                    { y: <?=$itog->getForSlide2()[10]?>, label: "ГКИ" },
+                    { y: <?=$itog->getForSlide2()[12]?>, label: "ИСМП" },
+                    { y: 0, label: "" },
+                ]
+            }
+            ]
+        });
 
         chart1.render();
         chart2.render();
         chart3.render();
+        chart4.render();
 
 
     }
