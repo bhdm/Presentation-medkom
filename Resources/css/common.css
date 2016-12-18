@@ -47,3 +47,6 @@ footer .container{
 .poiner{
     cursor: pointer;
 }
+.popover{
+    width: 220px;
+}

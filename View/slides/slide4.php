@@ -1,4 +1,4 @@
-<div class="title"><h1>Оценка удовлетворение потребностей</h1></div>
+<div class="title"><h1>Оценка удовлетворения потребностей</h1></div>
 
 <div class="row">
     <div class="col-xs-12 col-md-6">
@@ -32,7 +32,7 @@
 
         var chart1 = new CanvasJS.Chart("chart-1", {
             title: {
-                text: "Удовлетворение функциональных потребностей"
+                text: ""
             },
             axisX: {
                 interval: 10
@@ -62,7 +62,7 @@
 
         var chart2 = new CanvasJS.Chart("chart-2",{
             title: {
-                text: "Удовлетворение индивидуальных потребностей"
+                text: ""
             },
             axisX: {
                 interval: 10
@@ -94,7 +94,7 @@
 
         var chart3 = new CanvasJS.Chart("chart-3",{
             title: {
-                text: "Удовлетворение профессиональных потребностей "
+                text: ""
             },
             axisX: {
                 interval: 10

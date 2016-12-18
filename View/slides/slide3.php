@@ -16,7 +16,7 @@
 
 
 ?>
-<div class="title"><h1>Алгоритм расчета структуры закупок хирургических перчаток для операций</h1></div>
+<div class="title"><h1>Алгоритм расчета потребностей МО в  хирургических перчатках для операций</h1></div>
 
 <div class="text-center">
 <!--    <img src="/Resources/images/graph.png"  class="img-responsive img-thumbnail"/>-->
@@ -40,8 +40,8 @@
             <td><img src="/Resources/images/r1.png" class="wow flipInX" data-wow-delay="4.0s"/></td>
             <td><img src="/Resources/images/g4.png"  class="wow flipInX" data-wow-delay="5.0s"  style="margin-left: 20px"/></td>
             <td style="position: relative">
-                <img src="/Resources/images/c1.png" class="wow bounceInRight poiner" data-toggle="popover" title="" data-content="общая хирургия, ортопедия, акушерство, нейрохирургия, транспантология и т.д." data-wow-delay="5.5s" style="position: absolute;    top: -160px; left: -40px;"/>
-                <img src="/Resources/images/c2.png" class="wow bounceInRight poiner" data-toggle="popover" title="" data-content="аллергия на латекс (1 тип), аллергический контактный дерматит (4 тип),неаллергический контактный" data-wow-delay="6.0s" style="position: absolute;    left: -40px; top: -60px;"/>
+                <img src="/Resources/images/c1.png" class="wow bounceInRight poiner" data-toggle="popover" title="" data-content="общая хирургия, ортопедия, акушерство, нейрохирургия, трансплантология и т.д." data-wow-delay="5.5s" style="position: absolute;    top: -160px; left: -40px;"/>
+                <img src="/Resources/images/c2.png" class="wow bounceInRight poiner" data-toggle="popover" title="" data-content="аллергия на латекс (1 тип), аллергический контактный дерматит (4 тип), неаллергический контактный" data-wow-delay="6.0s" style="position: absolute;    left: -40px; top: -60px;"/>
                 <img src="/Resources/images/c3.png" class="wow bounceInRight poiner" data-toggle="popover" title="" data-content="гемоконтактные инфекции: ВИЧ, гепатиты В и С" data-wow-delay="6.5s" style="position: absolute;    left: -40px; top: 70px;"/>
                 <img src="/Resources/images/c4.png" class="wow bounceInRight poiner" data-toggle="popover" title="" data-content="инфекции, связанные с оказанием медицинской помощи" data-wow-delay="7.0s" style="position: absolute;    left: -40px; top: 165px;"/>
             </td>
