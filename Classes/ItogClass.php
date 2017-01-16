@@ -853,7 +853,7 @@ class ItogClass
         $text .= '
                 <tr>
                     <td colspan="3" class="text-right"><b>Итого</b></td>
-                    <td>'.$count.'</td>
+                    <td style="text-align: center">'.$count.'</td>
                 </tr>
                 </table>';
         return $text;

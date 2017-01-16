@@ -73,35 +73,39 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
     if ($char === 'a'){
         for($i = $cell ; true; $i ++){
             if (!isset($table['a'.$i])){ break; }
-            $count +=  $table['d'.$i];
-            ?>
-            <tr>
-                <td><?=$table['a'.$i]?></td>
-                <td><?=$table['b'.$i]?></td>
-                <td><?=$table['c'.$i]?></td>
-                <td class="text-center" data-title="<?=$table['c'.$i]?>"><?=$table['d'.$i]?></td>
-            </tr>
-            <?php
+            if ($table['d'.$i] != 0){
+                $count +=  $table['d'.$i];
+                ?>
+                <tr>
+                    <td><?=$table['a'.$i]?></td>
+                    <td><?=$table['b'.$i]?></td>
+                    <td><?=$table['c'.$i]?></td>
+                    <td class="text-center" data-title="<?=$table['c'.$i]?>"><?=$table['d'.$i]?></td>
+                </tr>
+                <?php
+            }
         }
     }
     if ($char == 'b'){
         for($i = $cell ; true; $i ++){
             if (!isset($table['f'.$i])){ break; }
-            $count +=  $table['d'.$i];
-            ?>
-            <tr>
-                <td><?=$table['f'.$i]?></td>
-                <td><?=$table['g'.$i]?></td>
-                <td><?=$table['h'.$i]?></td>
-                <td class="text-center" data-title="<?=$table['h'.$i]?>"><?=$table['i'.$i]?></td>
-            </tr>
-            <?php
+            if ($table['i'.$i] != 0){
+                $count +=  $table['d'.$i];
+                ?>
+                <tr>
+                    <td><?=$table['f'.$i]?></td>
+                    <td><?=$table['g'.$i]?></td>
+                    <td><?=$table['h'.$i]?></td>
+                    <td class="text-center" data-title="<?=$table['h'.$i]?>"><?=$table['i'.$i]?></td>
+                </tr>
+                <?php
+            }
         }
     }
     ?>
     <tr>
         <td colspan="3" class="text-right"><b>Итого</b></td>
-        <td><?=$count?></td>
+        <td style="text-align: center"><?=$count?></td>
     </tr>
 </table>
 

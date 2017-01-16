@@ -43,20 +43,23 @@
     </div>
     <div class="form-group">
         <label class="col-sm-8">
-            Профилактика ИСМП ( инфекции, связанные с оказанием медицинской помощи)
+            Профилактика ИСМП
         </label>
         <div class="col-sm-2">
             <input type="checkbox" class="check" name="b8" id="check8" value="1" checked>
         </div>
     </div>
 </form>
-<div class="col-xs-12 col-md-8" >
+<div class="col-xs-12 col-md-7" >
     <div class="table-item">
         <?=$itog->getTable()?>
     </div>
 </div>
-<div class="col-xs-12 col-md-4">
+<div class="col-xs-12 col-md-5">
     <div id="chart-6" class="chart" style="height: 500px"></div>
+    <div style="text-align: center; color: #7e0b20; font-style: italic">
+        *Наведите курсор на графики, чтобы увидеть значения
+    </div>
 </div>
 
 <script type="text/javascript">
@@ -91,6 +94,7 @@
             $.each(counts, function (key, val) {
                 if (val != 0 && val != NaN && val != undefined && val != false && !isNaN(val)){
                     data.push({
+                        yValueFormatString: "# #### ###.##",
                         name: key,
                         showInLegend: true,
                         type: "stackedColumn",
@@ -117,7 +121,8 @@
                     fontSize: 0
                 },
                 axisY: {
-                    labelFontSize: 14
+                    labelFontSize: 14,
+                    valueFormatString: "#####.##", //try properties here
                 },
                 axisX: {
                     interval: 10,
@@ -131,6 +136,13 @@
 
 
             chart1.render();
+//            var trs = $('.table-condensed').children('tbody').children('tr');
+//            for (var i =0 ; i <= trs.length ; i ++){
+//                if (trs.eq(i).children('td').eq(3).html() == '0' ){
+//                    trs.eq(i).remove();
+//                }
+//            }
+
         }
 
         $('.check').on('ifChecked', function(event){

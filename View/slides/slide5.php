@@ -1,4 +1,4 @@
-<div class="title"><h1>Объем хирургических перчаток</h1></div>
+<div class="title"><h1>Распределение расчетного объема</h1></div>
 
 <form class="form-horizontal">
     <div class="form-group">
@@ -21,12 +21,19 @@
 
 
 <div id="chart-5" class="chart" style="height: 500px"></div>
+<div style="text-align: center">
+    <img src="/Resources/images/legend-5-1.png" style="margin-left: 22px;">
+    <img src="/Resources/images/legend-5.png">
+</div>
+<div style="text-align: center; color: #7e0b20; font-style: italic">
+    *Наведите курсор на графики, чтобы увидеть значения
+</div>
 <?php $table = $itog->getForSlide5() ?>
 <script type="text/javascript">
     function getChart(msg) {
         var data = [{
             name: 'Базовый объем',
-            showInLegend: true,
+            showInLegend: false,
             type: "stackedColumn",
             toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
             dataPoints: [
@@ -47,7 +54,7 @@
         if (msg[0] == 1){
             data.push({
                 name: 'Дополнительный объем (длительность)',
-                showInLegend: true,
+                showInLegend: false,
                 type: "stackedColumn",
                 toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
                 dataPoints: [
@@ -70,7 +77,7 @@
         if (msg[1] == 1){
             data.push({
                 name: 'Дополнительный объем (повреждения)',
-                showInLegend: true,
+                showInLegend: false,
                 type: "stackedColumn",
                 toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
                 dataPoints: [
@@ -95,16 +102,15 @@
                 text: "Удовлетворение профессиональных потребностей",
                 fontSize: 18
             },
-            legend: {
-                fontSize: 14
-            },
+            legend: false,
             axisY: {
                 labelFontSize: 14
             },
             axisX: {
                 interval: 10,
                 labelAngle: 0,
-                labelFontSize: 14
+                labelFontSize: 0,
+                labelColor: '#FFF'
             },
             theme: "theme1",
             data: data,
