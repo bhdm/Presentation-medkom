@@ -73,7 +73,7 @@
                 ]
             },{
                 yValueFormatString: "# #### ###.##",
-                name: 'Операционные медсестры',
+                name: 'Операционные м/с',
                 showInLegend: true,
                 type: "area",
                 dataPoints: [
@@ -126,7 +126,7 @@
                 ]
             },{
                 yValueFormatString: "# #### ###.##",
-                name: 'Операционные медсестры',
+                name: 'Операционные м/с',
                 showInLegend: true,
                 type: "area",
                 dataPoints: [
@@ -225,7 +225,7 @@
                     { y: 0, label: " " },
                 ]
             },{
-                name: 'Операционные медсестры',
+                name: 'Операционные м/с',
                 showInLegend: true,
                 type: "area",
                 dataPoints: [
