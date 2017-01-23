@@ -100,13 +100,16 @@
             theme: "theme1",
             toolTip:{
                 content: function (e) {
+//                    console.log(e.entries[0]);
+                    var axisX = e.entries[0].dataSeries.name;
                     var xVal = e.entries[0].dataPoint.x;
                     var yVal = e.entries[0].dataPoint.y;
-                    var label = e.entries[0].dataPoint.label
-                    if (xVal == 0 || xVal == 3){
+                    var label = '';
+//                    var label = e.entries[0].dataPoint.label;
+                    if (xVal == 0 || xVal == 2){
                         return null;
                     }else{
-                        return label+': '+yVal;
+                        return axisX+' '+label+': '+yVal;
                     }
                 },
             },
@@ -151,13 +154,16 @@
             theme: "theme1",
             toolTip:{
                 content: function (e) {
+//                    console.log(e.entries[0]);
+                    var axisX = e.entries[0].dataSeries.name;
                     var xVal = e.entries[0].dataPoint.x;
                     var yVal = e.entries[0].dataPoint.y;
-                    var label = e.entries[0].dataPoint.label
-                    if (xVal == 0 || xVal == 6){
+                    var label = '';
+//                    var label = e.entries[0].dataPoint.label;
+                    if (xVal == 0 || xVal == 2){
                         return null;
                     }else{
-                        return label+': '+yVal;
+                        return axisX+' '+label+': '+yVal;
                     }
                 },
             },
@@ -194,13 +200,16 @@
             theme: "theme1",
             toolTip:{
                 content: function (e) {
+//                    console.log(e.entries[0]);
+                    var axisX = e.entries[0].dataSeries.name;
                     var xVal = e.entries[0].dataPoint.x;
                     var yVal = e.entries[0].dataPoint.y;
-                    var label = e.entries[0].dataPoint.label
-                    if (xVal == 0 || xVal == 3){
+                    var label = '';
+//                    var label = e.entries[0].dataPoint.label;
+                    if (xVal == 0 || xVal == 2){
                         return null;
                     }else{
-                        return label+': '+yVal;
+                        return axisX+' '+label+': '+yVal;
                     }
                 },
             },
