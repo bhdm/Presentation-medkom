@@ -186,7 +186,7 @@
             axisX: {
                 interval: 1,
                 labelAngle: 0,
-                labelFontSize: 14,
+                labelFontSize: 11,
             },
             axisY:{
                 valueFormatString: "#0", //try properties here
