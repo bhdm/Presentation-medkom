@@ -35,21 +35,41 @@
                 text: ""
             },
             axisX: {
-                interval: 10
+                interval: 1,
+                labelAngle: 0,
+                labelFontSize: 14,
+//                labelColor: '#000'
             },
             axisY:{
-                valueFormatString: "#####.##", //try properties here
+                valueFormatString: "#####.##",
             },
+            showInLegend: true,
             theme: "theme1",
+            toolTip:{
+                content: function (e) {
+//                    console.log(e.entries[0]);
+                    var axisX = e.entries[0].dataSeries.name;
+                    var xVal = e.entries[0].dataPoint.x;
+                    var yVal = e.entries[0].dataPoint.y;
+                    var label = '';
+//                    var label = e.entries[0].dataPoint.label;
+                    if (xVal == 0 || xVal == 2){
+                        return null;
+                    }else{
+                        return axisX+' '+label+': '+yVal;
+                    }
+                },
+            },
+
             data: [{
                 yValueFormatString: "# #### ###.##",
                 name: 'Хирурги',
                 showInLegend: true,
                 type: "area",
                 dataPoints: [
-                    { y: 0, label: "" },
-                    { y: <?=$itog->getVolumeSurgeons()?>, label: "Хирурги" },
-                    { y: 0, label: "" },
+                    { y: 0, label: " " },
+                    { y: <?=$itog->getVolumeSurgeons()?>, label: "Общий объем" },
+                    { y: 0, label: " " },
                 ]
             },{
                 yValueFormatString: "# #### ###.##",
@@ -57,9 +77,9 @@
                 showInLegend: true,
                 type: "area",
                 dataPoints: [
-                    { y: 0, label: "" },
-                    { y: <?=$itog->getVolumeNurses()?>, label: "Операционные медсестры" },
-                    { y: 0, label: "" },
+                    { y: 0, label: " " },
+                    { y: <?=$itog->getVolumeNurses()?>, label: "Общий объем" },
+                    { y: 0, label: " " },
                 ]
             }
             ]
@@ -70,22 +90,36 @@
                 text: ""
             },
             axisX: {
-                interval: 10
+                interval: 1,
+                labelAngle: 0,
+                labelFontSize: 11,
             },
             axisY:{
                 valueFormatString: "#0", //try properties here
             },
             theme: "theme1",
+            toolTip:{
+                content: function (e) {
+                    var xVal = e.entries[0].dataPoint.x;
+                    var yVal = e.entries[0].dataPoint.y;
+                    var label = e.entries[0].dataPoint.label
+                    if (xVal == 0 || xVal == 3){
+                        return null;
+                    }else{
+                        return label+': '+yVal;
+                    }
+                },
+            },
             data: [{
                 yValueFormatString: "# #### ###.##",
                 name: 'Хирурги',
                 showInLegend: true,
                 type: "area",
                 dataPoints: [
-                    { y: 0, label: "" },
+                    { y: 0, label: " " },
                     { y: <?=$itog->getForSlide2()[0]?>, label: "Аллергия 1 и 4 типа" },
                     { y: <?=$itog->getForSlide2()[1]?>, label: "Контактный неаллергический дерматит" },
-                    { y: 0, label: "" },
+                    { y: 0, label: " " },
                 ]
             },{
                 yValueFormatString: "# #### ###.##",
@@ -93,10 +127,10 @@
                 showInLegend: true,
                 type: "area",
                 dataPoints: [
-                    { y: 0, label: "" },
-                    { y: <?=$itog->getForSlide2()[2]?>, label: "Аллергия 1 и 4 типа" },
-                    { y: <?=$itog->getForSlide2()[3]?>, label: "Контактный неаллергический дерматит" },
-                    { y: 0, label: "" },
+                    { y: 0, label: " " },
+                    { y: <?=$itog->getForSlide2()[2]?>, label: "Синтетические при аллергии 1 и 4 типа" },
+                    { y: <?=$itog->getForSlide2()[3]?>, label: "Латексные неопудренные при контактном дерматите" },
+                    { y: 0, label: " " },
                 ]
             }
             ]
@@ -107,25 +141,39 @@
                 text: ""
             },
             axisX: {
-                interval: 10
+                interval: 1,
+                labelAngle: 0,
+                labelFontSize: 11,
             },
             axisY:{
                 valueFormatString: "#0", //try properties here
             },
             theme: "theme1",
+            toolTip:{
+                content: function (e) {
+                    var xVal = e.entries[0].dataPoint.x;
+                    var yVal = e.entries[0].dataPoint.y;
+                    var label = e.entries[0].dataPoint.label
+                    if (xVal == 0 || xVal == 6){
+                        return null;
+                    }else{
+                        return label+': '+yVal;
+                    }
+                },
+            },
             data: [{
                 yValueFormatString: "# #### ###.##",
                 name: 'Хирурги',
                 showInLegend: false,
                 type: "area",
                 dataPoints: [
-                    { y: 0, label: "" },
+                    { y: 0, label: " " },
                     { y: <?=$itog->getForSlide2()[4]?>, label: "Акушерские" },
                     { y: <?=$itog->getForSlide2()[5]?>, label: "Пов. прочности" },
                     { y: <?=$itog->getForSlide2()[6]?>, label: "Пов. чувствительн." },
                     { y: <?=$itog->getForSlide2()[7]?>, label: "Антимикробные" },
                     { y: <?=$itog->getForSlide2()[8]?>, label: "Текстурированные" },
-                    { y: 0, label: "" },
+                    { y: 0, label: " " },
                 ]
             }
             ]
@@ -136,33 +184,46 @@
                 text: ""
             },
             axisX: {
-                interval: 10,
-                fontSize: 14
+                interval: 1,
+                labelAngle: 0,
+                labelFontSize: 14,
             },
             axisY:{
                 valueFormatString: "#0", //try properties here
             },
             theme: "theme1",
+            toolTip:{
+                content: function (e) {
+                    var xVal = e.entries[0].dataPoint.x;
+                    var yVal = e.entries[0].dataPoint.y;
+                    var label = e.entries[0].dataPoint.label
+                    if (xVal == 0 || xVal == 3){
+                        return null;
+                    }else{
+                        return label+': '+yVal;
+                    }
+                },
+            },
             data: [{
                 yValueFormatString: "# #### ###.##",
                 name: 'Хирурги',
                 showInLegend: true,
                 type: "area",
                 dataPoints: [
-                    { y: 0, label: "" },
+                    { y: 0, label: " " },
                     { y: <?=$itog->getForSlide2()[9]?>, label: "ГКИ" },
                     { y: <?=$itog->getForSlide2()[11]?>, label: "ИСМП" },
-                    { y: 0, label: "" },
+                    { y: 0, label: " " },
                 ]
             },{
                 name: 'Операционные медсестры',
                 showInLegend: true,
                 type: "area",
                 dataPoints: [
-                    { y: 0, label: "" },
+                    { y: 0, label: " " },
                     { y: <?=$itog->getForSlide2()[10]?>, label: "ГКИ" },
                     { y: <?=$itog->getForSlide2()[12]?>, label: "ИСМП" },
-                    { y: 0, label: "" },
+                    { y: 0, label: " " },
                 ]
             }
             ]

@@ -32,6 +32,7 @@
 <script type="text/javascript">
     function getChart(msg) {
         var data = [{
+            yValueFormatString: "# #### ###.##",
             name: 'Базовый объем',
             showInLegend: false,
             type: "stackedColumn",
@@ -53,6 +54,7 @@
         }]
         if (msg[0] == 1){
             data.push({
+                yValueFormatString: "# #### ###.##",
                 name: 'Дополнительный объем (длительность)',
                 showInLegend: false,
                 type: "stackedColumn",
@@ -76,6 +78,7 @@
 
         if (msg[1] == 1){
             data.push({
+                yValueFormatString: "# #### ###.##",
                 name: 'Дополнительный объем (повреждения)',
                 showInLegend: false,
                 type: "stackedColumn",
