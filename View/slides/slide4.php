@@ -211,8 +211,8 @@
                 type: "area",
                 dataPoints: [
                     { y: 0, label: " " },
-                    { y: <?=$itog->getForSlide2()[9]?>, label: "ГКИ" },
-                    { y: <?=$itog->getForSlide2()[11]?>, label: "ИСМП" },
+                    { y: <?=$itog->getForSlide2()[9]?>, label: "двойные перчатки при ГКИ" },
+                    { y: <?=$itog->getForSlide2()[11]?>, label: "двойные перчатки при ГКИ" },
                     { y: 0, label: " " },
                 ]
             },{
@@ -221,8 +221,8 @@
                 type: "area",
                 dataPoints: [
                     { y: 0, label: " " },
-                    { y: <?=$itog->getForSlide2()[10]?>, label: "ГКИ" },
-                    { y: <?=$itog->getForSlide2()[12]?>, label: "ИСМП" },
+                    { y: <?=$itog->getForSlide2()[10]?>, label: "двойные перчатки при ГКИ" },
+                    { y: <?=$itog->getForSlide2()[12]?>, label: "антимикробные при ИСМП" },
                     { y: 0, label: " " },
                 ]
             }
