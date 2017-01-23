@@ -18,14 +18,14 @@ class VolumeClass
     }
 
     public function slide1(){
-        $this->slide1['b2'] = 10000;
+        $this->slide1['b2'] = 5000;
 
         $this->slide1['a5'] = 'Акушерство';
-        $this->slide1['a6'] = 'Гинекология';
-        $this->slide1['a7'] = 'Гнойная хирургия';
-        $this->slide1['a8'] = 'Абдоминальная хирургия';
-        $this->slide1['a9'] = 'Колопроктология';
-        $this->slide1['a10'] = 'Кардиохирургия';
+        $this->slide1['a6'] = 'Общая хирургия';
+        $this->slide1['a7'] = 'Травматология и ортопедия';
+        $this->slide1['a8'] = 'Трансплантология';
+        $this->slide1['a9'] = 'Нейрохирургия';
+        $this->slide1['a10'] = 0;
         $this->slide1['a11'] = 0;
         $this->slide1['a12'] = 0;
         $this->slide1['a13'] = 0;
@@ -38,7 +38,7 @@ class VolumeClass
         $this->slide1['b7'] = 1000;
         $this->slide1['b8'] = 1000;
         $this->slide1['b9'] = 1000;
-        $this->slide1['b10'] = 5000;
+        $this->slide1['b10'] = 0;
         $this->slide1['b11'] = 0;
         $this->slide1['b12'] = 0;
         $this->slide1['b13'] = 0;
