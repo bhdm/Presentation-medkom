@@ -60,7 +60,7 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
     $char = 'b';
 }
 ?>
-<table class="table table-hover table-bordered table-condensed">
+<table class="table table-hover table-bordered table-condensed" style="font-size: 11px;">
     <tr>
         <th class="text-center">Материал</th>
         <th class="text-center">Тип</th>
