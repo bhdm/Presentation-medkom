@@ -106,7 +106,7 @@
                     var yVal = e.entries[0].dataPoint.y;
                     var label = '';
 //                    var label = e.entries[0].dataPoint.label;
-                    if (xVal == 0 || xVal == 2){
+                    if (xVal == 0 || xVal == 3){
                         return null;
                     }else{
                         return axisX+' '+label+': '+yVal;
@@ -160,7 +160,7 @@
                     var yVal = e.entries[0].dataPoint.y;
                     var label = '';
 //                    var label = e.entries[0].dataPoint.label;
-                    if (xVal == 0 || xVal == 2){
+                    if (xVal == 0 || xVal == 6){
                         return null;
                     }else{
                         return axisX+' '+label+': '+yVal;
@@ -206,7 +206,7 @@
                     var yVal = e.entries[0].dataPoint.y;
                     var label = '';
 //                    var label = e.entries[0].dataPoint.label;
-                    if (xVal == 0 || xVal == 2){
+                    if (xVal == 0 || xVal == 3){
                         return null;
                     }else{
                         return axisX+' '+label+': '+yVal;
