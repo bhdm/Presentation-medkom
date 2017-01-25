@@ -2,28 +2,28 @@
 
 <div class="row">
     <div class="col-xs-12 col-md-6">
-        <p>Удовлетворение функциональных потребностей – перчатки, необходимые для годового числа операций.</p>
+        <p>Удовлетворение функциональных потребностей – перчатки, необходимые для годового числа операций.<br /><br /></p>
         <div id="chart-1" class="chart"></div>
-        <img src="Resources/images/l4-1.png" style="margin-left: 33px; width: 90%">
+        <img src="Resources/images/l4-1.png" style="margin-left: 33px;    position: absolute; margin-top: -10px; ">
     </div>
     <div class="col-xs-12 col-md-6">
         <p>Удовлетворение функциональных потребностей – перчатки, необходимые для защиты от гемоконтактных инфекций и при высоком риске ИСМП.</p>
         <div id="chart-4" class="chart"></div>
-        <img src="Resources/images/l4-2.png" style="margin-left: 33px; width: 90%">
+        <img src="Resources/images/l4-2.png" style="margin-left: 33px;  position: absolute; margin-top: -21px; ">
     </div>
 </div>
 <br />
 <br />
 <div class="row">
     <div class="col-xs-12 col-md-6">
-        <p>Удовлетворение профессиональных потребностей – перчатки, необходимые для специализированных операций</p>
+        <p>Удовлетворение профессиональных потребностей – перчатки, необходимые для профильных операций<br /><br /></p>
         <div id="chart-3" class="chart"></div>
-        <img src="Resources/images/l4-4.png" style="margin-left: 33px; width: 90%">
+        <img src="Resources/images/l4-4.png" style="margin-left: 33px;  position: absolute; margin-top: -30px; ">
     </div>
     <div class="col-xs-12 col-md-6">
         <p>Удовлетворение индивидуальных потребностей – перчатки, необходимые для предупреждения патологических реакций  у оперирующего персонала.</p>
         <div id="chart-2" class="chart"></div>
-        <img src="Resources/images/l4-3.png" style="margin-left: 33px; width: 90%">
+        <img src="Resources/images/l4-3.png" style="margin-left: 33px; ">
     </div>
 </div>
 <div style="text-align: center; color: #7e0b20; font-style: italic">
@@ -41,13 +41,13 @@
             axisX: {
                 interval: 1,
                 labelAngle: 0,
-                labelFontSize: 0,
+                labelFontSize: 11,
                 labelFontColor: '#FFF'
             },
             axisY:{
                 valueFormatString: "#####.##",
             },
-            showInLegend: true,
+            showInLegend: false,
             theme: "theme1",
             toolTip:{
                 content: function (e) {
@@ -151,7 +151,7 @@
             axisX: {
                 interval: 1,
                 labelAngle: 0,
-                labelFontSize: 0,
+                labelFontSize: 11,
                 labelFontColor: '#FFF'
             },
             axisY:{
@@ -198,7 +198,7 @@
             axisX: {
                 interval: 1,
                 labelAngle: 0,
-                labelFontSize: 0,
+                labelFontSize: 11,
                 labelFontColor: '#FFF'
             },
             axisY:{

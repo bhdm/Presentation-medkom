@@ -43,7 +43,7 @@
                 <img src="/Resources/images/c1.png" class="wow bounceInRight poiner" data-toggle="popover" title="" data-content="общая хирургия, ортопедия, акушерство, нейрохирургия, трансплантология и т.д." data-wow-delay="5.5s" style="position: absolute;    top: -160px; left: -40px;"/>
                 <img src="/Resources/images/c2.png" class="wow bounceInRight poiner" data-toggle="popover" title="" data-content="аллергия на латекс (1 тип), аллергический контактный дерматит (4 тип), неаллергический контактный" data-wow-delay="6.0s" style="position: absolute;    left: -40px; top: -60px;"/>
                 <img src="/Resources/images/c3.png" class="wow bounceInRight poiner" data-toggle="popover" title="" data-content="гемоконтактные инфекции: ВИЧ, гепатиты В и С" data-wow-delay="6.5s" style="position: absolute;    left: -40px; top: 70px;"/>
-                <img src="/Resources/images/c4.png" class="wow bounceInRight poiner" data-toggle="popover" title="" data-content="инфекции, связанные с оказанием медицинской помощи" data-wow-delay="7.0s" style="position: absolute;    left: -40px; top: 165px;"/>
+                <img src="/Resources/images/c4.png" class="wow bounceInRight poiner" data-toggle="popover" title="" data-content="операции  с высоким риском ИСМП" data-wow-delay="7.0s" style="position: absolute;    left: -40px; top: 165px;"/>
             </td>
         </tr>
         <td><img src="/Resources/images/g13.png" class="wow bounceInUp" data-wow-delay="0.5s"/></td>

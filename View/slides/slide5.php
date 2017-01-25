@@ -22,7 +22,7 @@
 
 <div id="chart-5" class="chart" style="height: 500px"></div>
 <div style="text-align: center">
-    <img src="/Resources/images/legend-5-1.png" style="margin-left: 22px; width: 90%">
+    <img src="/Resources/images/legend-5-1.png" style="margin-left: 40px;">
     <img src="/Resources/images/legend-5.png">
 </div>
 <div style="text-align: center; color: #7e0b20; font-style: italic">
@@ -106,7 +106,7 @@
         var chart1 = new CanvasJS.Chart("chart-5", {
             animationEnabled: true,
             title: {
-                text: "Удовлетворение профессиональных потребностей",
+                text: "Структурированный объем",
                 fontSize: 18
             },
             legend: false,
