@@ -828,7 +828,7 @@ class ItogClass
                 $count += $table['d'.$i];
                 $text.= '
             <tr>
-                <td>'.$table['a'.$i].'</td>
+                <td rowspan="1">'.$table['a'.$i].'</td>
                 <td>'.$table['b'.$i].'</td>
                 <td>'.$table['c'.$i].'</td>
                 <td class="text-center" data-title="'.$table['c'.$i].'">'.$table['d'.$i].'</td>
@@ -842,7 +842,7 @@ class ItogClass
                 $count += $table['i'.$i];
                 $text.= '
             <tr>
-                <td>'.$table['f'.$i].'</td>
+                <td rowspan="1">'.$table['f'.$i].'</td>
                 <td>'.$table['g'.$i].'</td>
                 <td>'.$table['h'.$i].'</td>
                 <td class="text-center" data-title="'.$table['h'.$i].'">'.$table['i'.$i].'</td>

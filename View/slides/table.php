@@ -64,7 +64,7 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
     $cell = 92;
     $char = 'b';
 }
-echo $char.$cell.'<br />';
+//echo $char.$cell.'<br />';
 ?>
 <table class="table table-hover table-bordered table-condensed" style="font-size: 11px;">
     <tr>
@@ -79,33 +79,33 @@ echo $char.$cell.'<br />';
     if ($char === 'a'){
         for($i = $cell ; true; $i ++){
             if (!isset($table['a'.$i])){ break; }
-//            if ($table['d'.$i] != 0 && $table['c'.$i] != ''){
+            if ($table['c'.$i] != ''){
                 $count +=  $table['d'.$i];
                 ?>
                 <tr>
-                    <td><?=$table['a'.$i]?></td>
+                    <td rowspan="1"><?=$table['a'.$i]?></td>
                     <td><?=$table['b'.$i]?></td>
                     <td><?=$table['c'.$i]?></td>
                     <td class="text-center" data-title="<?=$table['c'.$i]?>"><?=$table['d'.$i]?></td>
                 </tr>
                 <?php
-//            }
+            }
         }
     }
     if ($char == 'b'){
         for($i = $cell ; true; $i ++){
             if (!isset($table['f'.$i])){ break; }
-//            if ($table['i'.$i] != 0 && $table['h'.$i] != ''){
+            if ($table['h'.$i] != ''){
                 $count +=  $table['d'.$i];
                 ?>
                 <tr>
-                    <td><?=$table['f'.$i]?></td>
+                    <td rowspan="1"><?=$table['f'.$i]?></td>
                     <td><?=$table['g'.$i]?></td>
                     <td><?=$table['h'.$i]?></td>
                     <td class="text-center" data-title="<?=$table['h'.$i]?>"><?=$table['i'.$i]?></td>
                 </tr>
                 <?php
-//            }
+            }
         }
     }
     ?>

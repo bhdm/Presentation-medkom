@@ -109,6 +109,34 @@
             console.log(data);
             return data;
         }
+
+        function MergeGridCells()
+        {
+            for (var i =1; i <= $(".table tr").length ; i++){
+                var tr = $(".table tr").eq(i);
+
+                if (i > 1  && tr.children('td').eq(0).html() == $(".table tr").eq(i-1).children('td').eq(0).html() ){
+                    $(".table tr").eq(i-1).children('td').eq(0).attr('rowspan', parseInt($(".table tr").eq(i-1).children('td').eq(0).attr('rowspan'))+1);
+                    tr.children('td').eq(0).remove();
+                }
+            }
+        }
+
+        function addTooltip() {
+            for (var i =1; i <= $(".table tr").length ; i++){
+                var tr = $(".table tr").eq(i);
+
+                if (tr.children('td').eq(1).html() == 'система двойных перчаток' || tr.children('td').eq(0).html() == 'система двойных перчаток' ){
+                    tr.children('td').eq(tr.children('td').length-1).attr('data-toggle','popover');
+                    tr.children('td').eq(tr.children('td').length-1).attr('data-content','число комплектов');
+                    tr.children('td').eq(tr.children('td').length-1).attr('title','');
+                    tr.children('td').eq(tr.children('td').length-1).attr('data-title','');
+                    tr.children('td').eq(tr.children('td').length-1).append(' <span class="glyphicon glyphicon-info-sign" style="color: #777"></span>')
+                }
+            }
+            $('[data-toggle="popover"]').popover({trigger: "hover"})
+        }
+
         function getChart() {
             var counts = getCounts();
             var chart1 = new CanvasJS.Chart("chart-6", {
@@ -136,12 +164,17 @@
 
 
             chart1.render();
+            MergeGridCells();
+            addTooltip();
+
 //            var trs = $('.table-condensed').children('tbody').children('tr');
 //            for (var i =0 ; i <= trs.length ; i ++){
 //                if (trs.eq(i).children('td').eq(3).html() == '0' ){
 //                    trs.eq(i).remove();
 //                }
 //            }
+
+
 
         }
 
@@ -165,6 +198,7 @@
                 success: function (msg) {
                     $('.table-item').html(msg);
                     getChart();
+
                 }
         })
         });

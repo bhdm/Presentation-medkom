@@ -53,3 +53,6 @@ footer .container{
 .table-item{
     margin-left: -15px;
 }
+.table tr td{
+    vertical-align: middle !important;
+}
