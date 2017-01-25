@@ -50,3 +50,6 @@ footer .container{
 .popover{
     width: 220px;
 }
+.table-item{
+    margin-left: -15px;
+}

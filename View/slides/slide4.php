@@ -4,10 +4,12 @@
     <div class="col-xs-12 col-md-6">
         <p>Удовлетворение функциональных потребностей – перчатки, необходимые для годового числа операций.</p>
         <div id="chart-1" class="chart"></div>
+        <img src="Resources/images/l4-1.png" style="margin-left: 33px; width: 90%">
     </div>
     <div class="col-xs-12 col-md-6">
         <p>Удовлетворение функциональных потребностей – перчатки, необходимые для защиты от гемоконтактных инфекций и при высоком риске ИСМП.</p>
         <div id="chart-4" class="chart"></div>
+        <img src="Resources/images/l4-2.png" style="margin-left: 33px; width: 90%">
     </div>
 </div>
 <br />
@@ -16,10 +18,12 @@
     <div class="col-xs-12 col-md-6">
         <p>Удовлетворение профессиональных потребностей – перчатки, необходимые для специализированных операций</p>
         <div id="chart-3" class="chart"></div>
+        <img src="Resources/images/l4-4.png" style="margin-left: 33px; width: 90%">
     </div>
     <div class="col-xs-12 col-md-6">
         <p>Удовлетворение индивидуальных потребностей – перчатки, необходимые для предупреждения патологических реакций  у оперирующего персонала.</p>
         <div id="chart-2" class="chart"></div>
+        <img src="Resources/images/l4-3.png" style="margin-left: 33px; width: 90%">
     </div>
 </div>
 <div style="text-align: center; color: #7e0b20; font-style: italic">
@@ -37,8 +41,8 @@
             axisX: {
                 interval: 1,
                 labelAngle: 0,
-                labelFontSize: 14,
-//                labelColor: '#000'
+                labelFontSize: 0,
+                labelFontColor: '#FFF'
             },
             axisY:{
                 valueFormatString: "#####.##",
@@ -64,7 +68,7 @@
             data: [{
                 yValueFormatString: "# #### ###.##",
                 name: 'Хирурги',
-                showInLegend: true,
+                showInLegend: false,
                 type: "area",
                 dataPoints: [
                     { y: 0, label: " " },
@@ -74,7 +78,7 @@
             },{
                 yValueFormatString: "# #### ###.##",
                 name: 'Операционные м/с',
-                showInLegend: true,
+                showInLegend: false,
                 type: "area",
                 dataPoints: [
                     { y: 0, label: " " },
@@ -92,7 +96,8 @@
             axisX: {
                 interval: 1,
                 labelAngle: 0,
-                labelFontSize: 11,
+                labelFontSize: 0,
+                labelFontColor: '#FFF'
             },
             axisY:{
                 valueFormatString: "#0", //try properties here
@@ -116,7 +121,7 @@
             data: [{
                 yValueFormatString: "# #### ###.##",
                 name: 'Хирурги',
-                showInLegend: true,
+                showInLegend: false,
                 type: "area",
                 dataPoints: [
                     { y: 0, label: " " },
@@ -127,7 +132,7 @@
             },{
                 yValueFormatString: "# #### ###.##",
                 name: 'Операционные м/с',
-                showInLegend: true,
+                showInLegend: false,
                 type: "area",
                 dataPoints: [
                     { y: 0, label: " " },
@@ -146,7 +151,8 @@
             axisX: {
                 interval: 1,
                 labelAngle: 0,
-                labelFontSize: 11,
+                labelFontSize: 0,
+                labelFontColor: '#FFF'
             },
             axisY:{
                 valueFormatString: "#0", //try properties here
@@ -154,7 +160,7 @@
             theme: "theme1",
             toolTip:{
                 content: function (e) {
-//                    console.log(e.entries[0]);
+                    console.log(r=e.entries[0]);
                     var axisX = e.entries[0].dataSeries.name;
                     var xVal = e.entries[0].dataPoint.x;
                     var yVal = e.entries[0].dataPoint.y;
@@ -192,7 +198,8 @@
             axisX: {
                 interval: 1,
                 labelAngle: 0,
-                labelFontSize: 11,
+                labelFontSize: 0,
+                labelFontColor: '#FFF'
             },
             axisY:{
                 valueFormatString: "#0", //try properties here
@@ -216,7 +223,7 @@
             data: [{
                 yValueFormatString: "# #### ###.##",
                 name: 'Хирурги',
-                showInLegend: true,
+                showInLegend: false,
                 type: "area",
                 dataPoints: [
                     { y: 0, label: " " },
@@ -226,7 +233,7 @@
                 ]
             },{
                 name: 'Операционные м/с',
-                showInLegend: true,
+                showInLegend: false,
                 type: "area",
                 dataPoints: [
                     { y: 0, label: " " },

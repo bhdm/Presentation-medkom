@@ -29,7 +29,7 @@
     </script>
 </head>
 <body>
-<div class="container">
+<div class="container" style="max-width: 970px">
     <?php
         include "slides".$url.".php";
     ?>

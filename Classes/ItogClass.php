@@ -640,20 +640,20 @@ class ItogClass
 
     public function getForSlide2(){
         return array(
-            $this->slide4['g19'] + $this->slide4['g20'] + $this->slide4['g21'],
-            $this->slide4['g30'],
-            $this->slide4['g31'] + $this->slide4['g32'],
-            $this->slide4['g36'],
+            ceil($this->slide4['g19'] + $this->slide4['g20'] + $this->slide4['g21']),
+            ceil($this->slide4['g30']),
+            ceil($this->slide4['g31'] + $this->slide4['g32']),
+            ceil($this->slide4['g36']),
 
-            $this->slide4['g26'],
-            $this->slide4['g27'],
-            $this->slide4['g28'],
-            $this->slide3['ay40'],
-            $this->slide4['g29'],
+            ceil($this->slide4['g26']),
+            ceil($this->slide4['g27']),
+            ceil($this->slide4['g28']),
+            ceil($this->slide3['ay40']),
+            ceil($this->slide4['g29']),
 
-            $this->slide4['g20'] + $this->slide4['g24'],
-            $this->slide4['g32'] + $this->slide4['g35'],
-            $this->slide4['g21'] + $this->slide3['j40'],
+            ceil($this->slide4['g20'] + $this->slide4['g24']),
+            ceil($this->slide4['g32'] + $this->slide4['g35']),
+            ceil($this->slide4['g21'] + $this->slide3['j40']),
             0,
         );
     }

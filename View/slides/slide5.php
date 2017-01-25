@@ -22,7 +22,7 @@
 
 <div id="chart-5" class="chart" style="height: 500px"></div>
 <div style="text-align: center">
-    <img src="/Resources/images/legend-5-1.png" style="margin-left: 22px;">
+    <img src="/Resources/images/legend-5-1.png" style="margin-left: 22px; width: 90%">
     <img src="/Resources/images/legend-5.png">
 </div>
 <div style="text-align: center; color: #7e0b20; font-style: italic">
@@ -31,12 +31,14 @@
 <?php $table = $itog->getForSlide5() ?>
 <script type="text/javascript">
     function getChart(msg) {
+        console.log(m=msg);
         var data = [{
             yValueFormatString: "# #### ###.##",
             name: 'Базовый объем',
             showInLegend: false,
             type: "stackedColumn",
             toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
+            color: "#369ead",
             dataPoints: [
                 { x: 0,   y: <?=$table[0][0]?>, label: "стандартные" },
                 { x: 10,   y: <?=$table[0][1]?>, label: "система двойных перчаток" },
@@ -59,6 +61,7 @@
                 showInLegend: false,
                 type: "stackedColumn",
                 toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
+                color: "#c24642",
                 dataPoints: [
                     { x: 0,   y: <?=$table[1][0]?>, label: "стандартные" },
                     { x: 10,   y: <?=$table[1][1]?>, label: "система двойных перчаток" },
@@ -83,6 +86,7 @@
                 showInLegend: false,
                 type: "stackedColumn",
                 toolTipContent: "{label}<br/><span style='\"'color: {color};'\"'><strong>{name}</strong></span>: {y}",
+                color: "#7f6084",
                 dataPoints: [
                     { x: 0,   y: <?=$table[2][0]?>, label: "стандартные" },
                     { x: 10,  y: <?=$table[2][1]?>, label: "система двойных перчаток" },
@@ -107,13 +111,14 @@
             },
             legend: false,
             axisY: {
-                labelFontSize: 14
+                labelFontSize: 14,
+                valueFormatString: "# ### ###.##",
             },
             axisX: {
                 interval: 10,
                 labelAngle: 0,
                 labelFontSize: 0,
-                labelColor: '#FFF'
+                labelColor: '#FFF',
             },
             theme: "theme1",
             data: data,
@@ -125,7 +130,7 @@
 
 $(document).ready(function () {
 
-    getChart({"0" : 1,"1" : 1});
+    getChart([1,1]);
 
     $('.check').on('ifChecked', function(event){
         $.ajax({
@@ -133,7 +138,7 @@ $(document).ready(function () {
             data: 'ch='+$(this).attr('name'),
             method: 'POST',
             success: function (msg) {
-                getChart(msg);
+                getChart(JSON.parse(msg));
             }
         })
     });
@@ -143,7 +148,7 @@ $(document).ready(function () {
             data: 'uch='+$(this).attr('name'),
             method: 'POST',
             success: function (msg) {
-                getChart(msg);
+                getChart(JSON.parse(msg));
             }
         })
     });

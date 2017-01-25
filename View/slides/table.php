@@ -73,7 +73,7 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
     if ($char === 'a'){
         for($i = $cell ; true; $i ++){
             if (!isset($table['a'.$i])){ break; }
-            if ($table['d'.$i] != 0){
+            if ($table['d'.$i] != 0 && $table['c'.$i] != ''){
                 $count +=  $table['d'.$i];
                 ?>
                 <tr>
@@ -89,7 +89,7 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
     if ($char == 'b'){
         for($i = $cell ; true; $i ++){
             if (!isset($table['f'.$i])){ break; }
-            if ($table['i'.$i] != 0){
+            if ($table['i'.$i] != 0 && $table['h'.$i] != ''){
                 $count +=  $table['d'.$i];
                 ?>
                 <tr>
