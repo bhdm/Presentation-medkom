@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if ($_POST['ch']){
     $_SESSION[$_POST['ch']] = 1;
     $itog->slide5[$_POST['ch']] = 1;
@@ -9,6 +11,9 @@ if ($_POST['uch']){
     $itog->slide5[$_POST['uch']] = 0;
     $itog->slide5['c3'] = $itog->slide5['b3'] + $itog->slide5['b4'];
 }
+
+$itog->slide5();
+
 
 if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->slide5['b7'] == 4){
     $cell = 14;
@@ -59,6 +64,7 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
     $cell = 92;
     $char = 'b';
 }
+echo $char.$cell.'<br />';
 ?>
 <table class="table table-hover table-bordered table-condensed" style="font-size: 11px;">
     <tr>
@@ -73,7 +79,7 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
     if ($char === 'a'){
         for($i = $cell ; true; $i ++){
             if (!isset($table['a'.$i])){ break; }
-            if ($table['d'.$i] != 0 && $table['c'.$i] != ''){
+//            if ($table['d'.$i] != 0 && $table['c'.$i] != ''){
                 $count +=  $table['d'.$i];
                 ?>
                 <tr>
@@ -83,13 +89,13 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
                     <td class="text-center" data-title="<?=$table['c'.$i]?>"><?=$table['d'.$i]?></td>
                 </tr>
                 <?php
-            }
+//            }
         }
     }
     if ($char == 'b'){
         for($i = $cell ; true; $i ++){
             if (!isset($table['f'.$i])){ break; }
-            if ($table['i'.$i] != 0 && $table['h'.$i] != ''){
+//            if ($table['i'.$i] != 0 && $table['h'.$i] != ''){
                 $count +=  $table['d'.$i];
                 ?>
                 <tr>
@@ -99,7 +105,7 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
                     <td class="text-center" data-title="<?=$table['h'.$i]?>"><?=$table['i'.$i]?></td>
                 </tr>
                 <?php
-            }
+//            }
         }
     }
     ?>

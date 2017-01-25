@@ -22,7 +22,7 @@
             Специализация
         </label>
         <div class="col-sm-2">
-            <input type="checkbox" class="check" name="b5" id="check5" value="1"  checked>
+            <input type="checkbox" class="check" name="b8" id="check5" value="1"  checked>
         </div>
     </div>
     <div class="form-group">
@@ -30,7 +30,7 @@
             Аллергический статус
         </label>
         <div class="col-sm-2">
-            <input type="checkbox" class="check" name="b6" id="check6" value="1" checked>
+            <input type="checkbox" class="check" name="b5" id="check6" value="1" checked>
         </div>
     </div>
     <div class="form-group">
@@ -38,7 +38,7 @@
             Гемоконтактные инфекции
         </label>
         <div class="col-sm-2">
-            <input type="checkbox" class="check" name="b7" id="check7" value="1" checked>
+            <input type="checkbox" class="check" name="b6" id="check7" value="1" checked>
         </div>
     </div>
     <div class="form-group">
@@ -46,7 +46,7 @@
             Профилактика ИСМП
         </label>
         <div class="col-sm-2">
-            <input type="checkbox" class="check" name="b8" id="check8" value="1" checked>
+            <input type="checkbox" class="check" name="b7" id="check8" value="1" checked>
         </div>
     </div>
 </form>

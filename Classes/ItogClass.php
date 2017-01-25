@@ -49,12 +49,12 @@ class ItogClass
 
     public function slide5()
     {
-        $this->slide5['b3'] = $_SESSION['b3'] ? $_SESSION['b3'] : 1;
-        $this->slide5['b4'] = $_SESSION['b4'] ? $_SESSION['b4'] : 1;
-        $this->slide5['b5'] = $_SESSION['b5'] ? $_SESSION['b5'] : 1;
-        $this->slide5['b6'] = $_SESSION['b6'] ? $_SESSION['b6'] : 1;
-        $this->slide5['b7'] = $_SESSION['b7'] ? $_SESSION['b7'] : 1;
-        $this->slide5['b8'] = $_SESSION['b8'] ? $_SESSION['b8'] : 1;
+        $this->slide5['b3'] = isset($_SESSION['b3']) ? $_SESSION['b3'] : 1;
+        $this->slide5['b4'] = isset($_SESSION['b4']) ? $_SESSION['b4'] : 1;
+        $this->slide5['b5'] = isset($_SESSION['b5']) ? $_SESSION['b5'] : 1;
+        $this->slide5['b6'] = isset($_SESSION['b6']) ? $_SESSION['b6'] : 1;
+        $this->slide5['b7'] = isset($_SESSION['b7']) ? $_SESSION['b7'] : 1;
+        $this->slide5['b8'] = isset($_SESSION['b8']) ? $_SESSION['b8'] : 1;
 
         $this->slide5['c3'] = $this->slide5['b3'] + $this->slide5['b4'];
 
