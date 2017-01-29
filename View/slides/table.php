@@ -14,6 +14,34 @@ if ($_POST['uch']){
 
 $itog->slide5();
 
+function getSelect($glove){
+    if (!$glove){
+        return '';
+    }
+    $gs = [];
+    switch ($glove){
+        case 'Biogel Skinsense': { $gs = ['Encore Ultra']; break; };
+        case 'Biogel Skinsense Indicator': { $gs = []; break; };
+        case 'Bioclean Ultimate': { $gs = ['Bioclean Emerald']; break; };
+        case 'Biogel Surgeons': { $gs = ['Biogel Eclipse','Encore Acclaim','Encore Style 85','Medi-Grip PF','Shen Wei']; break; };
+        case 'Medi-Grip Plus': { $gs = []; break; };
+        case 'Encore Acclaim + Encore Underglove': { $gs = ['Biogel Eclipse Indicator']; break; };
+        case 'Bioclean Extra': { $gs = []; break; };
+        case 'Dona 410 PF': { $gs = []; break; };
+        case 'Encore Orthopaedic': { $gs = []; break; };
+        case 'Encore Microptic': { $gs = []; break; };
+        case 'Encore Style 85': { $gs = ['Encore Orthopaedic','Encore Underglove']; break; };
+        case 'Encore Underglove': { $gs = ['Shen Wei']; break; };
+    }
+
+    $txt = '<select class="form-control fc">';
+    foreach ($gs as $g){
+        $txt .= '<option>'.$g.'</option>';
+    }
+    $txt .= '<option>'.$glove.'</option>';
+    $txt .= '</select>';
+    return $txt;
+}
 
 if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->slide5['b7'] == 4){
     $cell = 14;
@@ -85,7 +113,7 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
                 <tr>
                     <td rowspan="1"><?=$table['a'.$i]?></td>
                     <td><?=$table['b'.$i]?></td>
-                    <td><?=$table['c'.$i]?></td>
+                    <td><?=getSelect($table['c'.$i])?></td>
                     <td class="text-center" data-title="<?=$table['c'.$i]?>"><?=$table['d'.$i]?></td>
                 </tr>
                 <?php
@@ -101,7 +129,7 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
                 <tr>
                     <td rowspan="1"><?=$table['f'.$i]?></td>
                     <td><?=$table['g'.$i]?></td>
-                    <td><?=$table['h'.$i]?></td>
+                    <td><?=getSelect($table['h'.$i])?></td>
                     <td class="text-center" data-title="<?=$table['h'.$i]?>"><?=$table['i'.$i]?></td>
                 </tr>
                 <?php
@@ -114,5 +142,6 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
         <td style="text-align: center"><?=$count?></td>
     </tr>
 </table>
+
 
 <?php exit ?>

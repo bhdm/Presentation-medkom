@@ -56,3 +56,8 @@ footer .container{
 .table tr td{
     vertical-align: middle !important;
 }
+.fc{
+    font-size: 12px !important;
+    padding: 3px 5px !important;
+    height: 25px !important;
+}
