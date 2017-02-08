@@ -124,7 +124,7 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
         for($i = $cell ; true; $i ++){
             if (!isset($table['f'.$i])){ break; }
             if ($table['h'.$i] != ''){
-                $count +=  $table['d'.$i];
+                $count +=  $table['i'.$i];
                 ?>
                 <tr>
                     <td rowspan="1"><?=$table['f'.$i]?></td>
