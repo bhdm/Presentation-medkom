@@ -65,8 +65,8 @@ class DurationClass
         for ($i = 3; $i <= 36; $i +=3 ) {
             $key++;
             $keySlide1++;
-            $this->slide2['a' . $i] = $this->slide1['a' . $key];
-            $this->slide2['b' . $i] = $this->slide1['a' . $key];
+            $this->slide3['a' . $i] = $this->slide1['a' . $key];
+            $this->slide3['b' . $i] = $this->slide1['a' . $key];
             switch ($this->slide1['a' . $i]) {
                 case $this->slide1['a52']:
                     $this->slide3['b' . $i] = $this->slide1['b52'];
