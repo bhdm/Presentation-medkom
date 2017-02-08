@@ -231,31 +231,31 @@ class CalculationClass
         );
 
 //      Длительность
-        $this->slide4['d39'] = $this->r($this->slide3['k40']);
-        $this->slide4['d40'] = $this->r($this->slide3['i40']);
-        $this->slide4['d43'] = $this->r($this->slide3['j40'] + $this->slide3['aw40']);
-        $this->slide4['d44'] = $this->r($this->slide3['y40']);
-        $this->slide4['d45'] = $this->r($this->slide3['ag40']);
-        $this->slide4['d46'] = $this->r($this->slide3['ao40']);
-        $this->slide4['d47'] = $this->r($this->slide3['be40']);
-        $this->slide4['d48'] = $this->r($this->slide3['bm40']);
-        $this->slide4['d49'] = $this->r($this->slide3['c41']);
-        $this->slide4['d52'] = $this->r($this->slide3['bi41']);
+        $this->slide4['e39'] = $this->r($this->slide3['k40']);
+        $this->slide4['e40'] = $this->r($this->slide3['i40']);
+        $this->slide4['e43'] = $this->r($this->slide3['j40'] + $this->slide3['aw40']);
+        $this->slide4['e44'] = $this->r($this->slide3['y40']);
+        $this->slide4['e45'] = $this->r($this->slide3['ag40']);
+        $this->slide4['e46'] = $this->r($this->slide3['ao40']);
+        $this->slide4['e47'] = $this->r($this->slide3['be40']);
+        $this->slide4['e48'] = $this->r($this->slide3['bm40']);
+        $this->slide4['e49'] = $this->r($this->slide3['c41']);
+        $this->slide4['e52'] = $this->r($this->slide3['bi41']);
 
-        $this->slide4['d41'] = $this->r((
+        $this->slide4['e41'] = $this->r((
                 $this->slide3['b40'] - $this->slide4['e39'] - $this->slide4['e40'] - $this->slide4['e43'] - $this->slide4['e44'] -
                 $this->slide4['e45'] - $this->slide4['e46'] - $this->slide4['e47'] - $this->slide4['e48']) * $this->slide3['q50']
         );
-        $this->slide4['d42'] = $this->r((
+        $this->slide4['e42'] = $this->r((
                 $this->slide3['b40'] - $this->slide4['e39'] - $this->slide4['e40'] - $this->slide4['e43'] - $this->slide4['e44'] -
                 $this->slide4['e45'] - $this->slide4['e46'] - $this->slide4['e47'] - $this->slide4['e48']) * $this->slide3['q51']
         );
 
-        $this->slide4['d50'] = $this->r((
+        $this->slide4['e50'] = $this->r((
                 $this->slide3['b41'] - $this->slide4['e49'] - $this->slide4['e52']) * $this->slide3['q50']
         );
 
-        $this->slide4['d51'] = $this->r((
+        $this->slide4['e51'] = $this->r((
                 $this->slide3['b41'] - $this->slide4['e49'] - $this->slide4['e52']) * $this->slide3['q51']
         );
 

@@ -67,7 +67,7 @@ class DurationClass
             $keySlide1++;
             $this->slide3['a' . $i] = $this->slide1['a' . $key];
             $this->slide3['b' . $i] = $this->slide1['a' . $key];
-            switch ($this->slide1['a' . $i]) {
+            switch ($this->slide3['a' . $i]) {
                 case $this->slide1['a52']:
                     $this->slide3['b' . $i] = $this->slide1['b52'];
                     break;
@@ -208,7 +208,7 @@ class DurationClass
             $this->slide3['bo'.($i+1)] = $this->slide3['b'.($i + 1)] * $this->slide3['b47'] - $this->slide3['b'.($i + 1)] * $this->slide3['b47'] * ($this->slide3['b55'] + $this->slide3['b56']) - $this->slide3['b'.($i + 1)] * $this->slide3['b47'] * ($this->slide3['b50'] + $this->slide3['b51'] + $this->slide3['b52']);
 
 //          Строка ом/с
-            $this->slide3['b' . ($i + 2)] = $this->slide1['b' . $keySlide1] * $this->slide3['b2'];
+            $this->slide3['b' . ($i + 2)] = $this->slide1['b' . $key] * $this->slide3['b2'];
             $this->slide3['c' . ($i + 2)] = $this->slide3['b' . ($i + 2)] * $this->slide3['c45'] + $this->slide3['b' . ($i + 2)] * $this->slide3['c46'];
             $this->slide3['d' . ($i + 2)] = $this->slide3['b' . ($i + 2)] * $this->slide3['b50'] + $this->slide3['b' . ($i + 2)] * $this->slide3['b51'] + $this->slide3['b' . ($i + 2)] * $this->slide3['b52'];
             $this->slide3['e' . ($i + 2)] = $this->slide3['b' . ($i + 2)] * ($this->slide3['c45'] + $this->slide3['c46']) * ($this->slide3['b50'] + $this->slide3['b51'] + $this->slide3['b52']);
