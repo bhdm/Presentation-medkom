@@ -216,7 +216,7 @@ class DurationClass
             $this->slide3['g' . ($i + 2)] = $this->slide3['c' . ($i + 2)] - $this->slide3['e' . ($i + 2)];
 
             $this->slide3['k' . ($i + 2)] = $this->slide3['c' . ($i + 2)] - $this->slide3['i' . ($i + 2)];
-            $this->slide3['l' . ($i + 2)] = $this->slide3['c' . ($i + 2)] - $this->slide3['e' . ($i + 2)] - $this->slide3['i' . ($i + 1)];
+            $this->slide3['l' . ($i + 2)] = $this->slide3['c' . ($i + 2)] - $this->slide3['e' . ($i + 2)] - $this->slide3['i' . ($i + 2)];
             $this->slide3['m' . ($i + 2)] = $this->slide3['b' . ($i + 2)] - $this->slide3['c' . ($i + 2)];
             $this->slide3['n' . ($i + 2)] = $this->slide3['b' . ($i + 2)] - $this->slide3['d' . ($i + 2)];
 
