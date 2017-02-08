@@ -179,24 +179,24 @@ class CalculationClass
         $this->slide4['f36'] = $this->r($this->slide4['d36']/(1-$this->slide4['d2']));
 
 //      Длительность - Повреждения
-        $this->slide4['g19'] = $this->r($this->slide4['d19']/(1-$this->slide4['d12']));
-        $this->slide4['g20'] = $this->r($this->slide4['d20']/(1-$this->slide4['d13']));
-        $this->slide4['g21'] = $this->r($this->slide4['d21']/(1-$this->slide4['d15']));
-        $this->slide4['g22'] = $this->r($this->slide4['d22']/(1-$this->slide4['d3']));
-        $this->slide4['g23'] = $this->r($this->slide4['d23']/(1-$this->slide4['d4']));
-        $this->slide4['g24'] = $this->r($this->slide4['d24']/(1-$this->slide4['d13']));
-        $this->slide4['g25'] = $this->r($this->slide4['d25']/(1-$this->slide4['d15']));
-        $this->slide4['g26'] = $this->r($this->slide4['d26']/(1-$this->slide4['d8']));
-        $this->slide4['g27'] = $this->r($this->slide4['d27']/(1-$this->slide4['d9']));
-        $this->slide4['g28'] = $this->r($this->slide4['d28']/(1-$this->slide4['d10']));
-        $this->slide4['g29'] = $this->r($this->slide4['d29']/(1-$this->slide4['d7']));
-        $this->slide4['g30'] = $this->r($this->slide4['d30']/(1-$this->slide4['d2']));
-        $this->slide4['g31'] = $this->r($this->slide4['d31']/(1-$this->slide4['d12']));
-        $this->slide4['g32'] = $this->r($this->slide4['d32']/(1-$this->slide4['d13']));
-        $this->slide4['g33'] = $this->r($this->slide4['d33']/(1-$this->slide4['d3']));
-        $this->slide4['g34'] = $this->r($this->slide4['d34']/(1-$this->slide4['d4']));
-        $this->slide4['g35'] = $this->r($this->slide4['d35']/(1-$this->slide4['d13']));
-        $this->slide4['g36'] = $this->r($this->slide4['d36']/(1-$this->slide4['d2']));
+        $this->slide4['g19'] = $this->r($this->slide4['e19']/(1-$this->slide4['d12']));
+        $this->slide4['g20'] = $this->r($this->slide4['e20']/(1-$this->slide4['d13']));
+        $this->slide4['g21'] = $this->r($this->slide4['e21']/(1-$this->slide4['d15']));
+        $this->slide4['g22'] = $this->r($this->slide4['e22']/(1-$this->slide4['d3']));
+        $this->slide4['g23'] = $this->r($this->slide4['e23']/(1-$this->slide4['d4']));
+        $this->slide4['g24'] = $this->r($this->slide4['e24']/(1-$this->slide4['d13']));
+        $this->slide4['g25'] = $this->r($this->slide4['e25']/(1-$this->slide4['d15']));
+        $this->slide4['g26'] = $this->r($this->slide4['e26']/(1-$this->slide4['d8']));
+        $this->slide4['g27'] = $this->r($this->slide4['e27']/(1-$this->slide4['d9']));
+        $this->slide4['g28'] = $this->r($this->slide4['e28']/(1-$this->slide4['d10']));
+        $this->slide4['g29'] = $this->r($this->slide4['e29']/(1-$this->slide4['d7']));
+        $this->slide4['g30'] = $this->r($this->slide4['e30']/(1-$this->slide4['d2']));
+        $this->slide4['g31'] = $this->r($this->slide4['e31']/(1-$this->slide4['d12']));
+        $this->slide4['g32'] = $this->r($this->slide4['e32']/(1-$this->slide4['d13']));
+        $this->slide4['g33'] = $this->r($this->slide4['e33']/(1-$this->slide4['d3']));
+        $this->slide4['g34'] = $this->r($this->slide4['e34']/(1-$this->slide4['d4']));
+        $this->slide4['g35'] = $this->r($this->slide4['e35']/(1-$this->slide4['d13']));
+        $this->slide4['g36'] = $this->r($this->slide4['e36']/(1-$this->slide4['d2']));
 
 
 //      Аллергии-0-ИСМП-Специализация
@@ -561,13 +561,13 @@ class CalculationClass
         $this->slide4['f101'] = $this->r($this->slide4['d101']/(1-$this->slide4['d13']));
 
 //      Длительность - Повреждения
-        $this->slide4['g95'] =  $this->r($this->slide4['g95'] /(1-$this->slide4['d3']));
-        $this->slide4['g96'] =  $this->r($this->slide4['g96'] /(1-$this->slide4['d4']));
-        $this->slide4['g97'] =  $this->r($this->slide4['g97'] /(1-$this->slide4['d13']));
-        $this->slide4['g98'] =  $this->r($this->slide4['g98'] /(1-$this->slide4['d15']));
-        $this->slide4['g99'] =  $this->r($this->slide4['g99'] /(1-$this->slide4['d3']));
-        $this->slide4['g100'] = $this->r($this->slide4['g100']/(1-$this->slide4['d4']));
-        $this->slide4['g101'] = $this->r($this->slide4['g101']/(1-$this->slide4['d13']));
+        $this->slide4['g95'] =  $this->r($this->slide4['e95'] /(1-$this->slide4['d3']));
+        $this->slide4['g96'] =  $this->r($this->slide4['e96'] /(1-$this->slide4['d4']));
+        $this->slide4['g97'] =  $this->r($this->slide4['e97'] /(1-$this->slide4['d13']));
+        $this->slide4['g98'] =  $this->r($this->slide4['e98'] /(1-$this->slide4['d15']));
+        $this->slide4['g99'] =  $this->r($this->slide4['e99'] /(1-$this->slide4['d3']));
+        $this->slide4['g100'] = $this->r($this->slide4['e100']/(1-$this->slide4['d4']));
+        $this->slide4['g101'] = $this->r($this->slide4['e101']/(1-$this->slide4['d13']));
 
 //      0-0-0-Специализация
 

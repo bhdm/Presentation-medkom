@@ -92,7 +92,7 @@ if ($itog->slide5['b8'] + $itog->slide5['b5'] + $itog->slide5['b6'] + $itog->sli
     $cell = 92;
     $char = 'b';
 }
-echo $itog->slide5['c3'].'<br />';
+//echo $itog->slide5['c3'].'<br />';
 ?>
 
 <table class="table table-hover table-bordered table-condensed" style="font-size: 11px;">
