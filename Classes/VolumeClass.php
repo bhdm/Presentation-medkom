@@ -418,7 +418,7 @@ class VolumeClass
             $this->slide2['g' . ($i + 2)] = $this->slide2['c' . ($i + 2)] - $this->slide2['e' . ($i + 2)];
 
             $this->slide2['k' . ($i + 2)] = $this->slide2['c' . ($i + 2)] - $this->slide2['i' . ($i + 2)];
-            $this->slide2['l' . ($i + 2)] = $this->slide2['c' . ($i + 2)] - $this->slide2['e' . ($i + 2)] - $this->slide2['i' . ($i + 1)];
+            $this->slide2['l' . ($i + 2)] = $this->slide2['c' . ($i + 2)] - $this->slide2['e' . ($i + 2)] - $this->slide2['i' . ($i + 2)];
             $this->slide2['m' . ($i + 2)] = $this->slide2['b' . ($i + 2)] - $this->slide2['c' . ($i + 2)];
             $this->slide2['n' . ($i + 2)] = $this->slide2['b' . ($i + 2)] - $this->slide2['d' . ($i + 2)];
 
