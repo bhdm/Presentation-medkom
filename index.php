@@ -19,6 +19,25 @@ spl_autoload_register(function ($class_name) {
     return false;
 
 });
+
+    if (isset($_POST['countOfYear'])){
+        $_SESSION['slide1']['b2'] = htmlspecialchars($_POST['countOfYear']);
+    }
+    if (isset($_POST['specialty'])){
+        unset($_SESSION['slide1']['spec']);
+        foreach ($_POST['specialty'] as $key=> $spec){
+            if (isset($spec) && $spec != null && $spec!= ''){
+                $_SESSION['slide1']['spec'][] = array(
+                    'title' => htmlspecialchars($spec),
+                    'value' => htmlspecialchars((isset($_POST['value'][$key]) ? $_POST['value'][$key] : 0)),
+                );
+            }
+        }
+    }
+
+
+
+
 // Пересчет параметров
 $itog = new ItogClass();
 

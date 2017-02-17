@@ -213,6 +213,7 @@
                 return false;
             }else{
                 $('#form').submit();
+                return false;
             }
 
         })
