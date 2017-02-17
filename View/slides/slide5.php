@@ -1,6 +1,6 @@
 <div class="title"><h1>Распределение расчетного объема</h1></div>
 
-<form class="form-horizontal">
+<form class="form-horizontal" id="form5">
     <div class="form-group">
         <label class="col-sm-8">
             Учитывать дополнительный объем – на замену через каждые 1,5 - 2 часа операции
@@ -152,6 +152,8 @@ $(document).ready(function () {
             }
         })
     });
+
+    $('#form5').show();
 });
 
 </script>

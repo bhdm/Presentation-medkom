@@ -71,6 +71,7 @@
                 'Encore Acclaim' :                      parseInt($('.table-condensed tr td[data-title="Encore Acclaim"]').html()),
                 'Encore Style 85' :                     parseInt($('.table-condensed tr td[data-title="Encore Style 85"]').html()),
                 'Medi-Grip PF' :                        parseInt($('.table-condensed tr td[data-title="Medi-Grip PF"]').html()),
+                'Shen Wei' :                            parseInt($('.table-condensed tr td[data-title="Shen Wei"]').html()),
                 'Encore Style 42' :                     parseInt($('.table-condensed tr td[data-title="Encore Style 42"]').html()),
                 'Medi-Grip PWD' :                       parseInt($('.table-condensed tr td[data-title="Medi-Grip PWD"]').html()),
                 'Medi-Grip Plus' :                      parseInt($('.table-condensed tr td[data-title="Medi-Grip Plus"]').html()),
@@ -90,6 +91,20 @@
                 'Bioclean Ultimate' :                   parseInt($('.table-condensed tr td[data-title="Bioclean Ultimate"]').html()),
 
             };
+
+
+//            keysSorted = Object.keys(counts).sort(function(a,b){return counts[a]-counts[b]})
+//            counts2 = [];
+//            for ( var i = 0 ;  i < keysSorted.length ; i++){
+//                counts2.push(
+//                    [
+//                        keysSorted[i] => counts[keysSorted[i]]
+//                    ]
+//                    );
+//            }
+//            console.log(counts2);
+
+
             var data = [];
             $.each(counts, function (key, val) {
                 if (val != 0 && val != NaN && val != undefined && val != false && !isNaN(val)){
@@ -103,10 +118,9 @@
                             { x: 0, y: val, label: "Объем закупок, пар" }
                         ]
                     });
-                    console.log(val);
                 }
             });
-            console.log(data);
+//            console.log(data);
             return data;
         }
 

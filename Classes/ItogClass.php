@@ -685,7 +685,7 @@ class ItogClass
             $this->slide4['e27'] - $cell1[8],
             $this->slide4['e28'] - $cell1[9],
             $this->slide4['e29'] - $cell1[10],
-            $this->slide4['e30'] + $this->slide4['e36'] - $cell1[12]
+            $this->slide4['e30'] + $this->slide4['e36'] - $cell1[10]
         );
         $cell3 = array(
             ($this->slide4['g19'] + $this->slide4['g31']) - ($this->slide4['e19'] + $this->slide4['e31']),
