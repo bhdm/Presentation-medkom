@@ -3,6 +3,12 @@ header('Content-Type: text/html; charset=utf-8');
 session_start();
 //  Настройки
 $dev = 1;
+if (!isset($_SESSION['check1'])){
+    $_SESSION['check1'] = 1;
+}
+if (!isset($_SESSION['check2'])){
+    $_SESSION['check2'] = 1;
+}
 
 if ($dev == 1){
     ini_set('error_reporting', E_ALL^E_NOTICE);
