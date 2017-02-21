@@ -46,9 +46,9 @@ class VolumeClass
         $this->slide1['b15'] =(isset($_SESSION['slide1']['spec'][10]) ? $_SESSION['slide1']['spec'][10]['value'] : 0);
         $this->slide1['b16'] =(isset($_SESSION['slide1']['spec'][11]) ? $_SESSION['slide1']['spec'][11]['value'] : 0);
 
-        echo '<pre>';
-        print_r($this->slide1);
-        echo '</pre>';
+//        echo '<pre>';
+//        print_r($this->slide1);
+//        echo '</pre>';
 //      Берем данные из сессии второго слайда
 //        $this->slide1['a5'] =  (isset($_SESSION['slide1']['spec'][0]['title']) ? $_SESSION['slide1']['spec'][0]['title'] : 0 );
 //        $this->slide1['a6'] =  (isset($_SESSION['slide1']['spec'][1]['title']) ? $_SESSION['slide1']['spec'][1]['title'] : 0 );
