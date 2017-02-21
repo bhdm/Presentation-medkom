@@ -171,8 +171,8 @@ class ItogClass
 
         $this->slide5['c29'] = 'Encore Ultra';
         $this->slide5['c30'] = 'Bioclean Ultimate';
-        $this->slide5['c31'] = '';
-        $this->slide5['c32'] = '';
+        $this->slide5['c31'] = 'Biogel Eclipse';
+        $this->slide5['c32'] = 'Medi-Grip Plus';
         $this->slide5['c33'] = 'Bioclean Extra';
         $this->slide5['c34'] = 'Dona 410 PF ';
         $this->slide5['c35'] = 'Encore Orthopaedic';
@@ -211,13 +211,13 @@ class ItogClass
         $this->slide5['b49'] = 'текстурированные';
 
         $this->slide5['c42'] = 'Biogel Eclipse';
-        $this->slide5['c43'] = '';
+        $this->slide5['c43'] = 'Medi-Grip Plus';
         $this->slide5['c44'] = 'Encore Acclaim + Encore Underglove';
         $this->slide5['c45'] = 'Bioclean Extra';
         $this->slide5['c46'] = 'Dona 410 PF ';
         $this->slide5['c47'] = 'Encore Orthopaedic';
-        $this->slide5['c48'] = '';
-        $this->slide5['c49'] = '';
+        $this->slide5['c48'] = 'Encore Microptic';
+        $this->slide5['c49'] = 'Encore Style 85';
 
         $this->slide5['d42'] = ($this->slide5['c3'] == 2 ? $this->slide4['g55'] + $this->slide4['g63'] : ($this->slide5['b3'] == 1 ? $this->slide4['e55'] + $this->slide4['e63'] : ($this->slide5['b4'] == 1 ? $this->slide4['f55'] + $this->slide4['f63'] : ($this->slide4['d55'] + $this->slide4['d63']))));
         $this->slide5['d43'] = ($this->slide5['c3'] == 2 ? $this->slide4['g56'] + $this->slide4['g64'] : ($this->slide5['b3'] == 1 ? $this->slide4['e56'] + $this->slide4['e64'] : ($this->slide5['b4'] == 1 ? $this->slide4['f56'] + $this->slide4['f64'] : ($this->slide4['d56'] + $this->slide4['d64']))));
@@ -250,13 +250,13 @@ class ItogClass
         $this->slide5['b61'] = 'с увлажнителем';
 
         $this->slide5['c53'] = 'Encore Ultra';
-        $this->slide5['c54'] = '';
-        $this->slide5['c55'] = '';
+        $this->slide5['c54'] = 'Biogel Surgeons';
+        $this->slide5['c55'] = 'Medi-Grip Plus';
         $this->slide5['c56'] = 'Bioclean Extra';
         $this->slide5['c57'] = 'Dona 410 PF ';
         $this->slide5['c73'] = 'Encore Orthopaedic';
-        $this->slide5['c59'] = '';
-        $this->slide5['c60'] = '';
+        $this->slide5['c59'] = 'Encore Microptic';
+        $this->slide5['c60'] = 'Encore Style 85';
         $this->slide5['c61'] = 'Encore Underglove';
 
         $this->slide5['d53'] = ($this->slide5['c3'] == 2 ? $this->slide4['g68'] + $this->slide4['g77'] : ($this->slide5['b3'] == 1 ? $this->slide4['e68'] + $this->slide4['e77'] : ($this->slide5['b4'] == 1 ? $this->slide4['f68'] + $this->slide4['f77'] : ($this->slide4['d68'] + $this->slide4['d77']))));
@@ -400,16 +400,16 @@ class ItogClass
         $this->slide5['g24'] = 'с увлажнителем';
 
         $this->slide5['h14'] = 'Encore Ultra';
-        $this->slide5['h15'] = '';
-        $this->slide5['h16'] = '';
-        $this->slide5['h17'] = '';
+        $this->slide5['h15'] = 'Biogel Skinsense Indicator';
+        $this->slide5['h16'] = 'Encore Acclaim';
+        $this->slide5['h17'] = 'Medi-Grip Plus';
         $this->slide5['h18'] = 'Biogel Eclipse Indicator';
         $this->slide5['h19'] = 'Bioclean Extra';
         $this->slide5['h20'] = 'Dona 410 PF ';
         $this->slide5['h21'] = 'Encore Orthopaedic';
-        $this->slide5['h22'] = '';
-        $this->slide5['h23'] = '';
-        $this->slide5['h24'] = '';
+        $this->slide5['h22'] = 'Encore Microptic';
+        $this->slide5['h23'] = 'Encore Style 85';
+        $this->slide5['h24'] = 'Encore Underglove';
 
         $this->slide5['i14'] = ($this->slide5['c3'] == 2 ? $this->slide4['o19'] + $this->slide4['o30'] : ($this->slide5['b3'] == 1 ? $this->slide4['m19'] + $this->slide4['m30'] : ($this->slide5['b4'] == 1 ? $this->slide4['n19'] + $this->slide4['n30'] : ($this->slide4['l19'] + $this->slide4['l30']))));
         $this->slide5['i15'] = ($this->slide5['c3'] == 2 ? $this->slide4['o20'] + $this->slide4['o31'] : ($this->slide5['b3'] == 1 ? $this->slide4['m20'] + $this->slide4['m31'] : ($this->slide5['b4'] == 1 ? $this->slide4['n20'] + $this->slide4['n31'] : ($this->slide4['l20'] + $this->slide4['l31']))));
@@ -443,10 +443,10 @@ class ItogClass
         $this->slide5['g36'] = 'с увлажнителем';
 
         $this->slide5['h29'] = 'Encore Ultra';
-        $this->slide5['h30'] = '';
+        $this->slide5['h30'] = 'Biogel Skinsense Indicator';
         $this->slide5['h31'] = 'Bioclean Ultimate';
         $this->slide5['h32'] = 'Biogel Surgeons';
-        $this->slide5['h33'] = '';
+        $this->slide5['h33'] = 'Medi-Grip Plus';
         $this->slide5['h34'] = 'Encore Acclaim + Encore Underglove';
         $this->slide5['h35'] = 'Bioclean Extra';
         $this->slide5['h36'] = 'Encore Underglove';
@@ -480,12 +480,12 @@ class ItogClass
         $this->slide5['g49'] = 'текстурированные';
 
         $this->slide5['h42'] = 'Biogel Eclipse';
-        $this->slide5['h43'] = '';
+        $this->slide5['h43'] = 'Medi-Grip Plus';
         $this->slide5['h44'] = 'Encore Acclaim + Encore Underglove';
         $this->slide5['h45'] = 'Bioclean Extra';
         $this->slide5['h46'] = 'Dona 410 PF ';
         $this->slide5['h47'] = 'Encore Orthopaedic';
-        $this->slide5['h48'] = '';
+        $this->slide5['h48'] = 'Encore Microptic';
         $this->slide5['h49'] = 'Biogel M';
 
         $this->slide5['i42'] = ($this->slide5['c3'] == 2 ? $this->slide4['o55'] + $this->slide4['o63'] : ($this->slide5['b3'] == 1 ? $this->slide4['m55'] + $this->slide4['m63'] : ($this->slide5['b4'] == 1 ? $this->slide4['n55'] + $this->slide4['n63'] : ($this->slide4['l55'] + $this->slide4['l63']))));
@@ -548,7 +548,7 @@ class ItogClass
         $this->slide5['h67'] = 'Bioclean Extra';
         $this->slide5['h68'] = 'Dona 410 PF ';
         $this->slide5['h69'] = 'Encore Orthopaedic';
-        $this->slide5['h70'] = '';
+        $this->slide5['h70'] = 'Encore Microptic';
         $this->slide5['h71'] = 'Biogel M';
 
         $this->slide5['i65'] = ($this->slide5['c3'] == 2 ? $this->slide4['o83'] + $this->slide4['o90'] : ($this->slide5['b3'] == 1 ? $this->slide4['m83'] + $this->slide4['m90'] : ($this->slide5['b4'] == 1 ? $this->slide4['n83'] + $this->slide4['n90'] : ($this->slide4['l83'] + $this->slide4['l90']))));
@@ -569,7 +569,7 @@ class ItogClass
         $this->slide5['g77'] = 'система двойных перчаток';
 
         $this->slide5['h75'] = 'Biogel Eclipse';
-        $this->slide5['h76'] = '';
+        $this->slide5['h76'] = 'Medi-Grip Plus';
         $this->slide5['h77'] = 'Encore Acclaim + Encore Underglove';
 
         $this->slide5['i75'] = ($this->slide5['c3'] == 2 ? $this->slide4['o95'] + $this->slide4['o98'] : ($this->slide5['b3'] == 1 ? $this->slide4['m95'] + $this->slide4['m98'] : ($this->slide5['b4'] == 1 ? $this->slide4['n95'] + $this->slide4['n98'] : ($this->slide4['l95'] + $this->slide4['l98']))));
