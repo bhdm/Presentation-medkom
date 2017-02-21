@@ -18,8 +18,8 @@ class VolumeClass
     }
 
     public function slide1(){
-        $this->slide1['b2'] = (isset($_SESSION['slide1']['b2']) ? $_SESSION['slide1']['b2'] : 5000);
 
+        $this->slide1['b2'] = (isset($_SESSION['slide1']['b2']) ? $_SESSION['slide1']['b2'] : 5000);
         $this->slide1['a5'] = (isset($_SESSION['slide1']['spec'][0]) ? $_SESSION['slide1']['spec'][0]['title'] : 'Акушерство');
         $this->slide1['a6'] = (isset($_SESSION['slide1']['spec'][1]) ? $_SESSION['slide1']['spec'][1]['title'] : 'Общая хирургия');
         $this->slide1['a7'] = (isset($_SESSION['slide1']['spec'][2]) ? $_SESSION['slide1']['spec'][2]['title'] : 'Травматология и ортопедия');
@@ -46,6 +46,9 @@ class VolumeClass
         $this->slide1['b15'] =(isset($_SESSION['slide1']['spec'][10]) ? $_SESSION['slide1']['spec'][10]['value'] : 0);
         $this->slide1['b16'] =(isset($_SESSION['slide1']['spec'][11]) ? $_SESSION['slide1']['spec'][11]['value'] : 0);
 
+        echo '<pre>';
+        print_r($this->slide1);
+        echo '</pre>';
 //      Берем данные из сессии второго слайда
 //        $this->slide1['a5'] =  (isset($_SESSION['slide1']['spec'][0]['title']) ? $_SESSION['slide1']['spec'][0]['title'] : 0 );
 //        $this->slide1['a6'] =  (isset($_SESSION['slide1']['spec'][1]['title']) ? $_SESSION['slide1']['spec'][1]['title'] : 0 );
