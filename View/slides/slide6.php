@@ -92,19 +92,6 @@
 
             };
 
-
-//            keysSorted = Object.keys(counts).sort(function(a,b){return counts[a]-counts[b]})
-//            counts2 = [];
-//            for ( var i = 0 ;  i < keysSorted.length ; i++){
-//                counts2.push(
-//                    [
-//                        keysSorted[i] => counts[keysSorted[i]]
-//                    ]
-//                    );
-//            }
-//            console.log(counts2);
-
-
             var data = [];
             $.each(counts, function (key, val) {
                 if (val != 0 && val != NaN && val != undefined && val != false && !isNaN(val)){
@@ -120,7 +107,21 @@
                     });
                 }
             });
-//            console.log(data);
+
+            var kol = data.length;
+            console.log(a=data);
+            for (var i = 0 ; i < kol ; i++){
+                for (var j = 0 ; j < kol ; j++){
+                    if (j+1 < kol){
+                        if (data[j].dataPoints[0].y < data[j+1].dataPoints[0].y){
+                            var tmp = data[j];
+                            data[j] = data[j+1];
+                            data[j+1] = tmp;
+                        }
+                    }
+                }
+            }
+
             return data;
         }
 
