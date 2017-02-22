@@ -19,12 +19,12 @@ class VolumeClass
 
     public function slide1(){
 
-        $this->slide1['b2'] = (isset($_SESSION['slide1']['b2']) ? $_SESSION['slide1']['b2'] : 5000);
-        $this->slide1['a5'] = (isset($_SESSION['slide1']['spec'][0]) ? $_SESSION['slide1']['spec'][0]['title'] : 'Акушерство');
-        $this->slide1['a6'] = (isset($_SESSION['slide1']['spec'][1]) ? $_SESSION['slide1']['spec'][1]['title'] : 'Общая хирургия');
-        $this->slide1['a7'] = (isset($_SESSION['slide1']['spec'][2]) ? $_SESSION['slide1']['spec'][2]['title'] : 'Травматология и ортопедия');
-        $this->slide1['a8'] = (isset($_SESSION['slide1']['spec'][3]) ? $_SESSION['slide1']['spec'][3]['title'] : 'Трансплантология');
-        $this->slide1['a9'] = (isset($_SESSION['slide1']['spec'][4]) ? $_SESSION['slide1']['spec'][4]['title'] : 'Нейрохирургия');
+        $this->slide1['b2'] = (isset($_SESSION['slide1']['b2']) ? $_SESSION['slide1']['b2'] : 0);
+        $this->slide1['a5'] = (isset($_SESSION['slide1']['spec'][0]) ? $_SESSION['slide1']['spec'][0]['title'] : 0);
+        $this->slide1['a6'] = (isset($_SESSION['slide1']['spec'][1]) ? $_SESSION['slide1']['spec'][1]['title'] : 0);
+        $this->slide1['a7'] = (isset($_SESSION['slide1']['spec'][2]) ? $_SESSION['slide1']['spec'][2]['title'] : 0);
+        $this->slide1['a8'] = (isset($_SESSION['slide1']['spec'][3]) ? $_SESSION['slide1']['spec'][3]['title'] : 0);
+        $this->slide1['a9'] = (isset($_SESSION['slide1']['spec'][4]) ? $_SESSION['slide1']['spec'][4]['title'] : 0);
         $this->slide1['a10'] = (isset($_SESSION['slide1']['spec'][5]) ? $_SESSION['slide1']['spec'][5]['title'] : 0);
         $this->slide1['a11'] = (isset($_SESSION['slide1']['spec'][6]) ? $_SESSION['slide1']['spec'][6]['title'] : 0);
         $this->slide1['a12'] = (isset($_SESSION['slide1']['spec'][7]) ? $_SESSION['slide1']['spec'][7]['title'] : 0);
@@ -33,11 +33,11 @@ class VolumeClass
         $this->slide1['a15'] = (isset($_SESSION['slide1']['spec'][10]) ? $_SESSION['slide1']['spec'][10]['title'] : 0);
         $this->slide1['a16'] = (isset($_SESSION['slide1']['spec'][11]) ? $_SESSION['slide1']['spec'][11]['title'] : 0);
 
-        $this->slide1['b5'] = (isset($_SESSION['slide1']['spec'][0]) ? $_SESSION['slide1']['spec'][0]['value'] : 1000);
-        $this->slide1['b6'] = (isset($_SESSION['slide1']['spec'][1]) ? $_SESSION['slide1']['spec'][1]['value'] : 1000);
-        $this->slide1['b7'] = (isset($_SESSION['slide1']['spec'][2]) ? $_SESSION['slide1']['spec'][2]['value'] : 1000);
-        $this->slide1['b8'] = (isset($_SESSION['slide1']['spec'][3]) ? $_SESSION['slide1']['spec'][3]['value'] : 1000);
-        $this->slide1['b9'] = (isset($_SESSION['slide1']['spec'][4]) ? $_SESSION['slide1']['spec'][4]['value'] : 1000);
+        $this->slide1['b5'] = (isset($_SESSION['slide1']['spec'][0]) ? $_SESSION['slide1']['spec'][0]['value'] : 0);
+        $this->slide1['b6'] = (isset($_SESSION['slide1']['spec'][1]) ? $_SESSION['slide1']['spec'][1]['value'] : 0);
+        $this->slide1['b7'] = (isset($_SESSION['slide1']['spec'][2]) ? $_SESSION['slide1']['spec'][2]['value'] : 0);
+        $this->slide1['b8'] = (isset($_SESSION['slide1']['spec'][3]) ? $_SESSION['slide1']['spec'][3]['value'] : 0);
+        $this->slide1['b9'] = (isset($_SESSION['slide1']['spec'][4]) ? $_SESSION['slide1']['spec'][4]['value'] : 0);
         $this->slide1['b10'] =(isset($_SESSION['slide1']['spec'][5]) ? $_SESSION['slide1']['spec'][5]['value'] : 0);
         $this->slide1['b11'] =(isset($_SESSION['slide1']['spec'][6]) ? $_SESSION['slide1']['spec'][6]['value'] : 0);
         $this->slide1['b12'] =(isset($_SESSION['slide1']['spec'][7]) ? $_SESSION['slide1']['spec'][7]['value'] : 0);

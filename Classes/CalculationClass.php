@@ -238,7 +238,7 @@ class CalculationClass
         $this->slide4['e45'] = $this->r($this->slide3['ag40']);
         $this->slide4['e46'] = $this->r($this->slide3['ao40']);
         $this->slide4['e47'] = $this->r($this->slide3['be40']);
-        $this->slide4['e48'] = $this->r($this->slide3['bm40']);
+        $this->slide4['e48'] = $this->r($this->slide3['bm41']);
         $this->slide4['e49'] = $this->r($this->slide3['c41']);
         $this->slide4['e52'] = $this->r($this->slide3['bi41']);
 
@@ -909,10 +909,10 @@ class CalculationClass
                 $this->slide4['m61'] - $this->slide4['m62']) * $this->slide3['q51']
         );
         $this->slide4['m63'] = $this->r((
-                $this->slide2['b41'] - $this->slide4['m65']) * $this->slide3['q50']
+                $this->slide3['b41'] - $this->slide4['m65']) * $this->slide3['q50']
         );
         $this->slide4['m64'] = $this->r((
-                $this->slide2['b41'] - $this->slide4['m65']) * $this->slide3['q51']
+                $this->slide3['b41'] - $this->slide4['m65']) * $this->slide3['q51']
         );
 
 //      Объем - Повреждения
