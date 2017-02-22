@@ -92,6 +92,7 @@
 
             };
 
+
             var data = [];
             $.each(counts, function (key, val) {
                 if (val != 0 && val != NaN && val != undefined && val != false && !isNaN(val)){
@@ -109,7 +110,7 @@
             });
 
             var kol = data.length;
-            console.log(a=data);
+//            console.log(a=data);
             for (var i = 0 ; i < kol ; i++){
                 for (var j = 0 ; j < kol ; j++){
                     if (j+1 < kol){
@@ -146,7 +147,14 @@
                     tr.children('td').eq(tr.children('td').length-1).attr('data-content','число комплектов');
                     tr.children('td').eq(tr.children('td').length-1).attr('title','');
                     tr.children('td').eq(tr.children('td').length-1).attr('data-title','');
-                    tr.children('td').eq(tr.children('td').length-1).append(' <span class="glyphicon glyphicon-info-sign" style="color: #777"></span>')
+
+
+
+
+
+                    if ($(".table tr").eq(i).children('td').eq($(".table tr").eq(i).children('td').length-1).children('span').hasClass('glyphicon') == false){
+                        tr.children('td').eq(tr.children('td').length-1).append(' <span class="glyphicon glyphicon-info-sign" style="color: #777"></span>')
+                    }
                 }
             }
             $('[data-toggle="popover"]').popover({trigger: "hover"})
@@ -182,15 +190,6 @@
             MergeGridCells();
             addTooltip();
 
-//            var trs = $('.table-condensed').children('tbody').children('tr');
-//            for (var i =0 ; i <= trs.length ; i ++){
-//                if (trs.eq(i).children('td').eq(3).html() == '0' ){
-//                    trs.eq(i).remove();
-//                }
-//            }
-
-
-
         }
 
         $('.check').on('ifChecked', function(event){
@@ -219,6 +218,13 @@
         });
 
         getChart();
-    })
+
+        $('body').on("change", ".fc", function () {
+            var title = $(this).find( "option:selected" ).text();
+            $(this).parent().parent().children('td:last').attr('data-title',title );
+            getChart();
+        })
+
+    });
 
 </script>

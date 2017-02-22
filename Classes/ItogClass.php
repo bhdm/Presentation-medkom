@@ -880,7 +880,7 @@ class ItogClass
         }
 
         $txt = '<select class="form-control fc">';
-        foreach ($gs as $g){
+        foreach (array_reverse($gs) as $g){
             $txt .= '<option>'.$g.'</option>';
         }
         $txt .= '<option>'.$glove.'</option>';

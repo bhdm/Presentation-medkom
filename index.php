@@ -62,5 +62,11 @@ $itog = new ItogClass();
     }elseif($url === '/ajaxSlide5'){
         include_once __DIR__."/View/slides/ajaxSlide5.php";
     }else{
+        $_SESSION['b3'] = 1;
+        $_SESSION['b4'] = 1;
+        $_SESSION['b5'] = 1;
+        $_SESSION['b6'] = 1;
+        $_SESSION['b7'] = 1;
+        $_SESSION['b8'] = 1;
         include_once __DIR__."/View/index.php";
     }
