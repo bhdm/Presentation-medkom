@@ -63,32 +63,40 @@
 </div>
 
 <script type="text/javascript">
+
+    function toSum($items) {
+        var s = 0;
+        for( i =0 ; i < $items.length; i++){
+            s += parseInt($items.eq(i).html());
+        }
+        return s;
+    }
     $(document).ready(function () {
         function getCounts() {
             var counts = {
-                'Biogel Surgeons' :                     parseInt($('.table-condensed tr td[data-title="Biogel Surgeons"]').html()),
-                'Biogel Eclipse' :                      parseInt($('.table-condensed tr td[data-title="Biogel Eclipse"]').html()),
-                'Encore Acclaim' :                      parseInt($('.table-condensed tr td[data-title="Encore Acclaim"]').html()),
-                'Encore Style 85' :                     parseInt($('.table-condensed tr td[data-title="Encore Style 85"]').html()),
-                'Medi-Grip PF' :                        parseInt($('.table-condensed tr td[data-title="Medi-Grip PF"]').html()),
-                'Shen Wei' :                            parseInt($('.table-condensed tr td[data-title="Shen Wei"]').html()),
-                'Encore Style 42' :                     parseInt($('.table-condensed tr td[data-title="Encore Style 42"]').html()),
-                'Medi-Grip PWD' :                       parseInt($('.table-condensed tr td[data-title="Medi-Grip PWD"]').html()),
-                'Medi-Grip Plus' :                      parseInt($('.table-condensed tr td[data-title="Medi-Grip Plus"]').html()),
-                'Encore Acclaim + Encore Underglove' :  parseInt($('.table-condensed tr td[data-title="Encore Acclaim + Encore Underglove"]').html()),
-                'Biogel Eclipse Indicator' :            parseInt($('.table-condensed tr td[data-title="Biogel Eclipse Indicator"]').html()),
-                'Bioclean Extra' :                      parseInt($('.table-condensed tr td[data-title="Bioclean Extra"]').html()),
-                'Dona 410 PF' :                         parseInt($('.table-condensed tr td[data-title="Dona 410 PF"]').html()),
-                'Encore Microptic' :                    parseInt($('.table-condensed tr td[data-title="Encore Microptic"]').html()),
-                'Biogel Super Sensitive' :              parseInt($('.table-condensed tr td[data-title="Biogel Super Sensitive"]').html()),
-                'Biogel M' :                            parseInt($('.table-condensed tr td[data-title="Biogel M"]').html()),
-                'Encore Orthopaedic' :                  parseInt($('.table-condensed tr td[data-title="Encore Orthopaedic"]').html()),
-                'Encore Underglove' :                   parseInt($('.table-condensed tr td[data-title="Encore Underglove"]').html()),
-                'Encore Ultra' :                        parseInt($('.table-condensed tr td[data-title="Encore Ultra"]').html()),
-                'Biogel Skinsense' :                    parseInt($('.table-condensed tr td[data-title="Biogel Skinsense"]').html()),
-                'Biogel Skinsense Indicator' :          parseInt($('.table-condensed tr td[data-title="Biogel Skinsense Indicator"]').html()),
-                'Bioclean Emerald' :                    parseInt($('.table-condensed tr td[data-title="Bioclean Emerald"]').html()),
-                'Bioclean Ultimate' :                   parseInt($('.table-condensed tr td[data-title="Bioclean Ultimate"]').html()),
+                'Biogel Surgeons' :                     toSum($('.table-condensed tr td[data-title="Biogel Surgeons"]')),
+                'Biogel Eclipse' :                      toSum($('.table-condensed tr td[data-title="Biogel Eclipse"]')),
+                'Encore Acclaim' :                      toSum($('.table-condensed tr td[data-title="Encore Acclaim"]')),
+                'Encore Style 85' :                     toSum($('.table-condensed tr td[data-title="Encore Style 85"]')),
+                'Medi-Grip PF' :                        toSum($('.table-condensed tr td[data-title="Medi-Grip PF"]')),
+                'Shen Wei' :                            toSum($('.table-condensed tr td[data-title="Shen Wei"]')),
+                'Encore Style 42' :                     toSum($('.table-condensed tr td[data-title="Encore Style 42"]')),
+                'Medi-Grip PWD' :                       toSum($('.table-condensed tr td[data-title="Medi-Grip PWD"]')),
+                'Medi-Grip Plus' :                      toSum($('.table-condensed tr td[data-title="Medi-Grip Plus"]')),
+                'Encore Acclaim + Encore Underglove' :  toSum($('.table-condensed tr td[data-title="Encore Acclaim + Encore Underglove"]')),
+                'Biogel Eclipse Indicator' :            toSum($('.table-condensed tr td[data-title="Biogel Eclipse Indicator"]')),
+                'Bioclean Extra' :                      toSum($('.table-condensed tr td[data-title="Bioclean Extra"]')),
+                'Dona 410 PF' :                         toSum($('.table-condensed tr td[data-title="Dona 410 PF"]')),
+                'Encore Microptic' :                    toSum($('.table-condensed tr td[data-title="Encore Microptic"]')),
+                'Biogel Super Sensitive' :              toSum($('.table-condensed tr td[data-title="Biogel Super Sensitive"]')),
+                'Biogel M' :                            toSum($('.table-condensed tr td[data-title="Biogel M"]')),
+                'Encore Orthopaedic' :                  toSum($('.table-condensed tr td[data-title="Encore Orthopaedic"]')),
+                'Encore Underglove' :                   toSum($('.table-condensed tr td[data-title="Encore Underglove"]')),
+                'Encore Ultra' :                        toSum($('.table-condensed tr td[data-title="Encore Ultra"]')),
+                'Biogel Skinsense' :                    toSum($('.table-condensed tr td[data-title="Biogel Skinsense"]')),
+                'Biogel Skinsense Indicator' :          toSum($('.table-condensed tr td[data-title="Biogel Skinsense Indicator"]')),
+                'Bioclean Emerald' :                    toSum($('.table-condensed tr td[data-title="Bioclean Emerald"]')),
+                'Bioclean Ultimate' :                   toSum($('.table-condensed tr td[data-title="Bioclean Ultimate"]')),
 
             };
 
