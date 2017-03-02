@@ -226,7 +226,7 @@ class DurationClass
             $this->slide3['s' . ($i + 2)] = $this->slide3['b' . ($i + 2)] - $this->slide3['e' . ($i + 2)] - $this->slide3['f' . ($i + 2)] - $this->slide3['l' . ($i + 2)];
 
             $this->slide3['bi' . ($i + 2)] = $this->slide3['b' . ($i + 2)] * $this->slide3['c47'];
-            $this->slide3['bl' . ($i + 2)] = $this->slide3['b' . ($i + 2)] * $this->slide3['c47'] * $this->slide3['b' . ($i + 2)] * $this->slide3['c47'] * ( $this->slide3['b50'] + $this->slide3['b51'] + $this->slide3['b52'] );
+            $this->slide3['bl' . ($i + 2)] = $this->slide3['b' . ($i + 2)] * $this->slide3['c47'] - $this->slide3['b' . ($i + 2)] * $this->slide3['c47'] * ( $this->slide3['b50'] + $this->slide3['b51'] + $this->slide3['b52'] );
             $this->slide3['bm' . ($i + 2)] = $this->slide3['b' . ($i + 2)] * $this->slide3['c47'];
             $this->slide3['bo' . ($i + 2)] = $this->slide3['b' . ($i + 2)] * $this->slide3['c47'] - $this->slide3['b' . ($i + 2)] * $this->slide3['c47'] * ( $this->slide3['b50'] + $this->slide3['b51'] + $this->slide3['b52'] );
 

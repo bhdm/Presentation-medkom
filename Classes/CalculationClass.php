@@ -405,18 +405,18 @@ class CalculationClass
         $this->slide4['e80'] = $this->r($this->slide3['bi41']);
 
         $this->slide4['e69'] = $this->r((
-                $this->slide2['b40'] - $this->slide4['e68'] - $this->slide4['e71'] - $this->slide4['e72'] - $this->slide4['e73'] -
+                $this->slide3['b40'] - $this->slide4['e68'] - $this->slide4['e71'] - $this->slide4['e72'] - $this->slide4['e73'] -
                 $this->slide4['e74'] - $this->slide4['e75'] - $this->slide4['e76']) * $this->slide3['q50']
         );
         $this->slide4['e70'] = $this->r((
-                $this->slide2['b40'] - $this->slide4['e68'] - $this->slide4['e71'] - $this->slide4['e72'] - $this->slide4['e73'] -
+                $this->slide3['b40'] - $this->slide4['e68'] - $this->slide4['e71'] - $this->slide4['e72'] - $this->slide4['e73'] -
                 $this->slide4['e74'] - $this->slide4['e75'] - $this->slide4['e76']) * $this->slide3['q51']
         );
         $this->slide4['e78'] = $this->r((
-                $this->slide2['b41'] - $this->slide4['e77'] - $this->slide4['e80']) * $this->slide3['q50']
+                $this->slide3['b41'] - $this->slide4['e77'] - $this->slide4['e80']) * $this->slide3['q50']
         );
         $this->slide4['e79'] = $this->r((
-                $this->slide2['b41'] - $this->slide4['e77'] - $this->slide4['e80']) * $this->slide3['q51']
+                $this->slide3['b41'] - $this->slide4['e77'] - $this->slide4['e80']) * $this->slide3['q51']
         );
 
 //      Объем - Повреждения
@@ -476,13 +476,13 @@ class CalculationClass
         $this->slide4['e84'] = $this->r($this->slide3['i40']);
         $this->slide4['e87'] = $this->r($this->slide3['j40']);
         $this->slide4['e88'] = $this->r($this->slide3['bm40']);
-        $this->slide4['e89'] = $this->r($this->slide3['k40']);
+        $this->slide4['e89'] = $this->r($this->slide3['k41']);
         $this->slide4['e92'] = $this->r($this->slide3['bm41']);
         $this->slide4['e85'] = $this->r((
-                $this->slide3['e40'] - $this->slide4['e83'] - $this->slide4['e84'] - $this->slide4['e87'] - $this->slide4['e88']) * $this->slide3['q50']
+                $this->slide3['b40'] - $this->slide4['e83'] - $this->slide4['e84'] - $this->slide4['e87'] - $this->slide4['e88']) * $this->slide3['q50']
         );
         $this->slide4['e86'] = $this->r((
-                $this->slide3['e40'] - $this->slide4['e83'] - $this->slide4['e84'] - $this->slide4['e87'] - $this->slide4['e88']) * $this->slide3['q51']
+                $this->slide3['b40'] - $this->slide4['e83'] - $this->slide4['e84'] - $this->slide4['e87'] - $this->slide4['e88']) * $this->slide3['q51']
         );
         $this->slide4['e90'] = $this->r((
                 $this->slide3['b41'] - $this->slide4['e89'] - $this->slide4['e92']) * $this->slide3['q50']
@@ -542,7 +542,7 @@ class CalculationClass
                 $this->slide3['b40'] - $this->slide4['e97'] - $this->slide4['e98']) * $this->slide3['q50']
         );
         $this->slide4['e96'] = $this->r((
-                $this->slide3['b40'] - $this->slide4['e97'] - $this->slide4['e98']) * $this->slide3['q50']
+                $this->slide3['b40'] - $this->slide4['e97'] - $this->slide4['e98']) * $this->slide3['q51']
         );
         $this->slide4['e99'] = $this->r((
                 $this->slide3['b41'] - $this->slide4['e101']) * $this->slide3['q50']
@@ -759,21 +759,21 @@ class CalculationClass
 //      Длительность - Повреждения
         $this->slide4['o19'] = $this->r($this->slide4['m19']/(1-$this->slide4['d12']));
         $this->slide4['o20'] = $this->r($this->slide4['m20']/(1-$this->slide4['d13']));
-        $this->slide4['o21'] = $this->r($this->slide4['m22']/(1-$this->slide4['d3']));
-        $this->slide4['o22'] = $this->r($this->slide4['m23']/(1-$this->slide4['d4']));
-        $this->slide4['o23'] = $this->r($this->slide4['m24']/(1-$this->slide4['d13']));
-        $this->slide4['o24'] = $this->r($this->slide4['m25']/(1-$this->slide4['d15']));
-        $this->slide4['o25'] = $this->r($this->slide4['m26']/(1-$this->slide4['d8']));
-        $this->slide4['o26'] = $this->r($this->slide4['m27']/(1-$this->slide4['d9']));
-        $this->slide4['o27'] = $this->r($this->slide4['m28']/(1-$this->slide4['d10']));
-        $this->slide4['o28'] = $this->r($this->slide4['m29']/(1-$this->slide4['d7']));
-        $this->slide4['o29'] = $this->r($this->slide4['m30']/(1-$this->slide4['d2']));
-        $this->slide4['o30'] = $this->r($this->slide4['m31']/(1-$this->slide4['d12']));
-        $this->slide4['o31'] = $this->r($this->slide4['m32']/(1-$this->slide4['d13']));
-        $this->slide4['o32'] = $this->r($this->slide4['m33']/(1-$this->slide4['d3']));
-        $this->slide4['o33'] = $this->r($this->slide4['m34']/(1-$this->slide4['d4']));
-        $this->slide4['o34'] = $this->r($this->slide4['m35']/(1-$this->slide4['d13']));
-        $this->slide4['o35'] = $this->r($this->slide4['m36']/(1-$this->slide4['d2']));
+        $this->slide4['o21'] = $this->r($this->slide4['m21']/(1-$this->slide4['d3']));
+        $this->slide4['o22'] = $this->r($this->slide4['m22']/(1-$this->slide4['d4']));
+        $this->slide4['o23'] = $this->r($this->slide4['m23']/(1-$this->slide4['d13']));
+        $this->slide4['o24'] = $this->r($this->slide4['m24']/(1-$this->slide4['d15']));
+        $this->slide4['o25'] = $this->r($this->slide4['m25']/(1-$this->slide4['d8']));
+        $this->slide4['o26'] = $this->r($this->slide4['m26']/(1-$this->slide4['d9']));
+        $this->slide4['o27'] = $this->r($this->slide4['m27']/(1-$this->slide4['d10']));
+        $this->slide4['o28'] = $this->r($this->slide4['m28']/(1-$this->slide4['d7']));
+        $this->slide4['o29'] = $this->r($this->slide4['m29']/(1-$this->slide4['d2']));
+        $this->slide4['o30'] = $this->r($this->slide4['m30']/(1-$this->slide4['d12']));
+        $this->slide4['o31'] = $this->r($this->slide4['m31']/(1-$this->slide4['d13']));
+        $this->slide4['o32'] = $this->r($this->slide4['m32']/(1-$this->slide4['d3']));
+        $this->slide4['o33'] = $this->r($this->slide4['m33']/(1-$this->slide4['d4']));
+        $this->slide4['o34'] = $this->r($this->slide4['m34']/(1-$this->slide4['d13']));
+        $this->slide4['o35'] = $this->r($this->slide4['m35']/(1-$this->slide4['d2']));
 
 //      Аллергии-ГКИ-ИСМП-0
 
@@ -1124,9 +1124,9 @@ class CalculationClass
 
 //      Объем
         $this->slide4['l104'] = $this->r($this->slide2['c40']);
-        $this->slide4['l107'] = $this->r($this->slide2['as40']);
+        $this->slide4['l107'] = $this->r($this->slide2['bi40']);
         $this->slide4['l108'] = $this->r($this->slide2['c41']);
-        $this->slide4['l111'] = $this->r($this->slide2['ci41']);
+        $this->slide4['l111'] = $this->r($this->slide2['bl41']);
         $this->slide4['l105'] = $this->r(($this->slide2['b40'] - $this->slide4['l104'] - $this->slide4['l107']) * $this->slide2['q50']);
         $this->slide4['l106'] = $this->r(($this->slide2['b40'] - $this->slide4['l104'] - $this->slide4['l107']) * $this->slide2['q51']);
         $this->slide4['l109'] = $this->r(($this->slide2['b41'] - $this->slide4['l108'] - $this->slide4['l111']) * $this->slide2['q50']);
@@ -1134,9 +1134,9 @@ class CalculationClass
 
 //      Длительность
         $this->slide4['m104'] = $this->r($this->slide3['c40']);
-        $this->slide4['m107'] = $this->r($this->slide3['as40']);
+        $this->slide4['m107'] = $this->r($this->slide3['bi40']);
         $this->slide4['m108'] = $this->r($this->slide3['c41']);
-        $this->slide4['m111'] = $this->r($this->slide3['ci41']);
+        $this->slide4['m111'] = $this->r($this->slide3['bi41']);
         $this->slide4['m105'] = $this->r(($this->slide3['b40'] - $this->slide4['m104'] - $this->slide4['m107']) * $this->slide3['q50']);
         $this->slide4['m106'] = $this->r(($this->slide3['b40'] - $this->slide4['m104'] - $this->slide4['m107']) * $this->slide3['q51']);
         $this->slide4['m109'] = $this->r(($this->slide3['b41'] - $this->slide4['m108'] - $this->slide4['m111']) * $this->slide3['q50']);

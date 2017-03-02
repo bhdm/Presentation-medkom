@@ -234,7 +234,7 @@ class ItogClass
         $this->slide5['a55'] = 'Латексные';
         $this->slide5['a56'] = 'Латексные';
         $this->slide5['a57'] = 'Латексные';
-        $this->slide5['a73'] = 'Латексные';
+        $this->slide5['a58'] = 'Латексные';
         $this->slide5['a59'] = 'Латексные';
         $this->slide5['a60'] = 'Латексные';
         $this->slide5['a61'] = 'Латексные';
@@ -244,7 +244,7 @@ class ItogClass
         $this->slide5['b55'] = 'стандартные опудренные';
         $this->slide5['b56'] = 'с антимикробным покрытием';
         $this->slide5['b57'] = 'акушерские';
-        $this->slide5['b73'] = 'повышенной прочности';
+        $this->slide5['b58'] = 'повышенной прочности';
         $this->slide5['b59'] = 'повышенной чувствительности';
         $this->slide5['b60'] = 'текстурированные';
         $this->slide5['b61'] = 'с увлажнителем';
@@ -254,7 +254,7 @@ class ItogClass
         $this->slide5['c55'] = 'Medi-Grip Plus';
         $this->slide5['c56'] = 'Bioclean Extra';
         $this->slide5['c57'] = 'Dona 410 PF ';
-        $this->slide5['c73'] = 'Encore Orthopaedic';
+        $this->slide5['c58'] = 'Encore Orthopaedic';
         $this->slide5['c59'] = 'Encore Microptic';
         $this->slide5['c60'] = 'Encore Style 85';
         $this->slide5['c61'] = 'Encore Underglove';
@@ -264,7 +264,7 @@ class ItogClass
         $this->slide5['d55'] = ($this->slide5['c3'] == 2 ? $this->slide4['g70'] + $this->slide4['g79'] : ($this->slide5['b3'] == 1 ? $this->slide4['e70'] + $this->slide4['e79'] : ($this->slide5['b4'] == 1 ? $this->slide4['f70'] + $this->slide4['f79'] : ($this->slide4['d70'] + $this->slide4['d79']))));
         $this->slide5['d56'] = ($this->slide5['c3'] == 2 ? $this->slide4['g71'] : ($this->slide5['b3'] == 1 ? $this->slide4['e71']  : ($this->slide5['b4'] == 1 ? $this->slide4['f71'] : ($this->slide4['d71'] ))));
         $this->slide5['d57'] = ($this->slide5['c3'] == 2 ? $this->slide4['g72'] : ($this->slide5['b3'] == 1 ? $this->slide4['e72']  : ($this->slide5['b4'] == 1 ? $this->slide4['f72'] : ($this->slide4['d72'] ))));
-        $this->slide5['d73'] = ($this->slide5['c3'] == 2 ? $this->slide4['g73'] : ($this->slide5['b3'] == 1 ? $this->slide4['e73']  : ($this->slide5['b4'] == 1 ? $this->slide4['f73'] : ($this->slide4['d73'] ))));
+        $this->slide5['d58'] = ($this->slide5['c3'] == 2 ? $this->slide4['g73'] : ($this->slide5['b3'] == 1 ? $this->slide4['e73']  : ($this->slide5['b4'] == 1 ? $this->slide4['f73'] : ($this->slide4['d73'] ))));
         $this->slide5['d59'] = ($this->slide5['c3'] == 2 ? $this->slide4['g74'] : ($this->slide5['b3'] == 1 ? $this->slide4['e74']  : ($this->slide5['b4'] == 1 ? $this->slide4['f74'] : ($this->slide4['d74'] ))));
         $this->slide5['d60'] = ($this->slide5['c3'] == 2 ? $this->slide4['g75'] : ($this->slide5['b3'] == 1 ? $this->slide4['e75']  : ($this->slide5['b4'] == 1 ? $this->slide4['f75'] : ($this->slide4['d75'] ))));
         $this->slide5['d61'] = ($this->slide5['c3'] == 2 ? $this->slide4['g76'] + $this->slide4['g80'] : ($this->slide5['b3'] == 1 ? $this->slide4['e76'] + $this->slide4['e80'] : ($this->slide5['b4'] == 1 ? $this->slide4['f76'] + $this->slide4['f80'] : ($this->slide4['d76'] + $this->slide4['d80']))));
@@ -500,28 +500,28 @@ class ItogClass
 //      Аллергии-ГКИ-0-0
         $this->slide5['f53'] = 'Синтетические';
         $this->slide5['f54'] = 'Синтетические';
-        $this->slide5['f70'] = 'Латексные';
+        $this->slide5['f55'] = 'Латексные';
         $this->slide5['f56'] = 'Латексные';
         $this->slide5['f57'] = 'Латексные';
         $this->slide5['f58'] = 'Латексные';
 
         $this->slide5['g53'] = 'стандартные';
         $this->slide5['g54'] = 'система двойных перчаток';
-        $this->slide5['g70'] = 'стандартные неопудренные';
+        $this->slide5['g55'] = 'стандартные неопудренные';
         $this->slide5['g56'] = 'стандартные опудренные';
         $this->slide5['g57'] = 'система двойных перчаток';
         $this->slide5['g58'] = 'с увлажнителем';
 
         $this->slide5['h53'] = 'Encore Ultra';
         $this->slide5['h54'] = 'Biogel Skinsense Indicator';
-        $this->slide5['h70'] = 'Biogel Eclipse';
+        $this->slide5['h55'] = 'Biogel Eclipse';
         $this->slide5['h56'] = 'Medi-Grip PWD';
         $this->slide5['h57'] = 'Encore Acclaim + Encore Underglove';
         $this->slide5['h58'] = 'Encore Underglove';
 
         $this->slide5['i53'] = ($this->slide5['c3'] == 2 ? $this->slide4['o68'] + $this->slide4['o74'] : ($this->slide5['b3'] == 1 ? $this->slide4['m68'] + $this->slide4['m74'] : ($this->slide5['b4'] == 1 ? $this->slide4['n68'] + $this->slide4['n74'] : ($this->slide4['l68'] + $this->slide4['l74']))));
         $this->slide5['i54'] = ($this->slide5['c3'] == 2 ? $this->slide4['o69'] + $this->slide4['o75'] : ($this->slide5['b3'] == 1 ? $this->slide4['m69'] + $this->slide4['m75'] : ($this->slide5['b4'] == 1 ? $this->slide4['n69'] + $this->slide4['n75'] : ($this->slide4['l69'] + $this->slide4['l75']))));
-        $this->slide5['i70'] = ($this->slide5['c3'] == 2 ? $this->slide4['o70'] + $this->slide4['o76'] : ($this->slide5['b3'] == 1 ? $this->slide4['m70'] + $this->slide4['m76'] : ($this->slide5['b4'] == 1 ? $this->slide4['n70'] + $this->slide4['n76'] : ($this->slide4['l70'] + $this->slide4['l76']))));
+        $this->slide5['i55'] = ($this->slide5['c3'] == 2 ? $this->slide4['o70'] + $this->slide4['o76'] : ($this->slide5['b3'] == 1 ? $this->slide4['m70'] + $this->slide4['m76'] : ($this->slide5['b4'] == 1 ? $this->slide4['n70'] + $this->slide4['n76'] : ($this->slide4['l70'] + $this->slide4['l76']))));
         $this->slide5['i56'] = ($this->slide5['c3'] == 2 ? $this->slide4['o71'] + $this->slide4['o77'] : ($this->slide5['b3'] == 1 ? $this->slide4['m71'] + $this->slide4['m77'] : ($this->slide5['b4'] == 1 ? $this->slide4['n71'] + $this->slide4['n77'] : ($this->slide4['l71'] + $this->slide4['l77']))));
         $this->slide5['i57'] = ($this->slide5['c3'] == 2 ? $this->slide4['o72'] + $this->slide4['o78'] : ($this->slide5['b3'] == 1 ? $this->slide4['m72'] + $this->slide4['m78'] : ($this->slide5['b4'] == 1 ? $this->slide4['n72'] + $this->slide4['n78'] : ($this->slide4['l72'] + $this->slide4['l78']))));
         $this->slide5['i58'] = ($this->slide5['c3'] == 2 ? $this->slide4['o73'] + $this->slide4['o79'] : ($this->slide5['b3'] == 1 ? $this->slide4['m73'] + $this->slide4['m79'] : ($this->slide5['b4'] == 1 ? $this->slide4['n73'] + $this->slide4['n79'] : ($this->slide4['l73'] + $this->slide4['l79']))));
