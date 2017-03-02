@@ -35,10 +35,10 @@ function getSelect($glove){
     }
 
     $txt = '<select class="form-control fc">';
-    foreach ($gs as $g){
+    $txt .= '<option>'.$glove.'</option>';
+    foreach (array_reverse($gs) as $g){
         $txt .= '<option>'.$g.'</option>';
     }
-    $txt .= '<option>'.$glove.'</option>';
     $txt .= '</select>';
     return $txt;
 }
