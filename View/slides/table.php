@@ -20,18 +20,44 @@ function getSelect($glove){
     }
     $gs = [];
     switch ($glove){
-        case 'Biogel Skinsense': { $gs = ['Encore Ultra']; break; };
-        case 'Biogel Skinsense Indicator': { $gs = []; break; };
-        case 'Bioclean Ultimate': { $gs = ['Bioclean Emerald']; break; };
         case 'Biogel Surgeons': { $gs = ['Biogel Eclipse','Encore Acclaim','Encore Style 85','Medi-Grip PF','Shen Wei']; break; };
+        case 'Biogel Eclipse': { $gs = ['Biogel Surgeons','Encore Acclaim','Encore Style 85','Medi-Grip PF','Shen Wei']; break; };
+        case 'Encore Acclaim': { $gs = ['Biogel Surgeons','Biogel Eclipse','Encore Style 85','Medi-Grip PF','Shen Wei']; break; };
+//            case 'Encore Style 85': { $gs = ['Biogel Surgeons','Biogel Eclipse','Encore Acclaim','Medi-Grip PF','Shen Wei']; break; };
+        case 'Medi-Grip PF': { $gs = ['Biogel Surgeons','Biogel Eclipse','Encore Acclaim','Encore Style 85','Shen Wei']; break; };
+        case 'Shen Wei': { $gs = ['Biogel Surgeons','Biogel Eclipse','Encore Acclaim','Encore Style 85','Medi-Grip PF']; break; };
+
         case 'Medi-Grip Plus': { $gs = []; break; };
+
+        case 'Biogel Eclipse Indicator': { $gs = ['Encore Acclaim + Encore Underglove']; break; };
         case 'Encore Acclaim + Encore Underglove': { $gs = ['Biogel Eclipse Indicator']; break; };
+
         case 'Bioclean Extra': { $gs = []; break; };
+
         case 'Dona 410 PF': { $gs = []; break; };
+
         case 'Encore Orthopaedic': { $gs = []; break; };
+
         case 'Encore Microptic': { $gs = []; break; };
+
+
         case 'Encore Style 85': { $gs = ['Encore Orthopaedic','Encore Underglove']; break; };
+//            case 'Encore Orthopaedic': { $gs = ['Encore Style 85','Encore Underglove']; break; };
+//            case 'Encore Underglove': { $gs = ['Encore Style 85','Encore Orthopaedic']; break; };
+
         case 'Encore Underglove': { $gs = ['Shen Wei']; break; };
+
+
+
+        case 'Biogel Skinsense': { $gs = ['Encore Ultra']; break; };
+
+        case 'Encore Ultra': { $gs = ['Biogel Skinsense']; break; };
+//            case 'Biogel Skinsense': { $gs = ['Encore Ultra']; break; };
+
+        case 'Biogel Skinsense Indicator': { $gs = []; break; };
+
+        case 'Bioclean Ultimate': { $gs = ['Bioclean Emerald']; break; };
+        case 'Bioclean Emerald': { $gs = ['Bioclean Ultimate']; break; };
     }
 
     $txt = '<select class="form-control fc">';
