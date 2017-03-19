@@ -20,7 +20,7 @@
 </form>
 
 
-<div id="chart-5" class="chart" style="height: 500px"></div>
+<div id="chart-5" class="chart" style="height: 600px"></div>
 <div style="text-align: center">
     <img src="/Resources/images/legend-5-1.png" style="margin-left: 40px;">
     <img src="/Resources/images/legend-5.png">
