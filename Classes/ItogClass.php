@@ -287,7 +287,7 @@ class ItogClass
         $this->slide5['c65'] = 'Encore Ultra';
         $this->slide5['c66'] = 'Bioclean Ultimate';
         $this->slide5['c67'] = 'Biogel Eclipse';
-        $this->slide5['c68'] = 'Encore Style 42';
+        $this->slide5['c68'] = 'Medi-Grip Plus';
         $this->slide5['c69'] = 'Bioclean Extra';
         $this->slide5['c70'] = 'Encore Underglove';
 
@@ -310,7 +310,7 @@ class ItogClass
         $this->slide5['b78'] = 'с антимикробным покрытием';
 
         $this->slide5['c75'] = 'Biogel Eclipse';
-        $this->slide5['c76'] = 'Medi-Grip PWD';
+        $this->slide5['c76'] = 'Medi-Grip Plus';
         $this->slide5['c77'] = 'Biogel Eclipse Indicator';
         $this->slide5['c78'] = 'Bioclean Extra';
 
@@ -337,11 +337,11 @@ class ItogClass
         $this->slide5['b88'] = 'текстурированные';
 
         $this->slide5['c82'] = 'Biogel Eclipse';
-        $this->slide5['c83'] = 'Encore Style 42';
+        $this->slide5['c83'] = 'Medi-Grip Plus';
         $this->slide5['c84'] = 'Bioclean Extra';
         $this->slide5['c85'] = 'Dona 410 PF ';
         $this->slide5['c86'] = 'Encore Orthopaedic';
-        $this->slide5['c87'] = 'Biogel Super Sensitive';
+        $this->slide5['c87'] = 'Encore Microptic';
         $this->slide5['c88'] = 'Encore Style 85';
 
         $this->slide5['d82'] = ($this->slide5['c3'] == 2 ? $this->slide4['g104'] + $this->slide4['g111'] : ($this->slide5['b3'] == 1 ? $this->slide4['e104'] + $this->slide4['e111'] : ($this->slide5['b4'] == 1 ? $this->slide4['f104'] + $this->slide4['f111'] : ($this->slide4['d104'] + $this->slide4['d111']))));
@@ -362,7 +362,7 @@ class ItogClass
         $this->slide5['b94'] = 'с антимикробным покрытием';
 
         $this->slide5['c92'] = 'Biogel Eclipse';
-        $this->slide5['c93'] = 'Encore Style 42';
+        $this->slide5['c93'] = 'Medi-Grip Plus';
         $this->slide5['c94'] = 'Bioclean Extra';
 
         $this->slide5['d92'] = ($this->slide5['c3'] == 2 ? $this->slide4['g115'] + $this->slide4['g118'] : ($this->slide5['b3'] == 1 ? $this->slide4['e115'] + $this->slide4['e118'] : ($this->slide5['b4'] == 1 ? $this->slide4['f115'] + $this->slide4['f118'] : ($this->slide4['d115'] + $this->slide4['d118']))));
@@ -515,7 +515,7 @@ class ItogClass
         $this->slide5['h53'] = 'Encore Ultra';
         $this->slide5['h54'] = 'Biogel Skinsense Indicator';
         $this->slide5['h55'] = 'Biogel Eclipse';
-        $this->slide5['h56'] = 'Medi-Grip PWD';
+        $this->slide5['h56'] = 'Medi-Grip Plus';
         $this->slide5['h57'] = 'Biogel Eclipse Indicator';
         $this->slide5['h58'] = 'Encore Underglove';
 
@@ -544,7 +544,7 @@ class ItogClass
         $this->slide5['g71'] = 'текстурированные';
 
         $this->slide5['h65'] = 'Biogel Eclipse';
-        $this->slide5['h66'] = 'Encore Style 42';
+        $this->slide5['h66'] = 'Medi-Grip Plus';
         $this->slide5['h67'] = 'Bioclean Extra';
         $this->slide5['h68'] = 'Dona 410 PF ';
         $this->slide5['h69'] = 'Encore Orthopaedic';
@@ -589,7 +589,7 @@ class ItogClass
 
         $this->slide5['h82'] = 'Encore Ultra';
         $this->slide5['h83'] = 'Biogel Eclipse';
-        $this->slide5['h84'] = 'Medi-Grip PWD';
+        $this->slide5['h84'] = 'Medi-Grip Plus';
         $this->slide5['h85'] = 'Encore Underglove';
 
         $this->slide5['i82'] = ($this->slide5['c3'] == 2 ? $this->slide4['o104'] + $this->slide4['o108'] : ($this->slide5['b3'] == 1 ? $this->slide4['m104'] + $this->slide4['m108'] : ($this->slide5['b4'] == 1 ? $this->slide4['n104'] + $this->slide4['n108'] : ($this->slide4['l104'] + $this->slide4['l108']))));
@@ -605,7 +605,7 @@ class ItogClass
         $this->slide5['g93'] = 'стандартные опудренные';
 
         $this->slide5['h92'] = 'Biogel Eclipse';
-        $this->slide5['h93'] = 'Encore Style 42';
+        $this->slide5['h93'] = 'Medi-Grip Plus';
 
         $this->slide5['i92'] = ($this->slide5['c3'] == 2 ? $this->slide4['o115'] + $this->slide4['o117'] : ($this->slide5['b3'] == 1 ? $this->slide4['m115'] + $this->slide4['m117'] : ($this->slide5['b4'] == 1 ? $this->slide4['n115'] + $this->slide4['n117'] : ($this->slide4['l115'] + $this->slide4['l117']))));
         $this->slide5['i93'] = ($this->slide5['c3'] == 2 ? $this->slide4['o116'] + $this->slide4['o118'] : ($this->slide5['b3'] == 1 ? $this->slide4['m116'] + $this->slide4['m118'] : ($this->slide5['b4'] == 1 ? $this->slide4['n116'] + $this->slide4['n118'] : ($this->slide4['l116'] + $this->slide4['l118']))));
@@ -685,7 +685,7 @@ class ItogClass
             $this->slide4['e27'] - $cell1[8],
             $this->slide4['e28'] - $cell1[9],
             $this->slide4['e29'] - $cell1[10],
-            $this->slide4['e30'] + $this->slide4['e36'] - $cell1[10]
+            $this->slide4['e30'] + $this->slide4['e36'] - $cell1[11]
         );
         $cell3 = array(
             ($this->slide4['g19'] + $this->slide4['g31']) - ($this->slide4['e19'] + $this->slide4['e31']),
