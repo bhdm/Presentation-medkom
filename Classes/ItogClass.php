@@ -174,7 +174,7 @@ class ItogClass
         $this->slide5['c31'] = 'Biogel Eclipse';
         $this->slide5['c32'] = 'Medi-Grip Plus';
         $this->slide5['c33'] = 'Bioclean Extra';
-        $this->slide5['c34'] = 'Dona 410 PF ';
+        $this->slide5['c34'] = 'Dona 410 PF';
         $this->slide5['c35'] = 'Encore Orthopaedic';
         $this->slide5['c36'] = 'Encore Microptic';
         $this->slide5['c37'] = 'Encore Style 85';
@@ -214,7 +214,7 @@ class ItogClass
         $this->slide5['c43'] = 'Medi-Grip Plus';
         $this->slide5['c44'] = 'Biogel Eclipse Indicator';
         $this->slide5['c45'] = 'Bioclean Extra';
-        $this->slide5['c46'] = 'Dona 410 PF ';
+        $this->slide5['c46'] = 'Dona 410 PF';
         $this->slide5['c47'] = 'Encore Orthopaedic';
         $this->slide5['c48'] = 'Encore Microptic';
         $this->slide5['c49'] = 'Encore Style 85';
@@ -253,7 +253,7 @@ class ItogClass
         $this->slide5['c54'] = 'Biogel Surgeons';
         $this->slide5['c55'] = 'Medi-Grip Plus';
         $this->slide5['c56'] = 'Bioclean Extra';
-        $this->slide5['c57'] = 'Dona 410 PF ';
+        $this->slide5['c57'] = 'Dona 410 PF';
         $this->slide5['c58'] = 'Encore Orthopaedic';
         $this->slide5['c59'] = 'Encore Microptic';
         $this->slide5['c60'] = 'Encore Style 85';
@@ -339,7 +339,7 @@ class ItogClass
         $this->slide5['c82'] = 'Biogel Eclipse';
         $this->slide5['c83'] = 'Medi-Grip Plus';
         $this->slide5['c84'] = 'Bioclean Extra';
-        $this->slide5['c85'] = 'Dona 410 PF ';
+        $this->slide5['c85'] = 'Dona 410 PF';
         $this->slide5['c86'] = 'Encore Orthopaedic';
         $this->slide5['c87'] = 'Encore Microptic';
         $this->slide5['c88'] = 'Encore Style 85';
@@ -405,7 +405,7 @@ class ItogClass
         $this->slide5['h17'] = 'Medi-Grip Plus';
         $this->slide5['h18'] = 'Biogel Eclipse Indicator';
         $this->slide5['h19'] = 'Bioclean Extra';
-        $this->slide5['h20'] = 'Dona 410 PF ';
+        $this->slide5['h20'] = 'Dona 410 PF';
         $this->slide5['h21'] = 'Encore Orthopaedic';
         $this->slide5['h22'] = 'Encore Microptic';
         $this->slide5['h23'] = 'Encore Style 85';
@@ -483,7 +483,7 @@ class ItogClass
         $this->slide5['h43'] = 'Medi-Grip Plus';
         $this->slide5['h44'] = 'Biogel Eclipse Indicator';
         $this->slide5['h45'] = 'Bioclean Extra';
-        $this->slide5['h46'] = 'Dona 410 PF ';
+        $this->slide5['h46'] = 'Dona 410 PF';
         $this->slide5['h47'] = 'Encore Orthopaedic';
         $this->slide5['h48'] = 'Encore Microptic';
         $this->slide5['h49'] = 'Biogel M';
@@ -546,10 +546,10 @@ class ItogClass
         $this->slide5['h65'] = 'Biogel Eclipse';
         $this->slide5['h66'] = 'Medi-Grip Plus';
         $this->slide5['h67'] = 'Bioclean Extra';
-        $this->slide5['h68'] = 'Dona 410 PF ';
+        $this->slide5['h68'] = 'Dona 410 PF';
         $this->slide5['h69'] = 'Encore Orthopaedic';
         $this->slide5['h70'] = 'Encore Microptic';
-        $this->slide5['h71'] = 'Biogel M';
+        $this->slide5['h71'] = 'Encore Style 85';
 
         $this->slide5['i65'] = ($this->slide5['c3'] == 2 ? $this->slide4['o83'] + $this->slide4['o90'] : ($this->slide5['b3'] == 1 ? $this->slide4['m83'] + $this->slide4['m90'] : ($this->slide5['b4'] == 1 ? $this->slide4['n83'] + $this->slide4['n90'] : ($this->slide4['l83'] + $this->slide4['l90']))));
         $this->slide5['i66'] = ($this->slide5['c3'] == 2 ? $this->slide4['o84'] + $this->slide4['o91'] : ($this->slide5['b3'] == 1 ? $this->slide4['m84'] + $this->slide4['m91'] : ($this->slide5['b4'] == 1 ? $this->slide4['n84'] + $this->slide4['n91'] : ($this->slide4['l84'] + $this->slide4['l91']))));

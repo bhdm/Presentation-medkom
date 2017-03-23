@@ -56,7 +56,7 @@
     </div>
 </div>
 <div class="col-xs-12 col-md-5">
-    <div id="chart-6" class="chart" style="height: 500px"></div>
+    <div id="chart-6" class="chart" style="height: 600px; margin-top: -100px"></div>
     <div style="text-align: center; color: #7e0b20; font-style: italic">
         *Наведите курсор на графики, чтобы увидеть значения
     </div>
@@ -102,6 +102,7 @@
 
 
             var data = [];
+            console.log(counts);
             $.each(counts, function (key, val) {
                 if (val != 0 && val != NaN && val != undefined && val != false && !isNaN(val)){
                     data.push({
@@ -118,7 +119,6 @@
             });
 
             var kol = data.length;
-//            console.log(a=data);
             for (var i = 0 ; i < kol ; i++){
                 for (var j = 0 ; j < kol ; j++){
                     if (j+1 < kol){
