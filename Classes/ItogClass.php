@@ -689,7 +689,7 @@ class ItogClass
         );
         $cell3 = array(
             ($this->slide4['g19'] + $this->slide4['g31']) - ($this->slide4['e19'] + $this->slide4['e31']),
-            ($this->slide4['g20'] + $this->slide4['g32']) - ($this->slide4['e20'] + $this->slide4['e32']),
+            ($this->slide4['g20'] + $this->slide4['g32']) - ($this->slide4['e20'] + $this->slide4['d32']),
             ($this->slide4['g21']) - ($this->slide4['e21']),
             ($this->slide4['g22'] + $this->slide4['g33']) - ($this->slide4['e22'] + $this->slide4['e33']),
             ($this->slide4['g23'] + $this->slide4['g34']) - ($this->slide4['e23'] + $this->slide4['e34']),
