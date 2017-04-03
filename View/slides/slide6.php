@@ -56,7 +56,7 @@
     </div>
 </div>
 <div class="col-xs-12 col-md-5">
-    <div id="chart-6" class="chart" style="height: 600px; margin-top: -100px"></div>
+    <div id="chart-6" class="chart" style="height: 750px; margin-top: -250px"></div>
     <div style="text-align: center; color: #7e0b20; font-style: italic">
         *Наведите курсор на графики, чтобы увидеть значения
     </div>
