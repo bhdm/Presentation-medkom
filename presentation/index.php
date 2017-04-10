@@ -1,4 +1,5 @@
 <?php
+$domain = 'http://medcom-medical.ru/presentation';
 header('Content-Type: text/html; charset=utf-8');
 session_start();
 //  Настройки
@@ -49,6 +50,8 @@ $itog = new ItogClass();
 
 //Роутер
     $url = $_SERVER['REQUEST_URI'];
+    $url = str_replace('/presentation', '', $url);
+
     if ($url == null || $url == '' || $url == '/'){
         $url = '/slide1';
     }elseif($url == '/clear'){

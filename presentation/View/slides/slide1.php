@@ -5,5 +5,5 @@
     годовых закупок для операций, при необходимости – оптимизировать их.
 </p>
 <div class="text-center">
-    <a href="/slide2"><img src="/Resources/images/btn.png"></a>
+    <a href="<?=$domain?>/slide2"><img src="<?=$domain?>/Resources/images/btn.png"></a>
 </div>

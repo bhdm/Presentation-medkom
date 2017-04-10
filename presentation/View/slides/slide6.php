@@ -202,7 +202,7 @@
 
         $('.check').on('ifChecked', function(event){
             $.ajax({
-                url: '/table',
+                url: '<?=$domain?>/table',
                 data: 'ch='+$(this).attr('name'),
                 method: 'POST',
                 success: function (msg) {
@@ -214,7 +214,7 @@
         });
         $('.check').on('ifUnchecked', function(event){
             $.ajax({
-                url: '/table',
+                url: '<?=$domain?>/table',
                 data: 'uch='+$(this).attr('name'),
                 method: 'POST',
                 success: function (msg) {

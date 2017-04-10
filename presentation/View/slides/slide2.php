@@ -12,7 +12,7 @@
     клинико-экономических расчетов, проведенных Медком-МП. Расчеты производятся на трех членов хирургической бригады.
 </p>
 <div class="title"><h2>Введите данные по Вашей больнице</h2></div>
-<form class="form-horizontal" method="POST" action="/slide3" id="form">
+<form class="form-horizontal" method="POST" action="<?=$domain?>/slide3" id="form">
     <div class="form-group">
         <label class="col-sm-6">Количество операций за год</label>
         <div class="col-sm-2">

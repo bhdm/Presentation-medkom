@@ -22,8 +22,8 @@
 
 <div id="chart-5" class="chart" style="height: 600px"></div>
 <div style="text-align: center">
-    <img src="/Resources/images/legend-5-1.png" style="margin-left: 40px;">
-    <img src="/Resources/images/legend-5.png">
+    <img src="<?=$domain?>/Resources/images/legend-5-1.png" style="margin-left: 40px;">
+    <img src="<?=$domain?>/Resources/images/legend-5.png">
 </div>
 <div style="text-align: center; color: #7e0b20; font-style: italic">
     *Наведите курсор на графики, чтобы увидеть значения
@@ -134,7 +134,7 @@ $(document).ready(function () {
 
     $('.check').on('ifChecked', function(event){
         $.ajax({
-            url: '/ajaxSlide5',
+            url: '<?=$domain?>/ajaxSlide5',
             data: 'ch='+$(this).attr('name'),
             method: 'POST',
             success: function (msg) {
@@ -144,7 +144,7 @@ $(document).ready(function () {
     });
     $('.check').on('ifUnchecked', function(event){
         $.ajax({
-            url: '/ajaxSlide5',
+            url: '<?=$domain?>/ajaxSlide5',
             data: 'uch='+$(this).attr('name'),
             method: 'POST',
             success: function (msg) {
