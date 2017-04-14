@@ -134,7 +134,7 @@ $(document).ready(function () {
 
     $('.check').on('ifChecked', function(event){
         $.ajax({
-            url: '<?=$domain?>/ajaxSlide5',
+            url: '<?=$domain?>ajaxSlide5',
             data: 'ch='+$(this).attr('name'),
             method: 'POST',
             success: function (msg) {
@@ -144,7 +144,7 @@ $(document).ready(function () {
     });
     $('.check').on('ifUnchecked', function(event){
         $.ajax({
-            url: '<?=$domain?>/ajaxSlide5',
+            url: '<?=$domain?>ajaxSlide5',
             data: 'uch='+$(this).attr('name'),
             method: 'POST',
             success: function (msg) {
