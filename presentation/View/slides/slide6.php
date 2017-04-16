@@ -136,12 +136,16 @@
 
         function MergeGridCells()
         {
+            var currentColumn = $(".table tr").eq(1).children('td')
             for (var i =1; i <= $(".table tr").length ; i++){
                 var tr = $(".table tr").eq(i);
-
-                if (i > 1  && tr.children('td').eq(0).html() == $(".table tr").eq(i-1).children('td').eq(0).html() ){
-                    $(".table tr").eq(i-1).children('td').eq(0).attr('rowspan', parseInt($(".table tr").eq(i-1).children('td').eq(0).attr('rowspan'))+1);
+                console.log(tr.children('td').eq(0).html() + ' == ' + currentColumn.eq(0).html());
+                if (i > 1  && tr.children('td').eq(0).html() == currentColumn.eq(0).html() ){
+                    currentColumn.eq(0).attr('rowspan', parseInt(currentColumn.eq(0).attr('rowspan'))+1);
+                    console.log('rowspan = ' + $(".table tr").eq(i-1).children('td').eq(0).attr('rowspan'));
                     tr.children('td').eq(0).remove();
+                }else{
+                    currentColumn = $(".table tr").eq(i).children('td');
                 }
             }
         }
@@ -202,7 +206,7 @@
 
         $('.check').on('ifChecked', function(event){
             $.ajax({
-                url: '<?=$domain?>table',
+                url: '<?=$domain?>/table',
                 data: 'ch='+$(this).attr('name'),
                 method: 'POST',
                 success: function (msg) {
@@ -214,7 +218,7 @@
         });
         $('.check').on('ifUnchecked', function(event){
             $.ajax({
-                url: '<?=$domain?>table',
+                url: '<?=$domain?>/table',
                 data: 'uch='+$(this).attr('name'),
                 method: 'POST',
                 success: function (msg) {
