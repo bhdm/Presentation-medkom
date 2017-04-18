@@ -39,7 +39,7 @@
     <div class="container row">
         <div class="col-xs-6 text-left">
             <?php
-            if ($url !== '/slide1'){
+            if ($url !== '/slide1' && $url !== '/slide2' ){
                 ?>
                 <a href="<?=$domain?>/slide<?=$preview?>"><button class="btn btn-primary btn-back"><span class="glyphicon glyphicon-arrow-left"></span> Назад</button></a>
                 <?php
@@ -49,7 +49,7 @@
 
         <div class="col-xs-6 text-right">
             <?php
-            if ($url !== '/slide6'){
+            if ($url !== '/slide6' && $url !== '/slide1'){
                 ?>
                 <a href="<?=$domain?>/slide<?=$next?>"><button class="btn btn-primary btn-next">Далее <span class="glyphicon glyphicon-arrow-right"></span></button></a>
                 <?php
