@@ -147,16 +147,16 @@ class ItogClass
         $this->slide5['d25'] = ($this->slide5['c3'] == 2 ? $this->slide4['g30'] + $this->slide4['g36'] : ($this->slide5['b3'] == 1 ? $this->slide4['e30'] + $this->slide4['e36'] : ($this->slide5['b4'] == 1 ? $this->slide4['f30'] + $this->slide4['f36'] : ($this->slide4['d30'] + $this->slide4['d36']))));
 
 //      Аллергии-0-ИСМП-Специализация
-        $this->slide5['a29'] = 'Синтетические';
-        $this->slide5['a30'] = 'Синтетические';
-        $this->slide5['a31'] = 'Латексные';
-        $this->slide5['a32'] = 'Латексные';
-        $this->slide5['a33'] = 'Латексные';
-        $this->slide5['a34'] = 'Латексные';
-        $this->slide5['a35'] = 'Латексные';
-        $this->slide5['a36'] = 'Латексные';
-        $this->slide5['a37'] = 'Латексные';
-        $this->slide5['a38'] = 'Латексные';
+        $this->slide5['a29'] = 'Синтетические перчатки';
+        $this->slide5['a30'] = 'Синтетические перчатки';
+        $this->slide5['a31'] = 'Латексные перчатки';
+        $this->slide5['a32'] = 'Латексные перчатки';
+        $this->slide5['a33'] = 'Латексные перчатки';
+        $this->slide5['a34'] = 'Латексные перчатки';
+        $this->slide5['a35'] = 'Латексные перчатки';
+        $this->slide5['a36'] = 'Латексные перчатки';
+        $this->slide5['a37'] = 'Латексные перчатки';
+        $this->slide5['a38'] = 'Латексные перчатки';
 
         $this->slide5['b29'] = 'стандартные';
         $this->slide5['b30'] = 'с антимикробным покрытием';
@@ -192,14 +192,14 @@ class ItogClass
         $this->slide5['d38'] = ($this->slide5['c3'] == 2 ? $this->slide4['g48'] + $this->slide4['g52'] : ($this->slide5['b3'] == 1 ? $this->slide4['e48'] + $this->slide4['e52'] : ($this->slide5['b4'] == 1 ? $this->slide4['f48'] + $this->slide4['f52'] : ($this->slide4['d48'] + $this->slide4['d52']))));
 
 //      0-ГКИ-ИСМП-Специализация
-        $this->slide5['a42'] = 'Латексные';
-        $this->slide5['a43'] = 'Латексные';
-        $this->slide5['a44'] = 'Латексные';
-        $this->slide5['a45'] = 'Латексные';
-        $this->slide5['a46'] = 'Латексные';
-        $this->slide5['a47'] = 'Латексные';
-        $this->slide5['a48'] = 'Латексные';
-        $this->slide5['a49'] = 'Латексные';
+        $this->slide5['a42'] = 'Латексные перчатки';
+        $this->slide5['a43'] = 'Латексные перчатки';
+        $this->slide5['a44'] = 'Латексные перчатки';
+        $this->slide5['a45'] = 'Латексные перчатки';
+        $this->slide5['a46'] = 'Латексные перчатки';
+        $this->slide5['a47'] = 'Латексные перчатки';
+        $this->slide5['a48'] = 'Латексные перчатки';
+        $this->slide5['a49'] = 'Латексные перчатки';
 
         $this->slide5['b42'] = 'стандартные неопудренные';
         $this->slide5['b43'] = 'стандартные опудренные';
@@ -229,15 +229,15 @@ class ItogClass
         $this->slide5['d49'] = ($this->slide5['c3'] == 2 ? $this->slide4['g62'] : ($this->slide5['b3'] == 1 ? $this->slide4['e62']  : ($this->slide5['b4'] == 1 ? $this->slide4['f62'] : ($this->slide4['d62'] ))));
 
 //      Аллергии-0-0-Специализация
-        $this->slide5['a53'] = 'Синтетические';
-        $this->slide5['a54'] = 'Латексные';
-        $this->slide5['a55'] = 'Латексные';
-        $this->slide5['a56'] = 'Латексные';
-        $this->slide5['a57'] = 'Латексные';
-        $this->slide5['a58'] = 'Латексные';
-        $this->slide5['a59'] = 'Латексные';
-        $this->slide5['a60'] = 'Латексные';
-        $this->slide5['a61'] = 'Латексные';
+        $this->slide5['a53'] = 'Синтетические перчатки';
+        $this->slide5['a54'] = 'Латексные перчатки';
+        $this->slide5['a55'] = 'Латексные перчатки';
+        $this->slide5['a56'] = 'Латексные перчатки';
+        $this->slide5['a57'] = 'Латексные перчатки';
+        $this->slide5['a58'] = 'Латексные перчатки';
+        $this->slide5['a59'] = 'Латексные перчатки';
+        $this->slide5['a60'] = 'Латексные перчатки';
+        $this->slide5['a61'] = 'Латексные перчатки';
 
         $this->slide5['b53'] = 'стандартные';
         $this->slide5['b54'] = 'стандартные неопудренные';
@@ -270,12 +270,12 @@ class ItogClass
         $this->slide5['d61'] = ($this->slide5['c3'] == 2 ? $this->slide4['g76'] + $this->slide4['g80'] : ($this->slide5['b3'] == 1 ? $this->slide4['e76'] + $this->slide4['e80'] : ($this->slide5['b4'] == 1 ? $this->slide4['f76'] + $this->slide4['f80'] : ($this->slide4['d76'] + $this->slide4['d80']))));
 
 //      Аллергии-0-ИСМП-0
-        $this->slide5['a65'] = 'Синтетические';
-        $this->slide5['a66'] = 'Синтетические';
-        $this->slide5['a67'] = 'Латексные';
-        $this->slide5['a68'] = 'Латексные';
-        $this->slide5['a69'] = 'Латексные';
-        $this->slide5['a70'] = 'Латексные';
+        $this->slide5['a65'] = 'Синтетические перчатки';
+        $this->slide5['a66'] = 'Синтетические перчатки';
+        $this->slide5['a67'] = 'Латексные перчатки';
+        $this->slide5['a68'] = 'Латексные перчатки';
+        $this->slide5['a69'] = 'Латексные перчатки';
+        $this->slide5['a70'] = 'Латексные перчатки';
 
         $this->slide5['b65'] = 'стандартные';
         $this->slide5['b66'] = 'с антимикробным покрытием';
@@ -299,10 +299,10 @@ class ItogClass
         $this->slide5['d70'] = ($this->slide5['c3'] == 2 ? $this->slide4['g88'] + $this->slide4['g92'] : ($this->slide5['b3'] == 1 ? $this->slide4['e88'] + $this->slide4['e92'] : ($this->slide5['b4'] == 1 ? $this->slide4['f88'] + $this->slide4['f92'] : ($this->slide4['d88'] + $this->slide4['d92']))));
 
 //      0-ГКИ-ИСМП-0
-        $this->slide5['a75'] = 'Латексные';
-        $this->slide5['a76'] = 'Латексные';
-        $this->slide5['a77'] = 'Латексные';
-        $this->slide5['a78'] = 'Латексные';
+        $this->slide5['a75'] = 'Латексные перчатки';
+        $this->slide5['a76'] = 'Латексные перчатки';
+        $this->slide5['a77'] = 'Латексные перчатки';
+        $this->slide5['a78'] = 'Латексные перчатки';
 
         $this->slide5['b75'] = 'стандартные неопудренные';
         $this->slide5['b76'] = 'стандартные опудренные';
@@ -320,13 +320,13 @@ class ItogClass
         $this->slide5['d78'] = ($this->slide5['c3'] == 2 ? $this->slide4['g98'] : ($this->slide5['b3'] == 1 ? $this->slide4['e98']  : ($this->slide5['b4'] == 1 ? $this->slide4['f98'] : ($this->slide4['d98'] ))));
 
 //      0-0-0-Специализация
-        $this->slide5['a82'] = 'Латексные';
-        $this->slide5['a83'] = 'Латексные';
-        $this->slide5['a84'] = 'Латексные';
-        $this->slide5['a85'] = 'Латексные';
-        $this->slide5['a86'] = 'Латексные';
-        $this->slide5['a87'] = 'Латексные';
-        $this->slide5['a88'] = 'Латексные';
+        $this->slide5['a82'] = 'Латексные перчатки';
+        $this->slide5['a83'] = 'Латексные перчатки';
+        $this->slide5['a84'] = 'Латексные перчатки';
+        $this->slide5['a85'] = 'Латексные перчатки';
+        $this->slide5['a86'] = 'Латексные перчатки';
+        $this->slide5['a87'] = 'Латексные перчатки';
+        $this->slide5['a88'] = 'Латексные перчатки';
 
         $this->slide5['b82'] = 'стандартные неопудренные';
         $this->slide5['b83'] = 'стандартные опудренные';
@@ -353,9 +353,9 @@ class ItogClass
         $this->slide5['d88'] = ($this->slide5['c3'] == 2 ? $this->slide4['g110'] : ($this->slide5['b3'] == 1 ? $this->slide4['e110']  : ($this->slide5['b4'] == 1 ? $this->slide4['f110'] : ($this->slide4['d110'] ))));
 
 //      0-0-ИСМП-0
-        $this->slide5['a92'] = 'Латексные';
-        $this->slide5['a93'] = 'Латексные';
-        $this->slide5['a94'] = 'Латексные';
+        $this->slide5['a92'] = 'Латексные перчатки';
+        $this->slide5['a93'] = 'Латексные перчатки';
+        $this->slide5['a94'] = 'Латексные перчатки';
 
         $this->slide5['b92'] = 'стандартные неопудренные';
         $this->slide5['b93'] = 'стандартные опудренные';
@@ -375,17 +375,17 @@ class ItogClass
 ########################
 
 //      Аллергии-ГКИ-0-Специализация
-        $this->slide5['f14'] = 'Синтетические';
-        $this->slide5['f15'] = 'Синтетические';
-        $this->slide5['f16'] = 'Латексные';
-        $this->slide5['f17'] = 'Латексные';
-        $this->slide5['f18'] = 'Латексные';
-        $this->slide5['f19'] = 'Латексные';
-        $this->slide5['f20'] = 'Латексные';
-        $this->slide5['f21'] = 'Латексные';
-        $this->slide5['f22'] = 'Латексные';
-        $this->slide5['f23'] = 'Латексные';
-        $this->slide5['f24'] = 'Латексные';
+        $this->slide5['f14'] = 'Синтетические перчатки';
+        $this->slide5['f15'] = 'Синтетические перчатки';
+        $this->slide5['f16'] = 'Латексные перчатки';
+        $this->slide5['f17'] = 'Латексные перчатки';
+        $this->slide5['f18'] = 'Латексные перчатки';
+        $this->slide5['f19'] = 'Латексные перчатки';
+        $this->slide5['f20'] = 'Латексные перчатки';
+        $this->slide5['f21'] = 'Латексные перчатки';
+        $this->slide5['f22'] = 'Латексные перчатки';
+        $this->slide5['f23'] = 'Латексные перчатки';
+        $this->slide5['f24'] = 'Латексные перчатки';
 
         $this->slide5['g14'] = 'стандартные';
         $this->slide5['g15'] = 'система двойных перчаток';
@@ -424,14 +424,14 @@ class ItogClass
         $this->slide5['i24'] = ($this->slide5['c3'] == 2 ? $this->slide4['o29'] + $this->slide4['o35'] : ($this->slide5['b3'] == 1 ? $this->slide4['m29'] + $this->slide4['m35'] : ($this->slide5['b4'] == 1 ? $this->slide4['n29'] + $this->slide4['n35'] : ($this->slide4['l29'] + $this->slide4['l35']))));
 
 //      Аллергии-ГКИ-ИСМП-0
-        $this->slide5['f29'] = 'Синтетические';
-        $this->slide5['f30'] = 'Синтетические';
-        $this->slide5['f31'] = 'Синтетические';
-        $this->slide5['f32'] = 'Латексные';
-        $this->slide5['f33'] = 'Латексные';
-        $this->slide5['f34'] = 'Латексные';
-        $this->slide5['f35'] = 'Латексные';
-        $this->slide5['f36'] = 'Латексные';
+        $this->slide5['f29'] = 'Синтетические перчатки';
+        $this->slide5['f30'] = 'Синтетические перчатки';
+        $this->slide5['f31'] = 'Синтетические перчатки';
+        $this->slide5['f32'] = 'Латексные перчатки';
+        $this->slide5['f33'] = 'Латексные перчатки';
+        $this->slide5['f34'] = 'Латексные перчатки';
+        $this->slide5['f35'] = 'Латексные перчатки';
+        $this->slide5['f36'] = 'Латексные перчатки';
 
         $this->slide5['g29'] = 'стандартные';
         $this->slide5['g30'] = 'система двойных перчаток';
@@ -461,14 +461,14 @@ class ItogClass
         $this->slide5['i36'] = ($this->slide5['c3'] == 2 ? $this->slide4['o46'] + $this->slide4['o52'] : ($this->slide5['b3'] == 1 ? $this->slide4['m46'] + $this->slide4['m52'] : ($this->slide5['b4'] == 1 ? $this->slide4['n46'] + $this->slide4['n52'] : ($this->slide4['l46'] + $this->slide4['l52']))));
 
 //      0-ГКИ-0-Специализация
-        $this->slide5['f42'] = 'Латексные';
-        $this->slide5['f43'] = 'Латексные';
-        $this->slide5['f44'] = 'Латексные';
-        $this->slide5['f45'] = 'Латексные';
-        $this->slide5['f46'] = 'Латексные';
-        $this->slide5['f47'] = 'Латексные';
-        $this->slide5['f48'] = 'Латексные';
-        $this->slide5['f49'] = 'Латексные';
+        $this->slide5['f42'] = 'Латексные перчатки';
+        $this->slide5['f43'] = 'Латексные перчатки';
+        $this->slide5['f44'] = 'Латексные перчатки';
+        $this->slide5['f45'] = 'Латексные перчатки';
+        $this->slide5['f46'] = 'Латексные перчатки';
+        $this->slide5['f47'] = 'Латексные перчатки';
+        $this->slide5['f48'] = 'Латексные перчатки';
+        $this->slide5['f49'] = 'Латексные перчатки';
 
         $this->slide5['g42'] = 'стандартные неопудренные';
         $this->slide5['g43'] = 'стандартные опудренные';
@@ -498,12 +498,12 @@ class ItogClass
         $this->slide5['i49'] = ($this->slide5['c3'] == 2 ? $this->slide4['o62'] : ($this->slide5['b3'] == 1 ? $this->slide4['m62']  : ($this->slide5['b4'] == 1 ? $this->slide4['n62'] : ($this->slide4['l62'] ))));
 
 //      Аллергии-ГКИ-0-0
-        $this->slide5['f53'] = 'Синтетические';
-        $this->slide5['f54'] = 'Синтетические';
-        $this->slide5['f55'] = 'Латексные';
-        $this->slide5['f56'] = 'Латексные';
-        $this->slide5['f57'] = 'Латексные';
-        $this->slide5['f58'] = 'Латексные';
+        $this->slide5['f53'] = 'Синтетические перчатки';
+        $this->slide5['f54'] = 'Синтетические перчатки';
+        $this->slide5['f55'] = 'Латексные перчатки';
+        $this->slide5['f56'] = 'Латексные перчатки';
+        $this->slide5['f57'] = 'Латексные перчатки';
+        $this->slide5['f58'] = 'Латексные перчатки';
 
         $this->slide5['g53'] = 'стандартные';
         $this->slide5['g54'] = 'система двойных перчаток';
@@ -527,13 +527,13 @@ class ItogClass
         $this->slide5['i58'] = ($this->slide5['c3'] == 2 ? $this->slide4['o73'] + $this->slide4['o79'] : ($this->slide5['b3'] == 1 ? $this->slide4['m73'] + $this->slide4['m79'] : ($this->slide5['b4'] == 1 ? $this->slide4['n73'] + $this->slide4['n79'] : ($this->slide4['l73'] + $this->slide4['l79']))));
 
 //      0-0-ИСМП-Специализация
-        $this->slide5['f65'] = 'Латексные';
-        $this->slide5['f66'] = 'Латексные';
-        $this->slide5['f67'] = 'Латексные';
-        $this->slide5['f68'] = 'Латексные';
-        $this->slide5['f69'] = 'Латексные';
-        $this->slide5['f70'] = 'Латексные';
-        $this->slide5['f71'] = 'Латексные';
+        $this->slide5['f65'] = 'Латексные перчатки';
+        $this->slide5['f66'] = 'Латексные перчатки';
+        $this->slide5['f67'] = 'Латексные перчатки';
+        $this->slide5['f68'] = 'Латексные перчатки';
+        $this->slide5['f69'] = 'Латексные перчатки';
+        $this->slide5['f70'] = 'Латексные перчатки';
+        $this->slide5['f71'] = 'Латексные перчатки';
 
         $this->slide5['g65'] = 'стандартные неопудренные';
         $this->slide5['g66'] = 'стандартные опудренные';
@@ -560,9 +560,9 @@ class ItogClass
         $this->slide5['i71'] = ($this->slide5['c3'] == 2 ? $this->slide4['o89'] : ($this->slide5['b3'] == 1 ? $this->slide4['m89']  : ($this->slide5['b4'] == 1 ? $this->slide4['n89'] : ($this->slide4['l89'] ))));
 
 //      0-ГКИ-0-0
-        $this->slide5['f75'] = 'Латексные';
-        $this->slide5['f76'] = 'Латексные';
-        $this->slide5['f77'] = 'Латексные';
+        $this->slide5['f75'] = 'Латексные перчатки';
+        $this->slide5['f76'] = 'Латексные перчатки';
+        $this->slide5['f77'] = 'Латексные перчатки';
 
         $this->slide5['g75'] = 'стандартные неопудренные';
         $this->slide5['g76'] = 'стандартные опудренные';
@@ -577,10 +577,10 @@ class ItogClass
         $this->slide5['i77'] = ($this->slide5['c3'] == 2 ? $this->slide4['o97'] + $this->slide4['o100'] : ($this->slide5['b3'] == 1 ? $this->slide4['m97'] + $this->slide4['m100'] : ($this->slide5['b4'] == 1 ? $this->slide4['n97'] + $this->slide4['n100'] : ($this->slide4['l97'] + $this->slide4['l100']))));
 
 //      Аллергии-0-0-0
-        $this->slide5['f82'] = 'Синтетические';
-        $this->slide5['f83'] = 'Латексные';
-        $this->slide5['f84'] = 'Латексные';
-        $this->slide5['f85'] = 'Латексные';
+        $this->slide5['f82'] = 'Синтетические перчатки';
+        $this->slide5['f83'] = 'Латексные перчатки';
+        $this->slide5['f84'] = 'Латексные перчатки';
+        $this->slide5['f85'] = 'Латексные перчатки';
 
         $this->slide5['g82'] = 'стандартные';
         $this->slide5['g83'] = 'стандартные неопудренные';
@@ -598,8 +598,8 @@ class ItogClass
         $this->slide5['i85'] = ($this->slide5['c3'] == 2 ? $this->slide4['o107'] + $this->slide4['o111'] : ($this->slide5['b3'] == 1 ? $this->slide4['m107'] + $this->slide4['m111'] : ($this->slide5['b4'] == 1 ? $this->slide4['n107'] + $this->slide4['n111'] : ($this->slide4['l107'] + $this->slide4['l111']))));
 
 //      0-0-0-0
-        $this->slide5['f92'] = 'Латексные';
-        $this->slide5['f93'] = 'Латексные';
+        $this->slide5['f92'] = 'Латексные перчатки';
+        $this->slide5['f93'] = 'Латексные перчатки';
 
         $this->slide5['g92'] = 'стандартные неопудренные';
         $this->slide5['g93'] = 'стандартные опудренные';

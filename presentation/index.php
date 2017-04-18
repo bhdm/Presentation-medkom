@@ -52,11 +52,14 @@ $itog = new ItogClass();
     $url = $_SERVER['REQUEST_URI'];
     $url = str_replace('/presentation', '', $url);
 
+
     if ($url == null || $url == '' || $url == '/'){
         $url = '/slide1';
     }elseif($url == '/clear'){
         unset($_SESSION['slide1']);
-        header( 'Location: /slide1', true, 301 );
+        header("HTTP/1.1 301 Moved Permanently");
+        header("Location: ".$domain."/slide2");
+        exit();
     }
     $next = substr($url,-1) + 1;
     $preview = substr($url,-1) - 1;

@@ -29,7 +29,7 @@
     </script>
 </head>
 <body>
-<div class="container" style="max-width: 970px">
+<div class="container">
     <?php
         include "slides".$url.".php";
     ?>
@@ -42,6 +42,10 @@
             if ($url !== '/slide1' && $url !== '/slide2' ){
                 ?>
                 <a href="<?=$domain?>/slide<?=$preview?>"><button class="btn btn-primary btn-back"><span class="glyphicon glyphicon-arrow-left"></span> Назад</button></a>
+                <?php
+            }elseif($url == '/slide2'){
+                ?>
+                <a href="<?=$domain?>/clear"><button class="btn btn-danger btn-back"><span class="glyphicon glyphicon-refresh"></span> Очистить</button></a>
                 <?php
             }
             ?>
