@@ -616,26 +616,26 @@ class ItogClass
 
     public function getVolumeSurgeons(){
         return $this->slide4['g19'] +
-        $this->slide4['g20'] +
-        $this->slide4['g21'] +
-        $this->slide4['g22'] +
-        $this->slide4['g23'] +
-        $this->slide4['g24'] +
-        $this->slide4['g25'] +
-        $this->slide4['g26'] +
-        $this->slide4['g27'] +
-        $this->slide4['g28'] +
-        $this->slide4['g29'] +
-        $this->slide4['g30'];
+            $this->slide4['g20'] +
+            $this->slide4['g21'] +
+            $this->slide4['g22'] +
+            $this->slide4['g23'] +
+            $this->slide4['g24'] +
+            $this->slide4['g25'] +
+            $this->slide4['g26'] +
+            $this->slide4['g27'] +
+            $this->slide4['g28'] +
+            $this->slide4['g29'] +
+            $this->slide4['g30'];
     }
 
     public function getVolumeNurses(){
         return $this->slide4['g31'] +
-        $this->slide4['g32'] +
-        $this->slide4['g33'] +
-        $this->slide4['g34'] +
-        $this->slide4['g35'] +
-        $this->slide4['g36'];
+            $this->slide4['g32'] +
+            $this->slide4['g33'] +
+            $this->slide4['g34'] +
+            $this->slide4['g35'] +
+            $this->slide4['g36'];
     }
 
     public function getForSlide2(){
@@ -825,8 +825,9 @@ class ItogClass
         if ($char === 'a'){
             for($i = $cell ; true; $i ++){
                 if (!isset($table['a'.$i])){ break; }
-                $count += $table['d'.$i];
-                $text.= '
+                if ($table['c'.$i] != '' && $table['d'.$i] != 0){
+                    $count += $table['d'.$i];
+                    $text.= '
             <tr>
                 <td rowspan="1">'.$table['a'.$i].'</td>
                 <td>'.$table['b'.$i].'</td>
@@ -834,20 +835,24 @@ class ItogClass
                 <td class="text-center" data-title="'.$table['c'.$i].'">'.$table['d'.$i].'</td>
             </tr>
             ';
-            }
+                }}
         }
         if ($char == 'b'){
-            for($i = $cell ; true; $i ++){
-                if (!isset($table['f'.$i])){ break; }
-                $count += $table['i'.$i];
-                $text.= '
+            for($i = $cell ; true; $i ++) {
+                if (!isset($table['f' . $i])) {
+                    break;
+                }
+                if ($table['h' . $i] != '' && $table['i' . $i] != 0) {
+                    $count += $table['i' . $i];
+                    $text .= '
             <tr>
-                <td rowspan="1">'.$table['f'.$i].'</td>
-                <td>'.$table['g'.$i].'</td>
-                <td>'.$this->getSelect($table['h'.$i]).'</td>
-                <td class="text-center" data-title="'.$table['h'.$i].'">'.$table['i'.$i].'</td>
+                <td rowspan="1">' . $table['f' . $i] . '</td>
+                <td>' . $table['g' . $i] . '</td>
+                <td>' . $this->getSelect($table['h' . $i]) . '</td>
+                <td class="text-center" data-title="' . $table['h' . $i] . '">' . $table['i' . $i] . '</td>
             </tr>
             ';
+                }
             }
         }
         $text .= '

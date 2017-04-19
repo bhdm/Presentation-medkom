@@ -29,7 +29,7 @@
     </script>
 </head>
 <body>
-<div class="container">
+<div class="container" style="<?=($url != '/slide6' ? 'width: 960px' : '0')?>">
     <?php
         include "slides".$url.".php";
     ?>

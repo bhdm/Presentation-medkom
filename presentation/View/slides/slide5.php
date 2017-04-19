@@ -6,7 +6,7 @@
             Учитывать дополнительный объем – на замену через каждые 1,5 - 2 часа операции
         </label>
         <div class="col-sm-2">
-            <input type="checkbox" class="check" name="check1" id="check1" value="1" checked>
+            <input type="checkbox" class="check" name="check1" id="check1" value="1" <?=($_SESSION['check1'] ? 'checked' : '')?>>
         </div>
     </div>
     <div class="form-group">
@@ -14,7 +14,7 @@
             Учитывать дополнительный объем, связанный с повреждениями перчаток при операциях
         </label>
         <div class="col-sm-2">
-            <input type="checkbox" class="check" name="check2" id="check2" value="1" checked>
+            <input type="checkbox" class="check" name="check2" id="check2" value="1" <?=($_SESSION['check2'] ? 'checked' : '')?>>
         </div>
     </div>
 </form>
@@ -23,7 +23,7 @@
 <div id="chart-5" class="chart" style="height: 600px"></div>
 <div style="text-align: center">
     <img src="<?=$domain?>/Resources/images/legend-5-1.png" style="margin-left: 40px;">
-    <img src="<?=$domain?>/Resources/images/legend-5.png">
+    <img src="<?=$domain?>/Resources/images/legend-5-3.png">
 </div>
 <div style="text-align: center; color: #7e0b20; font-style: italic">
     *Наведите курсор на графики, чтобы увидеть значения
@@ -130,7 +130,7 @@
 
 $(document).ready(function () {
 
-    getChart([1,1]);
+    getChart([<?=$_SESSION['check1']?>,<?=$_SESSION['check2']?>]);
 
     $('.check').on('ifChecked', function(event){
         $.ajax({

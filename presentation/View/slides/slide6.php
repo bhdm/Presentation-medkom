@@ -61,7 +61,9 @@
         *Наведите курсор на графики, чтобы увидеть значения
     </div>
 </div>
-
+<button type="button" class="btn btn-primary down hidden-xs hidden-sm">
+    <span class="glyphicon glyphicon-circle-arrow-down"></span>
+</button>
 <script type="text/javascript">
 
     function toSum($items) {
@@ -237,6 +239,20 @@
             getChart();
         })
 
+        $('.down').click(function () {
+            var body = $("html, body");
+            body.stop().animate({scrollTop:$('html').height()}, '500', 'swing');
+        });
+
+        $(window).scroll(function () {
+//            alert('1');
+            if ($(window).scrollTop() == $(document).height() - $(window).height()){
+                $('.down').fadeOut();
+            }else{
+                $('.down').fadeIn();
+            }
+
+        })
     });
 
 </script>
