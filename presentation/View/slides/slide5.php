@@ -7,6 +7,7 @@
         </label>
         <div class="col-sm-2">
             <input type="checkbox" class="check" name="check1" id="check1" value="1" <?=($_SESSION['check1'] ? 'checked' : '')?>>
+            <span class="glyphicon glyphicon-info-sign" style="color: #777" data-title="" data-toggle="popover" data-content="условие актуально не для всех профилей операций" title="" data-original-title=""></span>
         </div>
     </div>
     <div class="form-group">
@@ -28,6 +29,11 @@
 <div style="text-align: center; color: #7e0b20; font-style: italic">
     *Наведите курсор на графики, чтобы увидеть значения
 </div>
+
+<button type="button" class="btn btn-primary down hidden-xs hidden-sm">
+    <span class="glyphicon glyphicon-circle-arrow-down"></span>
+</button>
+
 <?php $table = $itog->getForSlide5() ?>
 <script type="text/javascript">
     function getChart(msg) {
@@ -155,5 +161,23 @@ $(document).ready(function () {
 
     $('#form5').show();
 });
+
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover({trigger: "hover"})
+        $('.down').click(function () {
+            var body = $("html, body");
+            body.stop().animate({scrollTop:$('html').height()}, '500', 'swing');
+        });
+
+        $(window).scroll(function () {
+//            alert('1');
+            if ($(window).scrollTop() == $(document).height() - $(window).height()){
+                $('.down').fadeOut();
+            }else{
+                $('.down').fadeIn();
+            }
+
+        })
+    })
 
 </script>

@@ -5,14 +5,14 @@
         <p>Удовлетворение функциональных потребностей – перчатки, необходимые для годового числа операций.<br /><br /></p>
         <div id="chart-1" class="chart" style="width: 400px; margin: 0 auto"></div>
         <div style="margin: 0 auto; width: 400px">
-            <img src="<?=$domain?>/Resources/images/l4-1.png" style="margin-left: 33px;    position: absolute; margin-top: -10px; ">
+            <img src="<?=$domain?>/Resources/images/l4-1.png" style="margin-left: 10px;    position: absolute; margin-top: -10px; ">
         </div>
     </div>
     <div class="col-xs-12 col-md-6">
         <p>Удовлетворение профессиональных потребностей – перчатки, необходимые для профильных операций<br /><br /></p>
         <div id="chart-3" class="chart" style="width: 400px; margin: 0 auto"></div>
         <div style="margin: 0 auto; width: 400px">
-            <img src="<?=$domain?>/Resources/images/l4-4.png" style="margin-left: 33px;  position: absolute; margin-top: -30px; ">
+            <img src="<?=$domain?>/Resources/images/l4-4.png" style="margin-left: 10px;  position: absolute; margin-top: 0px; ">
         </div>
     </div>
 </div>
@@ -23,14 +23,14 @@
         <p>Удовлетворение функциональных потребностей – перчатки, необходимые для защиты от гемоконтактных инфекций и при высоком риске ИСМП.</p>
         <div id="chart-4" class="chart" style="width: 400px; margin: 0 auto"></div>
         <div style="margin: 0 auto; width: 400px">
-            <img src="<?=$domain?>/Resources/images/l4-2.png" style="margin-left: 33px;  position: absolute; margin-top: -21px; ">
+            <img src="<?=$domain?>/Resources/images/l4-2.png" style="margin-left: 10px;  position: absolute; ">
         </div>
     </div>
     <div class="col-xs-12 col-md-6">
         <p>Удовлетворение индивидуальных потребностей – перчатки, необходимые для предупреждения патологических реакций  у оперирующего персонала.</p>
         <div id="chart-2" class="chart" style="width: 400px; margin: 0 auto"></div>
         <div style="margin: 0 auto; width: 400px">
-            <img src="<?=$domain?>/Resources/images/l4-3.png" style="margin-left: 33px; ">
+            <img src="<?=$domain?>/Resources/images/l4-3.png" style="margin-left: 10px; ">
         </div>
     </div>
 </div>
@@ -159,7 +159,7 @@
             axisX: {
                 interval: 1,
                 labelAngle: 0,
-                labelFontSize: 11,
+                labelFontSize: 0,
                 labelFontColor: '#FFF'
             },
             axisY:{
@@ -206,11 +206,12 @@
             axisX: {
                 interval: 1,
                 labelAngle: 0,
-                labelFontSize: 11,
+                labelFontSize: 0,
                 labelFontColor: '#FFF'
             },
             axisY:{
                 valueFormatString: "#0", //try properties here
+//                labelFontSize: 11,
             },
             theme: "theme1",
             toolTip:{
@@ -257,7 +258,6 @@
         chart2.render();
         chart3.render();
         chart4.render();
-
-
     }
+
 </script>
