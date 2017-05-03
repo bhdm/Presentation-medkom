@@ -3,11 +3,10 @@
 <form class="form-horizontal" id="form5">
     <div class="form-group">
         <label class="col-sm-8">
-            Учитывать дополнительный объем – на замену через каждые 1,5 - 2 часа операции
+            Учитывать дополнительный объем – на замену через каждые 1,5 - 2 часа операции <span class="glyphicon glyphicon-info-sign" style="color: #777" data-title="" data-toggle="popover" data-content="условие актуально не для всех профилей операций" title="" data-original-title=""></span>
         </label>
         <div class="col-sm-2">
             <input type="checkbox" class="check" name="check1" id="check1" value="1" <?=($_SESSION['check1'] ? 'checked' : '')?>>
-            <span class="glyphicon glyphicon-info-sign" style="color: #777" data-title="" data-toggle="popover" data-content="условие актуально не для всех профилей операций" title="" data-original-title=""></span>
         </div>
     </div>
     <div class="form-group">
