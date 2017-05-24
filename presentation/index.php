@@ -1,6 +1,6 @@
 <?php
-//$domain = 'http://localhost:8002/presentation';
-$domain = 'http://medcom-medical.ru/presentation';
+$domain = 'http://localhost:8002/presentation';
+//$domain = 'http://medcom-medical.ru/presentation';
 header('Content-Type: text/html; charset=utf-8');
 session_start();
 //  Настройки

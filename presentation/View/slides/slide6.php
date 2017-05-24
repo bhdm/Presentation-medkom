@@ -50,16 +50,23 @@
         </div>
     </div>
 </form>
+<div class="row">
 <div class="col-xs-12 col-md-7" >
     <div class="table-item">
         <?=$itog->getTable()?>
     </div>
+    <p>Представленная модель имеет демонстрационный характер. <br /><br />
+        Вы можете заказать полный расчет годового объема и структуры закупки хирургических перчаток не только для операций, но и для манипуляций и перевязок,  с учетом потребностей Вашей медицинской организации.<br />
+        <br />
+        <a href="http://medcom-medical.ru/economic/about/"><img src="Resources/images/link.png"></a>
+    </p>
 </div>
 <div class="col-xs-12 col-md-5">
     <div id="chart-6" class="chart" style="height: 750px; margin-top: -250px"></div>
     <div style="text-align: center; color: #7e0b20; font-style: italic">
         *Наведите курсор на графики, чтобы увидеть значения
     </div>
+</div>
 </div>
 <button type="button" class="btn btn-primary down hidden-xs hidden-sm">
     <span class="glyphicon glyphicon-circle-arrow-down"></span>
