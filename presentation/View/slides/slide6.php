@@ -55,10 +55,12 @@
     <div class="table-item">
         <?=$itog->getTable()?>
     </div>
-    <p>Представленная модель имеет демонстрационный характер. <br /><br />
+    <p>Представленная модель имеет демонстрационный характер.
+        <br />
         Вы можете заказать полный расчет годового объема и структуры закупки хирургических перчаток не только для операций, но и для манипуляций и перевязок,  с учетом потребностей Вашей медицинской организации.<br />
         <br />
-        <a href="http://medcom-medical.ru/economic/about/"><img src="Resources/images/link.png"></a>
+        <a href="http://medcom-medical.ru/economic/about/" target="_blank"><img src="Resources/images/link.png"></a>
+        <br />
     </p>
 </div>
 <div class="col-xs-12 col-md-5">
